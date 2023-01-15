@@ -1,0 +1,73 @@
+@use "../../Variables.scss" as variable;
+
+h1.typography {
+    font-size: variable.$h1-size;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+h2.typography {
+    font-size: variable.$h2-size;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+h3.typography {
+    font-size: variable.$h3-size;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+h4.typography {
+    font-size: variable.$h4-size;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+h5.typography {
+    font-size: variable.$h5-size;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+p.typography {
+    font-size: variable.$p-size;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+small.typography {
+    font-size: variable.$small-size;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+.text {
+    &.software {
+        color: variable.$software;
+    }
+    &.agile {
+        color: variable.$agile;
+    }
+    &.design {
+        color: variable.$design;
+    }
+
+    &.bold {
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,19 @@
+@use "~sass-rem" as rem;
+
+$black: #313131;
+$muted: #4B5C71;
+$background: #EDEDEE;
+$inner-color: #F9F9F9;
+$software: #DC2418;
+$agile: #2EAF4A;
+$design: #0075FF;
+
+$h1-size: rem.convert(67.68px);
+$h2-size: rem.convert(50.52px);
+$h3-size: rem.convert(37.9px);
+$h4-size: rem.convert(28.43px);
+$h5-size: rem.convert(21.33px);
+$p-size: rem.convert(16px);
+$small-size: rem.convert(12px);
+
+$navbar-height: 108px;

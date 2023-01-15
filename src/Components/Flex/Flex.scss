@@ -1,0 +1,13 @@
+.mr-flex {
+    display: flex;
+    padding: 32px 8px;
+    gap: 97px;
+    
+    &.align-center {
+        align-items: center;
+    }
+
+    &.justify-space-between {
+        justify-content: space-between;
+    }
+}
