@@ -20,6 +20,20 @@ export const Home = () => {
                                     </Typography>
                                 </>} />
 
+                <div>
+                    <ContactIcon type={"mail"} link={""} />
+                    <ContactIcon type={"linkedin"} link={""} />
+                    <ContactIcon type={"phone"} link={""} />
+                </div>
+
+                <div style={{textAlign: "center"}}>
+                    <Typography type="p">
+                        Currently working at <strong style={{ fontWeight: "bold" }}>Techesge S.p.a. - Italy</strong>
+                    </Typography>
+                </div>
+
+
+
             {/* <HomeSection 
                         type="right"
                         icon={<i className="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>}
