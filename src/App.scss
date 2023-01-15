@@ -1,4 +1,6 @@
 @use "./Variables.scss" as variable;
+@import 'w3-css';
+@import 'font-awesome';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Serif&family=Quattrocento&display=swap');
@@ -7,6 +9,8 @@ body {
     font-family: 'Raleway', sans-serif;
     background: variable.$background;
 }
+
+.fa-anchor,.fa-coffee {font-size:200px}
 
 
 .app-layout {
