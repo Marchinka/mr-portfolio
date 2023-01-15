@@ -3,15 +3,22 @@ import { HomeSection } from "../../Components/HomeSection/HomeSection";
 import { MLogo } from "../../Components/MLogo/MLogo";
 import { Typography } from "../../Components/Typography/Typography";
 import "./Home.scss";
+import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
+import Project2Img from "./../../Images/Project2.png";
+import Project3Img from "./../../Images/Project3.png";
+import { ProjectSection } from "../../Components/ProjectSection/ProjectSection";
+import { Divider } from "../../Components/Divider/Divider";
+
+
 
 export const Home = () => {
     return (
-        <div>     
+        <div className="mr-home-content">     
             <HomeSection 
                         type="left"
                         icon={<MLogo />}
                         content={<>
-                                    <Typography type="h2" color="muted">
+                                    <Typography type="h2" color="black">
                                         Marcello Rossi
                                     </Typography>
                                     <Typography type="p">
@@ -32,6 +39,26 @@ export const Home = () => {
                     </Typography>
                 </div>
 
+                <Divider />
+
+                <ProjectSection title={"Document Platform"} 
+                                subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
+                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} 
+                                img={<img src={DocumentPlatformImg} alt="M" style={{width: "100%"}} />} />
+
+                <Divider />
+
+                <ProjectSection title={"Project 2"} 
+                                subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
+                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} 
+                                img={<img src={Project2Img} alt="M" style={{width: "100%"}} />} />
+
+                <Divider />
+                
+                <ProjectSection title={"Project 3"} 
+                                subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
+                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} 
+                                img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} />
 
 
             {/* <HomeSection 

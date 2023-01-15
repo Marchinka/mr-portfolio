@@ -1,0 +1,8 @@
+@use "../../Variables.scss" as variable;
+
+.divider {
+    width: 100%;
+    border-top-color: variable.$muted;
+    border-top-width: 1px;
+    border-top-style: solid;
+}

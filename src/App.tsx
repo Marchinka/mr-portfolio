@@ -13,11 +13,11 @@ import { AppLayout } from './Components/AppLayout/AppLayout';
 function App() {
   return (
     <AppLayout>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/document-drive" element={<DocumentDrive />} />
-          </Routes>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/document-drive" element={<DocumentDrive />} />
+      </Routes>
     </AppLayout>
   );
 }

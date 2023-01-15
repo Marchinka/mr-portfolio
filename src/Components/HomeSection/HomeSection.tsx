@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const HomeSection = (props: Props) => {
-    return <div className="w3-row-padding w3-padding-64 ">
+    return <div className="w3-row-padding">
                 {props.type == "left" && <div className="w3-third w3-center">
                     {props.icon}
                 </div>}
