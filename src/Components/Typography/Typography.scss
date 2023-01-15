@@ -57,6 +57,12 @@ small.typography {
 }
 
 .text {
+    &.black {
+        color: variable.$black;
+    }
+    &.muted {
+        color: variable.$muted;
+    }
     &.software {
         color: variable.$software;
     }
