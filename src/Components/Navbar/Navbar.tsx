@@ -11,6 +11,6 @@ export const Navbar = () => {
                         <Link className="w3-bar-item w3-button w3-padding-large mr-navbar-link" to="/">Portfolio</Link>
                         <Link className="w3-bar-item w3-button w3-padding-large mr-navbar-link" to="/resume">Resume</Link>
                     </div>
-                </div>
+                </div> 
             </div>);
 }
