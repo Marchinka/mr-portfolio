@@ -21,7 +21,7 @@ export const Home = () => {
                         content={<>
                                     <br />
                                     <Typography type="h2" color="black">
-                                        Marcello Rossi
+                                        Marcellozzo Rossi
                                     </Typography>
                                     <Typography type="p">
                                         I consider myself an M-shaped person: my areas of expertise are <Typography type="span" color="software" weight="bold">Software Development</Typography>, <Typography type="span" color="agile" weight="bold">Agile Project Managament</Typography> and <Typography type="span" color="design" weight="bold">User Experience Design</Typography>.
