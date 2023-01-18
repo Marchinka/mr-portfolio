@@ -3,11 +3,11 @@ import { HomeSection } from "../../Components/HomeSection/HomeSection";
 import { MLogo } from "../../Components/MLogo/MLogo";
 import { Typography } from "../../Components/Typography/Typography";
 import "./Home.scss";
-import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
-import Project2Img from "./../../Images/Project2.png";
-import Project3Img from "./../../Images/Project3.png";
-import { ProjectSection } from "../../Components/ProjectSection/ProjectSection";
-import { Divider } from "../../Components/Divider/Divider";
+// import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
+// import Project2Img from "./../../Images/Project2.png";
+// import Project3Img from "./../../Images/Project3.png";
+// import { ProjectSection } from "../../Components/ProjectSection/ProjectSection";
+// import { Divider } from "../../Components/Divider/Divider";
 import { Skill } from "../../Components/Skill/Skill";
 
 

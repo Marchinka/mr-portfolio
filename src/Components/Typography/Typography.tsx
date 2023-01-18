@@ -35,5 +35,4 @@ export const Typography = (props: Props) => {
         default:
             return <span className={`typography ${colorClass}`}>{props.children || props.label}</span>    
     }
-    return <></>
 }

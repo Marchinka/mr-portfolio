@@ -1,4 +1,3 @@
-import { JsxElement } from "typescript";
 import "./HomeSection.scss";
 
 type Type = "left" | "right";
@@ -11,13 +10,13 @@ interface Props {
 
 export const HomeSection = (props: Props) => {
     return <div className="w3-row">
-                {props.type == "left" && <div className="w3-col s12 m4 l4 w3-center">
+                {props.type === "left" && <div className="w3-col s12 m4 l4 w3-center">
                     {props.icon}
                 </div>}
                 <div className="w3-half">
                     {props.content}
                 </div>
-                {props.type == "right" && <div className="w3-col s12 m8 l8 w3-center">
+                {props.type === "right" && <div className="w3-col s12 m8 l8 w3-center">
                     {props.icon}
                 </div>}
             </div>
