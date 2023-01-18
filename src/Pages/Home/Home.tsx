@@ -19,36 +19,31 @@ export const Home = () => {
                         type="left"
                         icon={<MLogo />}
                         content={<>
+                                    <br />
                                     <Typography type="h2" color="black">
                                         Marcello Rossi
                                     </Typography>
                                     <Typography type="p">
                                         I consider myself an M-shaped person: my areas of expertise are <Typography type="span" color="software" weight="bold">Software Development</Typography>, <Typography type="span" color="agile" weight="bold">Agile Project Managament</Typography> and <Typography type="span" color="design" weight="bold">User Experience Design</Typography>.
                                         Beside work I am a passionate yoga practitioner, theater enthusiast and japanese culture lover.
-                                        <br /><br />
-                                        Currently working at <strong style={{ fontWeight: "bold" }}>Techesge S.p.a. - Italy</strong>
                                     </Typography>
                                 </>} />
-                {/* <div style={{textAlign: "center"}}>
-                    <Typography type="p">
-                        
-                    </Typography>
-                </div> */}
+
 
                 <div className="w3-row">
-                    <div className="w3-col s12 m4 l4">
+                    <div className="w3-col s4 m4 l4">
                         <Contact 
                                 type="mail" 
                                 link="mailto:marc89rossi@gmail.com" 
                                 label="marc89rossi@gmail.com"/>
                     </div>
-                    <div className="w3-col s12 m4 l4">
+                    <div className="w3-col s4 m4 l4">
                         <Contact 
                                 type="linkedin" 
                                 link="https://www.linkedin.com/in/marcello-rossi-40301594/" 
-                                label="linkedin.com/in/marcello-rossi-40301594/" />
+                                label="linkedin.com" />
                     </div>
-                    <div className="w3-col s12 m4 l4">
+                    <div className="w3-col s4 m4 l4">
                         <Contact 
                                 type="phone" 
                                 link="tel:+393473914704" 
@@ -62,7 +57,7 @@ export const Home = () => {
                                     type="agile" 
                                     kpi="8"
                                     title="Years"
-                                    subTitle="of experience in IT projects as a motherfucker"/>
+                                    subTitle="work experience in IT projects"/>
                     </div>
                     <div className="w3-col s12 m4 l3">
                         <Skill 
@@ -76,7 +71,7 @@ export const Home = () => {
                                 type="software" 
                                 kpi="24"
                                 title="Projects"
-                                subTitle="followed in my whole career as super boss"/>
+                                subTitle="followed during in my whole career"/>
 
                     </div>
                     <div className="w3-col s12 m4 l3">
@@ -88,7 +83,12 @@ export const Home = () => {
 
                     </div>
                 </div>
+                <div style={{textAlign: "center"}}>
+                    <Typography type="p">
+                    Currently working at <strong style={{ fontWeight: "bold" }}>Techesge S.p.a. - Italy</strong>
 
+                    </Typography>
+                </div>
 
                 {/* <Divider />
 

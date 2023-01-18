@@ -24,8 +24,8 @@ export const Contact = (props: { type: Type, link: string, label: string | React
                 <div className="icon-border">
                     {getIcon()}
                 </div>
-                <div className="text">
+                {/* <div className="text">
                     {props.label}
-                </div>
+                </div> */}
             </a>
 }

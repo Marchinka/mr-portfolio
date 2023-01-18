@@ -5,8 +5,11 @@
     margin-bottom: 4px;
 
     display: flex;
+    // justify-content: center;
+
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 0px;
     gap: 16px;
 
@@ -56,6 +59,7 @@
 
     .skill-text {
         padding: 4px 4px 4px 0px;
+        width: 200px;
 
         .title {
             font-family: 'Raleway';
