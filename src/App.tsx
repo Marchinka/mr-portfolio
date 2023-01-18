@@ -17,6 +17,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/document-drive" element={<DocumentDrive />} />
+        <Route path="/*" element={<Home />} />
       </Routes>
     </AppLayout>
   );
