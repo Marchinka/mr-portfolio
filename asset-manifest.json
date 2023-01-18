@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mr-portfolio/static/css/main.b4188afb.css",
-    "main.js": "/mr-portfolio/static/js/main.a19b4beb.js",
+    "main.js": "/mr-portfolio/static/js/main.d6b784b1.js",
     "static/js/787.a4063eb2.chunk.js": "/mr-portfolio/static/js/787.a4063eb2.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/mr-portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/mr-portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -11,11 +11,11 @@
     "static/media/MLogo.svg": "/mr-portfolio/static/media/MLogo.29493d78dd2fbb83833ac891f7fd0c35.svg",
     "index.html": "/mr-portfolio/index.html",
     "main.b4188afb.css.map": "/mr-portfolio/static/css/main.b4188afb.css.map",
-    "main.a19b4beb.js.map": "/mr-portfolio/static/js/main.a19b4beb.js.map",
+    "main.d6b784b1.js.map": "/mr-portfolio/static/js/main.d6b784b1.js.map",
     "787.a4063eb2.chunk.js.map": "/mr-portfolio/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4188afb.css",
-    "static/js/main.a19b4beb.js"
+    "static/js/main.d6b784b1.js"
   ]
 }
