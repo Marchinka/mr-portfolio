@@ -1,4 +1,4 @@
-import { ContactIcon } from "../../Components/ContactIcon/ContactIcon";
+import { Contact } from "../../Components/Contact/Contact";
 import { HomeSection } from "../../Components/HomeSection/HomeSection";
 import { MLogo } from "../../Components/MLogo/MLogo";
 import { Typography } from "../../Components/Typography/Typography";
@@ -8,6 +8,7 @@ import Project2Img from "./../../Images/Project2.png";
 import Project3Img from "./../../Images/Project3.png";
 import { ProjectSection } from "../../Components/ProjectSection/ProjectSection";
 import { Divider } from "../../Components/Divider/Divider";
+import { Skill } from "../../Components/Skill/Skill";
 
 
 
@@ -24,22 +25,66 @@ export const Home = () => {
                                     <Typography type="p">
                                         I consider myself an M-shaped person: my areas of expertise are <Typography type="span" color="software" weight="bold">Software Development</Typography>, <Typography type="span" color="agile" weight="bold">Agile Project Managament</Typography> and <Typography type="span" color="design" weight="bold">User Experience Design</Typography>.
                                         Beside work I am a passionate yoga practitioner, theater enthusiast and japanese culture lover.
+                                        <br /><br />
+                                        Currently working at <strong style={{ fontWeight: "bold" }}>Techesge S.p.a. - Italy</strong>
                                     </Typography>
                                 </>} />
+                {/* <div style={{textAlign: "center"}}>
+                    <Typography type="p">
+                        
+                    </Typography>
+                </div> */}
 
                 <div>
-                    <ContactIcon type={"mail"} link={""} />
-                    <ContactIcon type={"linkedin"} link={""} />
-                    <ContactIcon type={"phone"} link={""} />
+                    <Contact 
+                                type="mail" 
+                                link="mailto:marc89rossi@gmail.com" 
+                                label="marc89rossi@gmail.com"/>
+                    <Contact 
+                                type="linkedin" 
+                                link="https://www.linkedin.com/in/marcello-rossi-40301594/" 
+                                label="linkedin.com/in/marcello-rossi-40301594/" />
+                    <Contact 
+                                type="phone" 
+                                link="tel:+393473914704" 
+                                label="+39 347 39 14 704" />
                 </div>
 
-                <div style={{textAlign: "center"}}>
-                    <Typography type="p">
-                        Currently working at <strong style={{ fontWeight: "bold" }}>Techesge S.p.a. - Italy</strong>
-                    </Typography>
+                <div className="w3-row">
+                    <div className="w3-col s12 m4 l3">
+                        <Skill 
+                                    type="agile" 
+                                    kpi="8"
+                                    title="Years"
+                                    subTitle="of experience in IT projects as a motherfucker"/>
+                    </div>
+                    <div className="w3-col s12 m4 l3">
+                        <Skill 
+                                type="design" 
+                                kpi="3"
+                                title="Areas of Expertise"
+                                subTitle="programming, agile and design"/>
+                    </div>
+                    <div className="w3-col s12 m4 l3">
+                        <Skill 
+                                type="software" 
+                                kpi="24"
+                                title="Projects"
+                                subTitle="followed in my whole career"/>
+
+                    </div>
+                    <div className="w3-col s12 m4 l3">
+                        <Skill 
+                                type="agile" 
+                                kpi="12"
+                                title="Certifications"
+                                subTitle="between cloud, agile and design"/>
+
+                    </div>
                 </div>
 
-                <Divider />
+
+                {/* <Divider />
 
                 <ProjectSection title={"Document Platform"} 
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
@@ -58,7 +103,7 @@ export const Home = () => {
                 <ProjectSection title={"Project 3"} 
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} 
-                                img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} />
+                                img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} /> */}
 
 
             {/* <HomeSection 

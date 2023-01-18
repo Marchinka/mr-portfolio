@@ -1,0 +1,93 @@
+@use "../../Variables.scss" as variable;
+
+.skill-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    height: 80px;
+
+    .kpi {
+
+        &.software {
+            color: variable.$software
+        }
+
+        &.agile {
+            color: variable.$agile
+        }
+
+        &.design {
+            color: variable.$design
+        }
+
+        font-weight: 400;
+        font-size: variable.$h3-size;
+        line-height: 44px;
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 72px;
+        height: 72px;
+
+        /* Inner Color */
+
+        background: variable.$background;
+        /* Black */
+
+        border: 1.5px solid variable.$black;
+        border-radius: 100%;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .skill-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: flex-start;
+        padding: 0px;
+        
+        width: 160px;
+        height: 57px;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+
+        .title {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: variable.$p-size;
+            line-height: 19px;
+            color: variable.$black;
+        }
+
+        .sub-title {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: variable.$small-size;;
+            line-height: 19px;
+            color: variable.$muted;
+        }
+
+    }
+}

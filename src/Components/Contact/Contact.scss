@@ -1,0 +1,33 @@
+@use "../../Variables.scss" as variable;
+
+.containt-item-containert {
+    
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    .icon-border {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 5px;
+        gap: 10px;
+        color: variable.$black;
+
+        width: 36px;
+        height: 36px;
+
+        /* Inner Color */
+
+        background: variable.$background;
+        /* Black */
+
+        border: 2px solid variable.$black;
+        border-radius: 59px;
+    }
+}
