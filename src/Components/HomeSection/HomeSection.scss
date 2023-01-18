@@ -1,0 +1,7 @@
+.s-center {
+    text-align: center;
+
+    @media (min-width: 993px) {
+        text-align: left;
+    }
+}

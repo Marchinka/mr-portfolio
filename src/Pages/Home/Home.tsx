@@ -21,7 +21,7 @@ export const Home = () => {
                         content={<>
                                     <br />
                                     <Typography type="h2" color="black">
-                                        Marcellozzo Rossi
+                                        Marcello Rossi
                                     </Typography>
                                     <Typography type="p">
                                         I consider myself an M-shaped person: my areas of expertise are <Typography type="span" color="software" weight="bold">Software Development</Typography>, <Typography type="span" color="agile" weight="bold">Agile Project Managament</Typography> and <Typography type="span" color="design" weight="bold">User Experience Design</Typography>.
@@ -52,21 +52,21 @@ export const Home = () => {
                 </div>
 
                 <div className="w3-row">
-                    <div className="w3-col s12 m4 l3">
+                    <div className="w3-col s12 m6 l3">
                         <Skill 
                                     type="agile" 
                                     kpi="8"
                                     title="Years"
                                     subTitle="work experience in IT projects"/>
                     </div>
-                    <div className="w3-col s12 m4 l3">
+                    <div className="w3-col s12 m6 l3">
                         <Skill 
                                 type="design" 
                                 kpi="3"
                                 title="Areas of Expertise"
                                 subTitle="programming, agile and design"/>
                     </div>
-                    <div className="w3-col s12 m4 l3">
+                    <div className="w3-col s12 m6 l3">
                         <Skill 
                                 type="software" 
                                 kpi="24"
@@ -74,7 +74,7 @@ export const Home = () => {
                                 subTitle="followed during in my whole career"/>
 
                     </div>
-                    <div className="w3-col s12 m4 l3">
+                    <div className="w3-col s12 m6 l3">
                         <Skill 
                                 type="agile" 
                                 kpi="12"

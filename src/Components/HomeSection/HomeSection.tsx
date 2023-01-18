@@ -9,14 +9,14 @@ interface Props {
 }
 
 export const HomeSection = (props: Props) => {
-    return <div className="w3-row">
-                {props.type === "left" && <div className="w3-col s12 m4 l4 w3-center">
+    return <div className="w3-row s-center">
+                {props.type === "left" && <div className="w3-col s12 m12 l4 w3-center">
                     {props.icon}
                 </div>}
-                <div className="w3-half">
+                <div className="w3-col s12 m12 l8">
                     {props.content}
                 </div>
-                {props.type === "right" && <div className="w3-col s12 m8 l8 w3-center">
+                {props.type === "right" && <div className="w3-col s12 m12 l8 w3-center">
                     {props.icon}
                 </div>}
             </div>
