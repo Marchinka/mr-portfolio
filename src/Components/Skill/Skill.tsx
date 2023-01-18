@@ -3,7 +3,7 @@ import "./Skill.scss";
 type Type = "software" | "agile" | "design";
 
 
-export const Skill = (props: { type: Type, kpi: string, title: string, subTitle: string }) => {
+export const Skill = (props: { type: Type, kpi: string, title: string, subTitle: string | React.ReactNode }) => {
 
    
 

@@ -6,7 +6,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 type Type = "mail" | "linkedin" | "phone";
 
 
-export const Contact = (props: { type: Type, link: string, label: string }) => {
+export const Contact = (props: { type: Type, link: string, label: string | React.ReactNode }) => {
 
     const getIcon = () => {
         switch (props.type) {
@@ -20,11 +20,11 @@ export const Contact = (props: { type: Type, link: string, label: string }) => {
         }
     }
 
-    return  <a className="containt-item-containert" href={props.link} target="_blank">
+    return  <a className="containt-item-container" href={props.link} target="_blank">
                 <div className="icon-border">
                     {getIcon()}
                 </div>
-                <div>
+                <div className="text">
                     {props.label}
                 </div>
             </a>

@@ -1,6 +1,6 @@
 @use "../../Variables.scss" as variable;
 
-.containt-item-containert {
+.containt-item-container {
     
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
@@ -21,13 +21,17 @@
 
         width: 36px;
         height: 36px;
-
+        min-width: 36px;
         /* Inner Color */
 
-        background: variable.$background;
+        background: variable.$inner-color;
         /* Black */
 
         border: 2px solid variable.$black;
         border-radius: 59px;
+    }
+
+    .text {
+        font-size: variable.$p-size;
     }
 }

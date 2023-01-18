@@ -1,8 +1,8 @@
 @use "../../Variables.scss" as variable;
 
 .skill-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 
     display: flex;
     flex-direction: row;
@@ -41,7 +41,7 @@
 
         /* Inner Color */
 
-        background: variable.$background;
+        background: variable.$inner-color;
         /* Black */
 
         border: 1.5px solid variable.$black;
@@ -55,28 +55,13 @@
     }
 
     .skill-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: inherit;
-        align-items: flex-start;
-        padding: 0px;
-        
-        width: 160px;
-        height: 57px;
-        
-        
-        /* Inside auto layout */
-        
-        flex: none;
-        order: 1;
-        flex-grow: 1;
+        padding: 4px 4px 4px 0px;
 
         .title {
             font-family: 'Raleway';
             font-style: normal;
             font-weight: 700;
             font-size: variable.$p-size;
-            line-height: 19px;
             color: variable.$black;
         }
 
@@ -85,7 +70,6 @@
             font-style: normal;
             font-weight: 400;
             font-size: variable.$small-size;;
-            line-height: 19px;
             color: variable.$muted;
         }
 

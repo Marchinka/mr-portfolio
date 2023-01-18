@@ -35,19 +35,25 @@ export const Home = () => {
                     </Typography>
                 </div> */}
 
-                <div>
-                    <Contact 
+                <div className="w3-row">
+                    <div className="w3-col s12 m4 l4">
+                        <Contact 
                                 type="mail" 
                                 link="mailto:marc89rossi@gmail.com" 
                                 label="marc89rossi@gmail.com"/>
-                    <Contact 
+                    </div>
+                    <div className="w3-col s12 m4 l4">
+                        <Contact 
                                 type="linkedin" 
                                 link="https://www.linkedin.com/in/marcello-rossi-40301594/" 
                                 label="linkedin.com/in/marcello-rossi-40301594/" />
-                    <Contact 
+                    </div>
+                    <div className="w3-col s12 m4 l4">
+                        <Contact 
                                 type="phone" 
                                 link="tel:+393473914704" 
                                 label="+39 347 39 14 704" />
+                    </div>
                 </div>
 
                 <div className="w3-row">
@@ -70,7 +76,7 @@ export const Home = () => {
                                 type="software" 
                                 kpi="24"
                                 title="Projects"
-                                subTitle="followed in my whole career"/>
+                                subTitle="followed in my whole career as super boss"/>
 
                     </div>
                     <div className="w3-col s12 m4 l3">
@@ -78,7 +84,7 @@ export const Home = () => {
                                 type="agile" 
                                 kpi="12"
                                 title="Certifications"
-                                subTitle="between cloud, agile and design"/>
+                                subTitle={<span>between cloud, agile and design <Typography weight="bold">(click to show)</Typography></span>}/>
 
                     </div>
                 </div>
