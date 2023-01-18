@@ -10,26 +10,28 @@ interface Props {
     subTitle: string | React.ReactNode;
     content: string | React.ReactNode;
     img: React.ReactNode;
+    route: string;
+    color: "software" | "agile" | "design"
 }
 
 export const ProjectSection = (props: Props) => {
-    return <div className="w3-row-padding project-section">
-                <Typography type="h3" color="black">
+    return <Link className="w3-row-padding project-section" to={props.route}>
+                <Typography type="h3" color="black" className={`title line-${props.color}`}>
                     {props.title}
                 </Typography>
-                <Typography type="small" color="muted">
+                <Typography type="small" color="black" weight="bold" className="sub-title">
                     {props.subTitle}
                 </Typography>
-                <Typography type="p" color="black">
+                <Typography type="p" color="black" className="content">
                     {props.content}
                 </Typography>
-                <div>
-                    <Link to="/">
+                <div className="link">
+                    <Link to={props.route}>
                         <Typography type="p" color="black" weight="bold">
-                            View Project <i className="fa fa-regular fa-arrow-right"></i>
+                            View Project
                         </Typography>
                     </Link>
                 </div>
                 <div>{props.img}</div>
-            </div>
+            </Link>
 }

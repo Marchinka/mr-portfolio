@@ -10,10 +10,11 @@ interface Props {
     label?: string;
     color?: MrColor;
     weight?: MrWeight;
+    className?: string;
 }
 
 export const Typography = (props: Props) => {
-    let colorClass = `text ${props.color || "black"} ${props.weight || "normal"}`;
+    let colorClass = `text ${props.color || "black"} ${props.weight || "normal"} ${props.className || ""}`;
 
     switch (props.type) {
         case "h1":

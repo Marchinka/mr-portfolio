@@ -3,18 +3,18 @@ import { HomeSection } from "../../Components/HomeSection/HomeSection";
 import { MLogo } from "../../Components/MLogo/MLogo";
 import { Typography } from "../../Components/Typography/Typography";
 import "./Home.scss";
-// import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
-// import Project2Img from "./../../Images/Project2.png";
-// import Project3Img from "./../../Images/Project3.png";
-// import { ProjectSection } from "../../Components/ProjectSection/ProjectSection";
-// import { Divider } from "../../Components/Divider/Divider";
+import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
+import Project2Img from "./../../Images/Project2.png";
+import Project3Img from "./../../Images/Project3.png";
 import { Skill } from "../../Components/Skill/Skill";
+import { Divider } from "../../Components/Divider/Divider";
+import { ProjectSection } from "../../Components/ProjectSection/ProjectSection";
 
 
 
 export const Home = () => {
     return (
-        <div className="mr-home-content">     
+        <div className="mr-home-content page-content">     
             <HomeSection 
                         type="left"
                         icon={<MLogo />}
@@ -90,58 +90,28 @@ export const Home = () => {
                     </Typography>
                 </div>
 
-                {/* <Divider />
+                <Divider />
 
-                <ProjectSection title={"Document Platform"} 
+                <ProjectSection title={"Document Platform"} color="agile" route="/document-drive"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
-                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} 
+                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
                                 img={<img src={DocumentPlatformImg} alt="M" style={{width: "100%"}} />} />
 
                 <Divider />
 
-                <ProjectSection title={"Project 2"} 
+                <ProjectSection title={"Project 2"}  color="software" route="/"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
-                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} 
+                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
                                 img={<img src={Project2Img} alt="M" style={{width: "100%"}} />} />
 
                 <Divider />
                 
-                <ProjectSection title={"Project 3"} 
+                <ProjectSection title={"Project 3"} color="design" route="/"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
-                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} 
-                                img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} /> */}
+                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
+                                img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} />
 
 
-            {/* <HomeSection 
-                        type="right"
-                        icon={<i className="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>}
-                        content={<>
-                                    <h1>HERO</h1>
-                                    <h5 className="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-                        
-                                    <p className="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </>} /> */}
-            
-
-    
-{/*     
-            <div className=" w3-black w3-center w3-opacity w3-padding-64">
-                <h1 className="w3-margin w3-xlarge">Quote of the day: live life</h1>
-            </div>
-    
-            <footer className=" w3-padding-64 w3-center w3-opacity">  
-              <div className="w3-xlarge w3-padding-32">
-                <i className="fa fa-facebook-official w3-hover-opacity"></i>
-                <i className="fa fa-instagram w3-hover-opacity"></i>
-                <i className="fa fa-snapchat w3-hover-opacity"></i>
-                <i className="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i className="fa fa-twitter w3-hover-opacity"></i>
-                <i className="fa fa-linkedin w3-hover-opacity"></i>
-            </div>
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-            </footer> */}
         </div>
       );
 }
