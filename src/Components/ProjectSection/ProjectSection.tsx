@@ -25,12 +25,8 @@ export const ProjectSection = (props: Props) => {
                 <Typography type="p" color="black" className="content">
                     {props.content}
                 </Typography>
-                <div className="link">
-                    <Link to={props.route}>
-                        <Typography type="p" color="black" weight="bold">
-                            View Project
-                        </Typography>
-                    </Link>
+                <div className={`link`}>
+                    <button className={`w3-button w3-mr-${props.color}`}> View Project</button>
                 </div>
                 <div>{props.img}</div>
             </Link>

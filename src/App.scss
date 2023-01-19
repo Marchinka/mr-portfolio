@@ -16,16 +16,17 @@ body {
 
 .fa-anchor,.fa-coffee {font-size:200px}
 
+.w3-mr-software {
+    color: variable.$inner-color;
+    background-color: variable.$software!important;
+}
 
-// .app-layout {
-//     margin-right: auto;
-//     margin-left: auto;
-//     max-width: 58rem;
-//     position: relative;
-//     margin-top: variable.$navbar-height;
+.w3-mr-agile {
+    color: variable.$inner-color;
+    background-color: variable.$agile!important;    
+}
 
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 60px;
-// }
+.w3-mr-design {
+    color: variable.$inner-color;
+    background-color: variable.$design!important;
+}
