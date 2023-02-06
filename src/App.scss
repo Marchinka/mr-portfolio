@@ -19,14 +19,15 @@ div {
 }
 
 body {
-    width: 100vw!important;
-    overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
     // background: variable.$background;
     background-image: url("/Images/background_1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    // these two lines corrects a bug from animate css: when a bound in animation is created whe total app width is grater than 100% and the background image is not displayed correctly
+    width: 100vw!important;
+    overflow-x: hidden;
 }
 
 .page-content {
