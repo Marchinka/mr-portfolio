@@ -11,11 +11,12 @@ interface Props {
     content: string | React.ReactNode;
     img: React.ReactNode;
     route: string;
-    color: "software" | "agile" | "design"
+    color: "software" | "agile" | "design",
+    classname?: string;
 }
 
 export const ProjectSection = (props: Props) => {
-    return <Link className="w3-row-padding project-section" to={props.route}>
+    return <Link className={`w3-row-padding project-section ${props.classname || ""}`} to={props.route}>
                 <Typography type="h3" color="black" className={`title line-${props.color}`}>
                     {props.title}
                 </Typography>

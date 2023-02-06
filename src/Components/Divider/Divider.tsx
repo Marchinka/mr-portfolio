@@ -1,5 +1,5 @@
 import "./Divider.scss";
 
-export const Divider = () => {
-    return <div className="divider"></div>
+export const Divider = (props: {className: string}) => {
+    return <div className={"divider" + (props.className || "")}></div>
 }

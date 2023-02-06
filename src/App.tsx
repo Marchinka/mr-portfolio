@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './Reset.scss';
 import './Variables.scss';
 import './App.scss';
+import 'animate.css';
 import { Home } from './Pages/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import { DocumentDrive } from './Pages/DocumentDrive/DocumentDrive';
