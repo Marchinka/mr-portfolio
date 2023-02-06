@@ -92,27 +92,27 @@ export const Home = () => {
                     </Typography>
                 </div>
 
-                <Divider className={CSS_CLASS_ROWS} />
+                <Divider className={CSS_CLASS_ROWS_ANIMATION} />
 
                 <ProjectSection title={"Document Platform"} color="agile" route="/document-drive"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
-                                classname={CSS_CLASS_ROWS}
+                                classname={CSS_CLASS_ROWS_ANIMATION}
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
                                 img={<img src={DocumentPlatformImg} alt="M" style={{width: "100%"}} />} />
 
-                <Divider className={CSS_CLASS_ROWS} />
+                <Divider className={CSS_CLASS_ROWS_ANIMATION} />
 
                 <ProjectSection title={"Project 2"}  color="software" route="/"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"}
-                                classname={CSS_CLASS_ROWS} 
+                                classname={CSS_CLASS_ROWS_ANIMATION} 
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
                                 img={<img src={Project2Img} alt="M" style={{width: "100%"}} />} />
 
-                <Divider className={CSS_CLASS_ROWS} />
+                <Divider className={CSS_CLASS_ROWS_ANIMATION} />
                 
                 <ProjectSection title={"Project 3"} color="design" route="/"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
-                                classname={CSS_CLASS_ROWS}
+                                classname={CSS_CLASS_ROWS_ANIMATION}
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
                                 img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} />
 
