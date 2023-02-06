@@ -19,6 +19,8 @@ div {
 }
 
 body {
+    width: 100vw!important;
+    overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
     // background: variable.$background;
     background-image: url("/Images/background_1.jpg");
