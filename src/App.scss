@@ -5,14 +5,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Serif&family=Quattrocento&display=swap');
 
+a,
+a:link,
+a:hover,
+a:visited,
+a:active,button,
+div {
+    color:inherit;
+    text-decoration:none;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
-    background: variable.$background;
-    background-image: url(https://cdn.discordapp.com/attachments/990816866618470440/1071515161418006598/marchinka_grey_background_for_website_made_just_be_lines_and_wa_fdd1a90c-0004-43b5-8893-0c5b0d23c3c2.png);
+    // background: variable.$background;
+    background-image: url("/Images/background_1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
-    background-blend-mode: overlay;
+    background-size: cover;
 }
 
 .page-content {
@@ -35,3 +47,23 @@ body {
     color: variable.$inner-color;
     background-color: variable.$design!important;
 }
+
+.w3-mr-black {
+    color: variable.$inner-color;
+    background-color: variable.$black!important;
+}
+
+.logo-svg {
+    .logo-agile {
+        stroke: variable.$agile!important; 
+    }
+    
+    .logo-design {
+        stroke: variable.$design!important; 
+    }
+    
+    .logo-software {
+        stroke: variable.$software!important; 
+    }
+}
+

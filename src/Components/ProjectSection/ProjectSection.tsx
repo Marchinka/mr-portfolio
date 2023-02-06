@@ -26,7 +26,7 @@ export const ProjectSection = (props: Props) => {
                     {props.content}
                 </Typography>
                 <div className={`link`}>
-                    <button className={`w3-button w3-mr-${props.color}`}> View Project</button>
+                    <button className={`w3-button w3-mr-black`}> View Project</button>
                 </div>
                 <div>{props.img}</div>
             </Link>

@@ -3,10 +3,42 @@
 $black: #313131;
 $muted: #4B5C71;
 $background: #EDEDEE;
-$inner-color: #F9F9F9;
-$software: #DC2418;
-$agile: #2EAF4A;
-$design: #0075FF;
+$inner-color: hsl(0, 0%, 98%);
+
+// ## Red, blue, light blue
+// $software: #DF3C5F;
+// $agile: #224193;
+// $design: #6F9BD1;
+
+// ## Light blue, yellow and red
+// $software: #81CAD6;
+// $agile: #EDCD44;
+// $design: #DC3E26;
+
+// ## Light Rose, light yellow and dark rose
+// $software: #e47188;
+// $agile: #80C4B7;
+// $design: #E3856B;
+
+// ## Rose, violet and yellow
+// $software: #3B5BA5;
+// $agile: #E87A5D;
+// $design: #F3B941;
+
+// ## Rose, violet and yellow
+$software: #C7395F;
+$agile: #563675;
+$design: #f09d30;
+
+// ## Blue, grey and yellow
+// $software: #3b4d61;
+// $agile: #be9e0e;
+// $design: #2C306F;
+
+// ## Red, green and blue
+// $software: #DC2418;
+// $agile: #2EAF4A;
+// $design: #0075FF;
 
 $h1-size: rem.convert(67.68px);
 $h2-size: rem.convert(50.52px);

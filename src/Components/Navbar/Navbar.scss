@@ -5,14 +5,16 @@
     padding-right: 5px;
     padding-left: 5px;
 
-    // -webkit-box-shadow: 0px 5px 19px 2px variable.$background; 
-    // box-shadow: 0px 5px 19px 2px variable.$background;
+    &.mr-navbar-scrolled {
+        -webkit-box-shadow: 0px 5px 19px 2px variable.$background; 
+        box-shadow: 0px 5px 19px 2px variable.$background;
+        background: variable.$background;
+    }
 
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-content: center;
-    // background: variable.$background;
 
     .mr-navbar-logo {
         font-family: 'Quattrocento';
