@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/mr-portfolio/static/css/main.835b0751.css",
-    "main.js": "/mr-portfolio/static/js/main.bfbe3621.js",
+    "main.css": "/mr-portfolio/static/css/main.bfd81b0b.css",
+    "main.js": "/mr-portfolio/static/js/main.b9b39c8c.js",
     "static/js/787.a4063eb2.chunk.js": "/mr-portfolio/static/js/787.a4063eb2.chunk.js",
     "static/media/Project3.png": "/mr-portfolio/static/media/Project3.e2e4ca27a8273295505a.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/mr-portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Project2.png": "/mr-portfolio/static/media/Project2.987f9413cc37038aca5f.png",
+    "static/media/background_1.jpg": "/mr-portfolio/static/media/background_1.6183dad59b531f072b5f.jpg",
     "static/media/fontawesome-webfont.eot": "/mr-portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/mr-portfolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/DocumentPlatform.png": "/mr-portfolio/static/media/DocumentPlatform.64e5eb7146b26de343da.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/mr-portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/mr-portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/MLogo.svg": "/mr-portfolio/static/media/MLogo.4fbc13ff3f016793b600a369a05e4687.svg",
     "index.html": "/mr-portfolio/index.html",
-    "main.835b0751.css.map": "/mr-portfolio/static/css/main.835b0751.css.map",
-    "main.bfbe3621.js.map": "/mr-portfolio/static/js/main.bfbe3621.js.map",
+    "main.bfd81b0b.css.map": "/mr-portfolio/static/css/main.bfd81b0b.css.map",
+    "main.b9b39c8c.js.map": "/mr-portfolio/static/js/main.b9b39c8c.js.map",
     "787.a4063eb2.chunk.js.map": "/mr-portfolio/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.835b0751.css",
-    "static/js/main.bfbe3621.js"
+    "static/css/main.bfd81b0b.css",
+    "static/js/main.b9b39c8c.js"
   ]
 }
