@@ -11,7 +11,8 @@ import { Divider } from "../../Components/Divider/Divider";
 import { ProjectSection } from "../../Components/ProjectSection/ProjectSection";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
-const CSS_CLASS_ROWS = `w3-row ${CSS_ANIMATION_CLASS}`;
+const CSS_CLASS_ROWS = `w3-row`;
+const CSS_CLASS_ROWS_ANIMATION = `${CSS_CLASS_ROWS} ${CSS_ANIMATION_CLASS}`;
 
 export const Home = () => {
     return (
@@ -31,7 +32,7 @@ export const Home = () => {
                                 </div>} />
 
 
-                <div className={CSS_CLASS_ROWS}>
+                <div className={CSS_CLASS_ROWS_ANIMATION}>
                     <div className="w3-col s4 m4 l4">
                         <Contact 
                                 type="mail" 
@@ -52,7 +53,7 @@ export const Home = () => {
                     </div>
                 </div>
 
-                <div className={CSS_CLASS_ROWS}>
+                <div className={CSS_CLASS_ROWS_ANIMATION}>
                     <div className="w3-col s12 m6 l3">
                         <Skill 
                                     type="agile" 
@@ -84,7 +85,7 @@ export const Home = () => {
 
                     </div>
                 </div>
-                <div style={{textAlign: "center"}} className={CSS_CLASS_ROWS}>
+                <div style={{textAlign: "center"}} className={CSS_CLASS_ROWS_ANIMATION}>
                     <Typography type="p">
                     Currently working at <strong style={{ fontWeight: "bold" }}>Techesge S.p.a. - Italy</strong>
 
@@ -95,7 +96,7 @@ export const Home = () => {
 
                 <ProjectSection title={"Document Platform"} color="agile" route="/document-drive"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
-                                classname={CSS_ANIMATION_CLASS}
+                                classname={CSS_CLASS_ROWS}
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
                                 img={<img src={DocumentPlatformImg} alt="M" style={{width: "100%"}} />} />
 
@@ -103,7 +104,7 @@ export const Home = () => {
 
                 <ProjectSection title={"Project 2"}  color="software" route="/"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"}
-                                classname={CSS_ANIMATION_CLASS} 
+                                classname={CSS_CLASS_ROWS} 
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
                                 img={<img src={Project2Img} alt="M" style={{width: "100%"}} />} />
 
@@ -111,7 +112,7 @@ export const Home = () => {
                 
                 <ProjectSection title={"Project 3"} color="design" route="/"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
-                                classname={CSS_ANIMATION_CLASS}
+                                classname={CSS_CLASS_ROWS}
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
                                 img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} />
 
