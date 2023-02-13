@@ -3,5 +3,11 @@ import { PortfolioProject } from "../../Components/PortfolioProject/PortfolioPro
 import Md from './DocumentDrive.md';
 
 export const DocumentDrive = () => {
-    return <PortfolioProject mdUrl={Md} />
+    return <PortfolioProject 
+                mdUrl={Md}
+                back={""}
+                next={""} 
+                title={"Document Platform"} 
+                breadcrumbTitle={"Document Platform Redesign"} 
+                color={"agile"} />
 }

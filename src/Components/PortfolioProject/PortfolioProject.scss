@@ -1,6 +1,31 @@
+@use "../../Variables.scss" as variable;
+
 .embedded-markup {
 
+    .title {
+        border-bottom-color: transparent;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        text-transform: capitalize;
+        width: fit-content;
 
+        &.line-software {
+            border-bottom-color: variable.$software
+        }
+
+        &.line-agile {
+            border-bottom-color: variable.$agile
+        }
+
+        &.line-design {
+            border-bottom-color: variable.$design
+        }
+
+    }
+
+    .sub-title {
+        text-transform: uppercase;
+    }
 }
 
 .portfolio-footer {

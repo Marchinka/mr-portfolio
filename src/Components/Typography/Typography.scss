@@ -1,48 +1,48 @@
 @use "../../Variables.scss" as variable;
 
-h1.typography {
+h1 {
     font-size: variable.$h1-size;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
 }
 
-h2.typography {
+h2 {
     font-size: variable.$h2-size;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
 }
 
-h3.typography {
+h3 {
     font-size: variable.$h3-size;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
 }
 
-h4.typography {
+h4 {
     font-size: variable.$h4-size;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
 }
 
-h5.typography {
+h5 {
     font-size: variable.$h5-size;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
 }
 
-p.typography {
+p {
     font-size: variable.$p-size;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
 }
 
-small.typography {
+small {
     font-size: variable.$small-size;
     font-family: 'Raleway';
     font-style: normal;
@@ -52,6 +52,9 @@ small.typography {
 .text {
     &.black {
         color: variable.$black;
+    }
+    &.light-grey {
+        color: variable.$light-grey;
     }
     &.muted {
         color: variable.$muted;

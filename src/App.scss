@@ -12,11 +12,25 @@ a:visited,
 a:active,button
 // ,div
 {
-    color:inherit;
-    text-decoration:none;
     transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -webkit-transition: all .25s ease-in-out;
+
+    &:hover {
+        color: variable.$muted!important; 
+    }
+
+    &.agile:hover {
+        color: variable.$agile!important; 
+    }
+    
+    &.design:hover {
+        color: variable.$design!important; 
+    }
+    
+    &.software:hover {
+        color: variable.$software!important; 
+    }
 }
 
 body {
@@ -53,7 +67,7 @@ body {
 }
 
 .w3-mr-black {
-    color: variable.$inner-color;
+    color: variable.$inner-color!important;
     background-color: variable.$black!important;
 }
 

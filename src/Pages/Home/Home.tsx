@@ -8,7 +8,7 @@ import Project2Img from "./../../Images/Project2.png";
 import Project3Img from "./../../Images/Project3.png";
 import { Skill } from "../../Components/Skill/Skill";
 import { Divider } from "../../Components/Divider/Divider";
-import { ProjectSection } from "../../Components/ProjectSection/ProjectSection";
+import { ProjectSection } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;

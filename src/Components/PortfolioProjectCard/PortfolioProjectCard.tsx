@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { JsxElement } from "typescript";
 import { Typography } from "../Typography/Typography";
-import "./ProjectSection.scss";
-
-type Type = "left" | "right";
+import "./PortfolioProjectCard.scss";
 
 interface Props {
     title: string | React.ReactNode;
