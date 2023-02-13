@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './Reset.scss';
+// import './Reset.scss';
 import './Variables.scss';
 import './App.scss';
 import 'animate.css';

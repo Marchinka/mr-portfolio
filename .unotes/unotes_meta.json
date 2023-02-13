@@ -1,0 +1,74 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "build": {
+      "name": "build",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "public": {
+      "name": "public",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "src": {
+      "name": "src",
+      "isOrdered": true,
+      "folders": {
+        "Components": {
+          "name": "Components",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "Images": {
+          "name": "Images",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "Pages": {
+          "name": "Pages",
+          "isOrdered": true,
+          "folders": {
+            "DocumentDrive": {
+              "name": "DocumentDrive",
+              "isOrdered": true,
+              "folders": {
+                "Contents": {
+                  "name": "Contents",
+                  "isOrdered": true,
+                  "folders": {},
+                  "files": {
+                    "1_Intro": 0
+                  }
+                }
+              },
+              "files": {}
+            },
+            "Home": {
+              "name": "Home",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            },
+            "Resume": {
+              "name": "Resume",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            }
+          },
+          "files": {}
+        }
+      },
+      "files": {}
+    }
+  },
+  "files": {
+    "README": 0
+  }
+}
