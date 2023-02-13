@@ -57,6 +57,10 @@ body {
     background-color: variable.$black!important;
 }
 
+.w3-mr-lifted {
+    box-shadow: 0 2px 8px #6a6a6a66;
+}
+
 .logo-svg {
     .logo-agile {
         stroke: variable.$agile!important; 

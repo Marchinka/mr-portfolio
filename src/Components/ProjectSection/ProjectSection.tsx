@@ -1,3 +1,5 @@
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { JsxElement } from "typescript";
 import { Typography } from "../Typography/Typography";
@@ -27,7 +29,9 @@ export const ProjectSection = (props: Props) => {
                     {props.content}
                 </Typography>
                 <div className={`link`}>
-                    <button className={`w3-button w3-mr-black`}> View Project</button>
+                    <button className={`w3-button w3-mr-black w3-round w3-mr-lifted`}> 
+                        View Project <FontAwesomeIcon icon={faAngleRight} /> 
+                    </button>
                 </div>
                 <div>{props.img}</div>
             </Link>
