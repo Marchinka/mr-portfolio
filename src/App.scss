@@ -9,8 +9,9 @@ a,
 a:link,
 a:hover,
 a:visited,
-a:active,button,
-div {
+a:active,button
+// ,div
+{
     color:inherit;
     text-decoration:none;
     transition: all .25s ease-in-out;
