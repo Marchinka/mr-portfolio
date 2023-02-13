@@ -36,7 +36,7 @@ export const PortfolioProject = (props: Props) => {
                     {props.designTags.map(tag => <Tag key={tag} label={tag} color="design" />)}
                     {props.softwareTags.map(tag => <Tag key={tag} label={tag} color="software" />)}
                 </div>
-                <br />
+                <br /> 
                 <MarkdownContent url={props.mdUrl} />
                 <Divider className="portfolio-divider"/>
                 <div className="portfolio-footer">
