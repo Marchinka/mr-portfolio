@@ -1,0 +1,20 @@
+@use "../../Variables.scss" as variable;
+
+.w3-mr-margin {
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.mr-tag-software {
+    background-color: variable.$software!important;
+}
+.mr-tag-agile {
+    background-color: variable.$agile!important;
+}
+.mr-tag-design {
+    color:  variable.$agile!important;
+    background-color: variable.$design!important;
+}
+.mr-tag-black {
+    background-color: variable.$black!important;
+}
