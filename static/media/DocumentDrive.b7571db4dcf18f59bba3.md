@@ -1,3 +1,4 @@
+<!-- ## Document Platform -->
 
 The objective of this *project* is to <span class="text agile">**re-engineer**</span> the document platform used by a major Italian oil & gas company, with a focus on improving the user experience for the technical and scientific department. The goal is to create a platform that is user-friendly, efficient, and provides a high level of functionality, including digital signature and improved profile management. The platform should also be able to integrate with at least 10 company applications to ingest data and user information. Additionally, this project serves as the foundation for a design system for the entire company. The platform will have over **3,000 users**, __making__ it important to design a platform that is scalable and efficient for a large user base.
 
