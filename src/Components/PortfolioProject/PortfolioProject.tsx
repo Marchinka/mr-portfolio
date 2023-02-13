@@ -32,9 +32,9 @@ export const PortfolioProject = (props: Props) => {
                     {props.title}
                 </Typography>
                 <div>
-                    {props.agileTags.map(tag => <Tag key={tag} label={tag} color="agile"/>)}
-                    {props.designTags.map(tag => <Tag key={tag} label={tag} color="design" />)}
-                    {props.softwareTags.map(tag => <Tag key={tag} label={tag} color="software" />)}
+                    {props.agileTags.map(tag => <Tag key={tag} label={tag} />)}
+                    {props.designTags.map(tag => <Tag key={tag} label={tag}  />)}
+                    {props.softwareTags.map(tag => <Tag key={tag} label={tag}  />)}
                 </div>
                 <br />
                 <MarkdownContent url={props.mdUrl} />
