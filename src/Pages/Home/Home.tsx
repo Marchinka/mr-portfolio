@@ -17,18 +17,6 @@ const CSS_CLASS_ROWS = `w3-row`;
 const CSS_CLASS_ROWS_ANIMATION = `${CSS_CLASS_ROWS} ${CSS_ANIMATION_CLASS}`;
 
 export const Home = () => {
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const source = urlParams.get('source');
-        if (source) {
-          console.log("Navigation catched to", source);
-          navigate(source);
-        }
-    }, [])
-
     
     return (
         <div className="mr-home-content page-content">     
