@@ -32,6 +32,10 @@ As the Scrum master, I was responsible for facilitating the whole process and en
 <span style="background: yellow">Timeline</span>
 ### Product evolution
 
+### Old Platform Painpoints
+
+- Bad and overcomplicated profile management
+- Obsoluete user interface
 
 ### User needs & goals
 

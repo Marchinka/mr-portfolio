@@ -5,6 +5,8 @@ import MdBody from './2-DocumentDrive-Body.md';
 import { Kpi } from "../../Components/Kpi/Kpi";
 import { Typography } from "../../Components/Typography/Typography";
 
+// gantt chart
+// https://www.npmjs.com/package/gantt-task-react
 
 export const DocumentDrive = () => {
     return <PortfolioProject 
