@@ -31,6 +31,7 @@
         border-bottom-color: transparent;
         border-bottom-width: 3px;
         border-bottom-style: solid;
+        border-left-color: variable.$muted;
     }
 
     $highlight-padding: 24px;
@@ -49,17 +50,6 @@
     }
 }
 
-.embedded-markup.software strong{
-    border-bottom-color: variable.$software
-}
-
-.embedded-markup.agile strong {
-    border-bottom-color: variable.$agile
-}
-
-.embedded-markup.design strong {
-    border-bottom-color: variable.$design
-}
 
 
 // .embedded-markup.software .highlight{

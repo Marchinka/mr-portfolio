@@ -4,25 +4,25 @@
 ### Project background
 
 
-The objective of this project is to **re-engineer the main document platform** used by a major **Italian oil & gas company**, with a focus on improving the user experience for the technical and scientific department. The goal is to create a platform that is user-friendly, efficient, and provides a digital signature feature and improved profile management. The platform should also be able to integrate with at least 10 company applications to ingest data and user information. The platform will have over **3,000 users**, making it important to design a platform that is scalable and efficient for a large user base.
+The objective of this project is to <span class="u agile">re-engineer the main document platform</span> used by a major <span class="u design">Italian oil & gas company</span>, with a focus on improving the user experience for the technical and scientific department. The goal is to create a platform that is user-friendly, efficient, and provides a digital signature feature and improved profile management. The platform should also be able to integrate with at least 10 company applications to ingest data and user information. The platform will have over <span class="u design">3,000 users</span>, making it important to design a platform that is scalable and efficient for a large user base. 
 
+The project involved as well the migration of <span class="u software">600k documents</span> and <span class="u software">25 Tb</span> of physical files from the previous infrastructure.
 
 ### Target Audience
 
-The target audience for this platform includes technical and scientific employees of the Italian oil & gas company (**geologyst**, **reservoir experts**, **drilling specialists...**), who work with documents on a daily basis and need a platform that is easy to use and provides the necessary functionality. The platform should be accessible and efficient for individuals who work in 12 professional areas of expertise within the company.
+The target audience for this platform includes technical and scientific employees of the Italian oil & gas company (<span class="u design">geologyst</span>, <span class="u design">reservoir experts</span>, <span class="u design">drilling specialists...</span>), who work with documents on a daily basis and need a platform that is easy to use and provides the necessary functionality. The platform should be accessible and efficient for individuals who work in 12 professional areas of expertise within the company.
 
 ## Project Management
 
 ### Team
 
 The team for this project was composed of 
-- 1 Scrum master (**me**)
-- Lean UX
-- 1 Solution Architect
-- 1 Azure cloud expert
-- 1 Seniro Dev Lead 
-- 2 UX designers
-- 5 Software developers
+- 1 Scrum master (<span class="u agile">me</span>)
+- 2 Solution Architects - *Luca Di Biagio. Fabrizio Zanette. Microsoft*
+- 1 Azure cloud expert - *Stefano Campanella. Techedge*
+- 1 Senior Dev Lead  - *Francesco Cardin. Microsoft*
+- 2 UX designers - *Andrea Caporale. Francesco Villa. Microsoft*
+- 5 Software developers / heroes - *Emanuele Serrao, Giuseppe Campanella, Davide Ferri, Andrea Pasquali, stefano Ruga. Techedge.*
 
 
 
@@ -30,14 +30,14 @@ The team for this project was composed of
 
 The governance of the team was focused on collaboration, continuous improvement, and delivering value. As the Scrum master, I was responsible for facilitating the whole process and ensuring that the team adheres to Agile principles. The Solution Architect and Azure cloud expert were responsible for technical decisions and ensuring that the solution is scalable, reliable, and meets the requirements. The Senior Dev Lead and software developers were responsible for the development process, ensuring code quality, and delivering features on time. The product backload included items for the UX team as well, and it was responsible for the user experience and ensuring that the solution is user-centric. 
 
-- Complete **Scrum** cycle (planning, review, daily, retrospective) 
+- Complete <span class="u agile">Scrum</span> cycle (planning, review, daily, retrospective) 
 - 3 week sprint
-- **Design Sprints** in the early stages of the design process 
+- <span class="u design">Design Sprints</span> in the early stages of the design process 
 - Daily meetings with the project team and the customer
-- 
-- Prendere ispirazione dal ciclo LEAN UX + SCRUM
-- Come era gestite le attività di Design? 
-- Design Sprints / Workshops
+- Microsoft Architects were involved in recurrent <span class="u software">Architectural Review Boards</span> 
+- Recurrent <span class="u design">Accessibility Reviews</span> by the UX team
+- **Prendere ispirazione dal ciclo LEAN UX + SCRUM**
+- **Come era gestite le attività di Design?**
 
 
 

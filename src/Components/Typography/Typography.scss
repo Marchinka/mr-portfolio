@@ -73,3 +73,26 @@ small {
         font-weight: 700;
     }
 }
+
+.u {
+    border-bottom-color: transparent;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    font-weight: bold;
+
+    &.software {
+        border-bottom-color: variable.$software;
+    }
+    &.agile {
+        border-bottom-color: variable.$agile;
+    }
+    &.design {
+        border-bottom-color: variable.$design;
+    }
+    &.muted {
+        border-bottom-color: variable.$muted;
+    }
+    &.light-grey {
+        border-bottom-color: variable.$light-grey;
+    }
+}
