@@ -45,7 +45,7 @@ export const DocumentDriveKpis = () => {
                             type="design" 
                             kpi="3k"
                             title="Users"
-                            subTitle="working on the platform"/>
+                            subTitle="working on the platform on 12 different professional areas"/>
             </div>
             <div className="w3-col s12 m12 l4">
                 <Kpi 
@@ -53,14 +53,14 @@ export const DocumentDriveKpis = () => {
                         fontSize="24px"
                         kpi="600k"
                         title="Documents"
-                        subTitle="to migrate form older platform"/>
+                        subTitle="to make accessible form older platform"/>
             </div>
             <div className="w3-col s12 m12 l4">
                 <Kpi 
                         type="software" 
                         kpi="25"
                         title="Tb"
-                        subTitle="of physical files to migrate"/>
+                        subTitle="of physical files to migrate, index and expose via full-text search"/>
 
             </div>
         </div>
