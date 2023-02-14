@@ -36,14 +36,25 @@ a:active,button
 body {
     font-family: 'Raleway', sans-serif;
     // background: variable.$background;
-    background-image: url("/Images/background_1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     // these two lines corrects a bug from animate css: when a bound in animation is created whe total app width is grater than 100% and the background image is not displayed correctly
     width: 100vw!important;
     overflow-x: hidden;
 }
+
+body:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
+    background-image: url("/Images/background_1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 
 .page-content {
     margin-top: 80px;
