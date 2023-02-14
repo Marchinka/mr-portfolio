@@ -6,11 +6,17 @@ import { Kpi } from "../../Components/Kpi/Kpi";
 import { Typography } from "../../Components/Typography/Typography";
 import { Gantt, Task, ViewMode } from "gantt-task-react";
 import "gantt-task-react/dist/index.css";
+import { useEffect } from "react";
+import { ScrollToTop } from "../../Utils/ScrollToTop";
 
 // gantt chart
 // https://www.npmjs.com/package/gantt-task-react
 
 export const DocumentDrive = () => {
+    useEffect(() => {
+        ScrollToTop();
+    }, [])
+
     return <PortfolioProject 
                 title={"Document Platform"} 
                 subTitle={"Document Platform Redesign"} 

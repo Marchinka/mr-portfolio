@@ -11,6 +11,7 @@ import { Divider } from "../../Components/Divider/Divider";
 import { ProjectSection } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { ScrollToTop } from "../../Utils/ScrollToTop";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;
@@ -18,9 +19,9 @@ const CSS_CLASS_ROWS_ANIMATION = `${CSS_CLASS_ROWS} ${CSS_ANIMATION_CLASS}`;
 
 export const Home = () => {
     useEffect(() => {
-        window.scrollTo(0, 0)
+        ScrollToTop();
     }, []);
-    
+
     return (
         <div className="mr-home-content page-content">     
             <HomeSection 
