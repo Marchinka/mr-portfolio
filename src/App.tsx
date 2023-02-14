@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 // import './Reset.scss';
 import './Variables.scss';
@@ -10,8 +10,22 @@ import { DocumentDrive } from './Pages/DocumentDrive/DocumentDrive';
 import { Resume } from './Pages/Resume/Resume';
 import { Navbar } from './Components/Navbar/Navbar';
 import { AppLayout } from './Components/AppLayout/AppLayout';
+import { useNavigate } from "react-router-dom";
 
 function App() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const source = urlParams.get('source');
+      if (source) {
+        console.log("Navigation catched to", source);
+        navigate(source);
+      }
+  }, []);
+  
   return (
     <AppLayout>
       <Routes>

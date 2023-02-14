@@ -9,12 +9,27 @@ import Project3Img from "./../../Images/Project3.png";
 import { Skill } from "../../Components/Skill/Skill";
 import { Divider } from "../../Components/Divider/Divider";
 import { ProjectSection } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;
 const CSS_CLASS_ROWS_ANIMATION = `${CSS_CLASS_ROWS} ${CSS_ANIMATION_CLASS}`;
 
 export const Home = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const source = urlParams.get('source');
+        if (source) {
+          console.log("Navigation catched to", source);
+          navigate(source);
+        }
+    }, [])
+
+    
     return (
         <div className="mr-home-content page-content">     
             <HomeSection 

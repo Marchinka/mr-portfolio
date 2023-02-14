@@ -40,7 +40,7 @@
 
         &:hover {
             border-top-color: variable.$muted;
-            background-color: variable.$background!important;
+            background-color: transparent!important;
         }
     }
 }
