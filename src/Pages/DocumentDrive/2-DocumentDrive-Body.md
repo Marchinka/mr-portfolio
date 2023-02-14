@@ -1,6 +1,6 @@
 ### Target Audience
 
-The target audience for this platform includes technical and scientific employees of the Italian oil & gas company (**geologyst**, **reservoir experts**, **drilling specialists**...), who work with documents on a daily basis and need a platform that is easy to use and provides the necessary functionality. The platform should be accessible and efficient for individuals who work in 12 professional areas of expertise within the company.
+The target audience for this platform includes technical and scientific employees of the Italian oil & gas company (**geologyst**, **reservoir experts**, **drilling specialists**...), working with documents on a daily basis and need a platform that is easy to use and provides the necessary functionality. The platform should be accessible and efficient for individuals who work in 12 professional areas of expertise within the company.
 
 ## Project Management
 
@@ -10,9 +10,9 @@ The team for this project was composed of
 - 1 Scrum master (<span class="u agile">me</span>)
 - 2 Solution Architects - *Luca Di Biagio. Fabrizio Zanette. Microsoft*
 - 1 Azure cloud expert - *Stefano Campanella. Techedge*
-- 1 Senior Dev Lead  - *Francesco Cardin. Microsoft*
+- 1 Senior Dev Lead  - *Francesco Cardin. Techedge*
 - 2 UX designers - *Andrea Caporale. Francesco Villa. Microsoft*
-- 5 Software developers / heroes - *Emanuele Serrao, Giuseppe Campanella, Davide Ferri, Andrea Pasquali, stefano Ruga. Techedge.*
+- 5 Software developers / heroes - *Emanuele Serrao, Giuseppe Campanella, Davide Ferri, Andrea Pasquali, Stefano Ruga. Techedge.*
 
 
 
@@ -21,7 +21,7 @@ The team for this project was composed of
 The governance of the team was focused on collaboration, continuous improvement, and delivering value. As the Scrum master, I was responsible for facilitating the whole process and ensuring that the team adheres to Agile principles. The Solution Architect and Azure cloud expert were responsible for technical decisions and ensuring that the solution is scalable, reliable, and meets the requirements. The Senior Dev Lead and software developers were responsible for the development process, ensuring code quality, and delivering features on time. The product backload included items for the UX team as well, and it was responsible for the user experience and ensuring that the solution is user-centric. 
 
 - Complete <span class="u agile">Agile Scrum</span> cycle (planning, review, daily, retrospective). 3 week sprints. Daily meetings with the project team and the customer. Product backload management on Azure DevOps. During all agile meetings cross functional elements from all professional profiles of the project were included. Tasks and product backlog items for both developers and designers were included in all plannings.
-- <span class="u software">Architectural review board</span>: an architectural review board (ARB) is a group of technical experts and stakeholders responsible for assessing proposed changes to a software system's architecture. The board evaluates the proposed changes based on established design principles and guidelines, to ensure that the architecture aligns with the system's functional requirements, scalability, security, maintainability, and other relevant non-functional requirements. The ARB aims to maintain the overall coherence and consistency of the system's architecture and to prevent architectural deterioration or divergence over time. Our ARB was frequently about microservices on **Azure AKS** and implementing features based on **Azure Cognitive Search** PaaS service.
+- <span class="u software">Architectural review board</span>: the board evaluated the proposed changes on the software architecture based to ensure that the architecture aligns with the system's functional requirements, scalability, security, maintainability, and other relevant non-functional requirements. The ARB aims to maintain the overall coherence and consistency of the system's architecture and to prevent architectural deterioration or divergence over time. Our ARB was frequently about microservices on **Azure AKS** and implementing features based on **Azure Cognitive Search** PaaS service.
 - <span class="u design">Design Reviews</span>: our design reviews included our team UX specialists, developers, and project stakeholders who provided feedback on the design based on established UX design principles, such as usability, accessibility, and visual design. The design review aimed to ensure that the design meets the needs of the target users, is user-friendly, and aligned with the overall product strategy. The board's feedback helped to optimize the design and improve the user experience while iterating both on prototypes and the final product. Among our team members, these meetings helped us to implement correctly **Atomic Design** adopting Microsoft **Fluent UI** design system.
 
 
