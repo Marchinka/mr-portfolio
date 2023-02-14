@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import { Typography } from "../Typography/Typography";
 import { Tag } from "../Tag/Tag";
 
+type Content = React.ReactNode | string;
+
 interface Props {
     title: string | React.ReactNode;
     subTitle: string | React.ReactNode;
@@ -14,9 +16,9 @@ interface Props {
     agileTags: string[];
     designTags: string[];
     softwareTags: string[];
-    mdUrl: string;
     back: string;
     next: string;
+    components: Content[];
 }
 
 export const PortfolioProject = (props: Props) => {
@@ -37,7 +39,13 @@ export const PortfolioProject = (props: Props) => {
                 <Typography type="h1" color={"black"} className={`title`}>
                     {props.title}
                 </Typography>
-                <MarkdownContent url={props.mdUrl} />
+                {props.components.map(component => {
+                    if (typeof(component) == "string") {
+                        return <MarkdownContent url={component} />
+                    } else {
+                        return <>{component}</>
+                    }
+                })}
                 <div className="animate__animated animate__fadeIn animate__delay-1s">
                     <Divider className="portfolio-divider"/>
                     <div className="portfolio-footer">

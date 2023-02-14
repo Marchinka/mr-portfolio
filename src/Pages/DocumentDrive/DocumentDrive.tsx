@@ -1,6 +1,37 @@
 import { MarkdownContent } from "../../Components/MarkdownContent/HtmlContent";
 import { PortfolioProject } from "../../Components/PortfolioProject/PortfolioProject";
-import Md from './DocumentDrive.md';
+import MdIntro from './1-DocumentDrive-Intro.md';
+import MdBody from './2-DocumentDrive-Body.md';
+import { Kpi } from "../../Components/Kpi/Kpi";
+import { Typography } from "../../Components/Typography/Typography";
+
+export const DocumentDriveKpis = () => {
+    return <div className={"w3-row"}>
+            <div className="w3-col s12 m12 l4">
+                <Kpi 
+                            type="design" 
+                            kpi="3k"
+                            title="Users"
+                            subTitle="working on the platform"/>
+            </div>
+            <div className="w3-col s12 m12 l4">
+                <Kpi 
+                        type="agile" 
+                        fontSize="24px"
+                        kpi="600k"
+                        title="Documents"
+                        subTitle="to migrate form older platform"/>
+            </div>
+            <div className="w3-col s12 m12 l4">
+                <Kpi 
+                        type="software" 
+                        kpi="25"
+                        title="Tb"
+                        subTitle="of physical files to migrate"/>
+
+            </div>
+        </div>
+}
 
 export const DocumentDrive = () => {
     return <PortfolioProject 
@@ -22,7 +53,11 @@ export const DocumentDrive = () => {
                         "Microservices", 
                         "Microfrontend"
                     ]}
-                mdUrl={Md}
                 back={""}
-                next={""} />
+                next={""} 
+                components={[
+                    MdIntro,
+                    <DocumentDriveKpis />,
+                    MdBody
+                ]}/>
 }

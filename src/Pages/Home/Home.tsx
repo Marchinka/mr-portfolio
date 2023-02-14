@@ -6,7 +6,7 @@ import "./Home.scss";
 import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
 import Project2Img from "./../../Images/Project2.png";
 import Project3Img from "./../../Images/Project3.png";
-import { Skill } from "../../Components/Skill/Skill";
+import { Kpi } from "../../Components/Kpi/Kpi";
 import { Divider } from "../../Components/Divider/Divider";
 import { ProjectSection } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
 import { useNavigate } from "react-router-dom";
@@ -58,21 +58,21 @@ export const Home = () => {
 
                 <div className={CSS_CLASS_ROWS_ANIMATION}>
                     <div className="w3-col s12 m6 l3">
-                        <Skill 
+                        <Kpi 
                                     type="agile" 
                                     kpi="8"
                                     title="Years"
                                     subTitle="work experience in IT projects"/>
                     </div>
                     <div className="w3-col s12 m6 l3">
-                        <Skill 
+                        <Kpi 
                                 type="design" 
                                 kpi="3"
                                 title="Areas of Expertise"
                                 subTitle="programming, agile and design"/>
                     </div>
                     <div className="w3-col s12 m6 l3">
-                        <Skill 
+                        <Kpi 
                                 type="software" 
                                 kpi="24"
                                 title="Projects"
@@ -80,7 +80,7 @@ export const Home = () => {
 
                     </div>
                     <div className="w3-col s12 m6 l3">
-                        <Skill 
+                        <Kpi 
                                 type="agile" 
                                 kpi="12"
                                 title="Certifications"
