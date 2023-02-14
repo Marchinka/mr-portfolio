@@ -26,7 +26,53 @@
     .sub-title {
         text-transform: uppercase;
     }
+
+    strong {
+        border-bottom-color: transparent;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+    }
+
+    $highlight-padding: 24px;
+
+    .highlight {
+        border-left-color: variable.$muted;
+        color: variable.$light-grey;
+        border-left-width: 6px;
+        border-left-style: solid;
+        padding-left: $highlight-padding;
+        padding-right: $highlight-padding;
+        padding-top: $highlight-padding;
+        padding-bottom: $highlight-padding;
+        font-style: italic;
+        font-size: variable.$h5-size;
+    }
 }
+
+.embedded-markup.software strong{
+    border-bottom-color: variable.$software
+}
+
+.embedded-markup.agile strong {
+    border-bottom-color: variable.$agile
+}
+
+.embedded-markup.design strong {
+    border-bottom-color: variable.$design
+}
+
+
+// .embedded-markup.software .highlight{
+//     border-left-color: variable.$software
+// }
+
+// .embedded-markup.agile .highlight {
+//     border-left-color: variable.$agile
+// }
+
+// .embedded-markup.design .highlight {
+//     border-left-color: variable.$design
+// }
 
 .portfolio-footer {
     margin-top: 20px;

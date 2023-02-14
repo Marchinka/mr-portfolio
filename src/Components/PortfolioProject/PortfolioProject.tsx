@@ -20,7 +20,7 @@ interface Props {
 }
 
 export const PortfolioProject = (props: Props) => {
-    return <div className="animate__animated animate__fadeIn page-content embedded-markup">
+    return <div className={`animate__animated animate__fadeIn page-content embedded-markup ${props.color}`}>
                 <div>
                     <Typography type="p" color="black">
                         <Link className={props.color} to={"/"}>Portfolio</Link>&nbsp;
@@ -28,24 +28,26 @@ export const PortfolioProject = (props: Props) => {
                         {props.subTitle}
                     </Typography>
                 </div>
-                <Typography type="h2" color={"black"} className={`title`}>
-                    {props.title}
-                </Typography>
                 <div>
                     {props.agileTags.map(tag => <Tag key={tag} label={tag} color="agile"/>)}
                     {props.designTags.map(tag => <Tag key={tag} label={tag} color="design" />)}
                     {props.softwareTags.map(tag => <Tag key={tag} label={tag} color="software" />)}
                 </div>
-                <br /> 
+
+                <Typography type="h1" color={"black"} className={`title`}>
+                    {props.title}
+                </Typography>
                 <MarkdownContent url={props.mdUrl} />
-                <Divider className="portfolio-divider"/>
-                <div className="portfolio-footer">
-                    <Link className={`w3-button w3-white w3-border w3-round-large `} to={props.back}>
-                        <FontAwesomeIcon icon={faAngleLeft} /> Previous Project
-                    </Link>
-                    <Link className={`w3-button w3-mr-black w3-round-large w3-mr-lifted`} to={props.next}> 
-                        Next Project <FontAwesomeIcon icon={faAngleRight} /> 
-                    </Link>
+                <div className="animate__animated animate__fadeIn animate__delay-1s">
+                    <Divider className="portfolio-divider"/>
+                    <div className="portfolio-footer">
+                        <Link className={`w3-button w3-white w3-border w3-round-large `} to={props.back}>
+                            <FontAwesomeIcon icon={faAngleLeft} /> Previous Project
+                        </Link>
+                        <Link className={`w3-button w3-mr-black w3-round-large w3-mr-lifted`} to={props.next}> 
+                            Next Project <FontAwesomeIcon icon={faAngleRight} /> 
+                        </Link>
+                    </div>
                 </div>
             </div>
 }
