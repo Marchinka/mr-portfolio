@@ -30,14 +30,16 @@ The team for this project was composed of
 
 The governance of the team was focused on collaboration, continuous improvement, and delivering value. As the Scrum master, I was responsible for facilitating the whole process and ensuring that the team adheres to Agile principles. The Solution Architect and Azure cloud expert were responsible for technical decisions and ensuring that the solution is scalable, reliable, and meets the requirements. The Senior Dev Lead and software developers were responsible for the development process, ensuring code quality, and delivering features on time. The product backload included items for the UX team as well, and it was responsible for the user experience and ensuring that the solution is user-centric. 
 
-- Complete <span class="u agile">Scrum</span> cycle (planning, review, daily, retrospective) 
-- 3 week sprint
-- <span class="u design">Design Sprints</span> in the early stages of the design process 
-- Daily meetings with the project team and the customer
-- Microsoft Architects were involved in recurrent <span class="u software">Architectural Review Boards</span> 
-- Recurrent <span class="u design">Accessibility Reviews</span> by the UX team
+- Complete <span class="u agile">Agile Scrum</span> cycle (planning, review, daily, retrospective). 3 week sprints. Daily meetings with the project team and the customer. Product backload management on Azure DevOps.
+- <span class="u software">Architectural review board</span>: an architectural review board (ARB) is a group of technical experts and stakeholders responsible for assessing proposed changes to a software system's architecture. The board evaluates the proposed changes based on established design principles and guidelines, to ensure that the architecture aligns with the system's functional requirements, scalability, security, maintainability, and other relevant non-functional requirements. The ARB aims to maintain the overall coherence and consistency of the system's architecture and to prevent architectural deterioration or divergence over time. Our ARB was frequently about microservices on **Azure AKS** and implementing features based on **Azure Cognitive Search** PaaS service.
+- <span class="u design">Design Reviews</span>: our design reviews included our team UX specialists, developers, and project stakeholders who provided feedback on the design based on established UX design principles, such as usability, accessibility, and visual design. The design review aimed to ensure that the design meets the needs of the target users, is user-friendly, and aligned with the overall product strategy. The board's feedback helped to optimize the design and improve the user experience while iterating both on prototypes and the final product. Among our team members, these meetings helped us to implement correctly **Atomic Design** adopting Microsoft **Fluent UI** design system.
 - **Prendere ispirazione dal ciclo LEAN UX + SCRUM**
 - **Come era gestite le attività di Design?**
+- **Spiegare ARB and Accessibility**
+
+
+
+
 
 
 
@@ -196,6 +198,9 @@ After performing this kind of research, we recollected all the users responses, 
 ### Lessons learned
 
 <span style="background: yellow">Reflect on the lessons learned during the project, including any challenges and opportunities for improvement.</span>
+
+fare collaborare meglio i dev e i desgin attraverso le design reviews
+
 
 ### Future improvements
 
