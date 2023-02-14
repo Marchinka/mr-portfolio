@@ -17,6 +17,9 @@ const CSS_CLASS_ROWS = `w3-row`;
 const CSS_CLASS_ROWS_ANIMATION = `${CSS_CLASS_ROWS} ${CSS_ANIMATION_CLASS}`;
 
 export const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
     
     return (
         <div className="mr-home-content page-content">     
