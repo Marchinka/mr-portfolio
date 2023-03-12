@@ -92,12 +92,12 @@ body:before {
 }
 
 .logo-svg {
-    .logo-agile {
-        stroke: variable.$agile!important; 
-    }
-
     .logo-fill {
         fill: variable.$inner-color!important; 
+    }
+
+    .logo-agile {
+        stroke: variable.$agile!important; 
     }
     
     .logo-design {
