@@ -19,7 +19,7 @@ export const DocumentDriveModel: ProjectModel = {
         "User Research"
     ],
     softwareTags: [
-        "Azure CLoud",
+        "Azure Cloud",
         "Kubernetes",
         "Microservices",
         "Microfrontend"

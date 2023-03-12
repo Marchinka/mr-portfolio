@@ -18,7 +18,7 @@ export const Project3Model: ProjectModel = {
         "User Research"
     ],
     softwareTags: [
-        "Azure CLoud",
+        "Azure Cloud",
         "Kubernetes",
         "Microservices",
         "Microfrontend"
