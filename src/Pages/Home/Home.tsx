@@ -1,5 +1,5 @@
 import { Contact } from "../../Components/Contact/Contact";
-import { HomeSection } from "../../Components/HomeSection/HomeSection";
+import { HomeSection as HeroSection } from "../../Components/HomeSection/HomeSection";
 import { MLogo } from "../../Components/MLogo/MLogo";
 import { Typography } from "../../Components/Typography/Typography";
 import "./Home.scss";
@@ -27,7 +27,7 @@ export const Home = () => {
 
     return (
         <div className="mr-home-content page-content">     
-            <HomeSection 
+                <HeroSection 
                         type="left"
                         icon={<div className="animate__animated animate__fadeIn"><MLogo /></div>}
                         content={<div className="home-hero-text">

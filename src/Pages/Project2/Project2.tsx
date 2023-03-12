@@ -9,19 +9,13 @@ export const Project2Model: ProjectModel = {
     subTitle: "Lorem ipsum dolor sit amet",
     color: "design",
     agileTags: [
-        "Test",
-        "Test"
+        "Test", "Test"
     ],
     designTags: [
-        "Test",
-        "Test",
-        "Test"
+        "Test", "Test", "Test"
     ],
     softwareTags: [
-        "Test",
-        "Test",
-        "Test",
-        "Test"
+        "Test", "Test", "Test", "Test"
     ],
     back: "",
     next: "",

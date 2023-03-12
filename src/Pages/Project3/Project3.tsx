@@ -1,7 +1,4 @@
-import { DocumentDriveKpis } from '../../Components/DocumentDriveKpi/DocumentDriveKpi';
-import { Kpi } from '../../Components/Kpi/Kpi';
 import { ProjectModel } from '../../Utils/ProjectModel';
-import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
 import Project3Img from "./../../Images/Project3.png";
 
 export const Project3Model: ProjectModel = {
@@ -9,19 +6,13 @@ export const Project3Model: ProjectModel = {
     subTitle: "Lorem ipsum dolor sit amet",
     color: "software",
     agileTags: [
-        "Test",
-        "Test"
+        "Test", "Test"
     ],
     designTags: [
-        "Test",
-        "Test",
-        "Test"
+        "Test", "Test", "Test"
     ],
     softwareTags: [
-        "Test",
-        "Test",
-        "Test",
-        "Test"
+        "Test", "Test", "Test", "Test"
     ],
     back: "",
     next: "",
