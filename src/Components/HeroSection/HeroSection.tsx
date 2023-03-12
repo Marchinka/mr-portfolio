@@ -1,4 +1,4 @@
-import "./HomeSection.scss";
+import "./HeroSection.scss";
 
 type Type = "left" | "right";
 
@@ -8,7 +8,7 @@ interface Props {
     content: React.ReactNode;
 }
 
-export const HomeSection = (props: Props) => {
+export const HeroSection = (props: Props) => {
     return <div className="w3-row s-center">
                 {props.type === "left" && <div className="w3-col s12 m12 l4 w3-center">
                     {props.icon}

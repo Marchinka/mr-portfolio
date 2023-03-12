@@ -1,5 +1,5 @@
 import { Contact } from "../../Components/Contact/Contact";
-import { HomeSection as HeroSection } from "../../Components/HomeSection/HomeSection";
+import { HeroSection as HeroSection } from "../../Components/HeroSection/HeroSection";
 import { MLogo } from "../../Components/MLogo/MLogo";
 import { Typography } from "../../Components/Typography/Typography";
 import "./Home.scss";
@@ -31,7 +31,6 @@ export const Home = () => {
                         type="left"
                         icon={<div className="animate__animated animate__fadeIn"><MLogo /></div>}
                         content={<div className="home-hero-text">
-                                    <br />
                                     <Typography type="h2" color="black" className="animate__animated animate__bounceInRight animate__delay-02s">
                                         Marcello Rossi
                                     </Typography>

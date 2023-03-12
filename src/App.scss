@@ -95,6 +95,10 @@ body:before {
     .logo-agile {
         stroke: variable.$agile!important; 
     }
+
+    .logo-fill {
+        fill: variable.$inner-color!important; 
+    }
     
     .logo-design {
         stroke: variable.$design!important; 
