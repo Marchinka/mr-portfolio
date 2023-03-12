@@ -6,6 +6,7 @@ import { Gantt, Task, ViewMode } from "gantt-task-react";
 import "gantt-task-react/dist/index.css";
 import { useEffect } from "react";
 import { ScrollToTop } from "../../Utils/ScrollToTop";
+import { DocumentDriveModel } from "./DocumentDriveModel";
 
 // gantt chart
 // https://www.npmjs.com/package/gantt-task-react
@@ -15,64 +16,8 @@ export const DocumentDrive = () => {
         ScrollToTop();
     }, [])
 
-    return <PortfolioProject 
-                title={"Document Platform"} 
-                subTitle={"Document Platform Redesign"} 
-                color={"agile"} 
-                agileTags={[
-                        "Scrum",
-                        "Lean UX"
-                    ]}
-                designTags={[
-                        "UX Management", 
-                        "UX Design", 
-                        "User Research"
-                    ]}
-                softwareTags={[
-                        "Azure CLoud", 
-                        "Kubernetes", 
-                        "Microservices", 
-                        "Microfrontend"
-                    ]}
-                back={""}
-                next={""} 
-                components={[
-                    MdIntro,
-                    <DocumentDriveKpis />,
-                    // <DocumentDriveGantt />,
-                    MdBody
-                ]}/>
+    return <PortfolioProject model={DocumentDriveModel}/>
 }
-
-
-export const DocumentDriveKpis = () => {
-    return <div className={"w3-row"}>
-            <div className="w3-col s12 m12 l4">
-                <Kpi 
-                            type="design" 
-                            kpi="3k"
-                            title="Users"
-                            subTitle="working on the platform on 12 different professional areas"/>
-            </div>
-            <div className="w3-col s12 m12 l4">
-                <Kpi 
-                        type="agile" 
-                        fontSize="24px"
-                        kpi="600k"
-                        title="Documents"
-                        subTitle="to make accessible form older platform"/>
-            </div>
-            <div className="w3-col s12 m12 l4">
-                <Kpi 
-                        type="software" 
-                        kpi="25"
-                        title="Tb"
-                        subTitle="of physical files to migrate, index and expose via full-text search"/>
-
-            </div>
-        </div>
-}
-
 export const DocumentDriveGantt = () => {
     let tasks: Task[] = [
         {
