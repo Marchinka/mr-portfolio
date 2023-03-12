@@ -64,21 +64,25 @@ body:before {
 .fa-anchor,.fa-coffee {font-size:200px}
 
 .w3-mr-software {
+    text-decoration: none;
     color: variable.$inner-color;
     background-color: variable.$software!important;
 }
 
 .w3-mr-agile {
+    text-decoration: none;
     color: variable.$inner-color;
     background-color: variable.$agile!important;    
 }
 
 .w3-mr-design {
+    text-decoration: none;
     color: variable.$inner-color;
     background-color: variable.$design!important;
 }
 
 .w3-mr-black {
+    text-decoration: none;
     color: variable.$inner-color!important;
     background-color: variable.$black!important;
 }

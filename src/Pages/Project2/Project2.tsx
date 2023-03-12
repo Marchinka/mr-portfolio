@@ -9,19 +9,19 @@ export const Project2Model: ProjectModel = {
     subTitle: "Lorem ipsum dolor sit amet",
     color: "design",
     agileTags: [
-        "Scrum",
-        "Lean UX"
+        "Test",
+        "Test"
     ],
     designTags: [
-        "UX Management",
-        "UX Design",
-        "User Research"
+        "Test",
+        "Test",
+        "Test"
     ],
     softwareTags: [
-        "Azure Cloud",
-        "Kubernetes",
-        "Microservices",
-        "Microfrontend"
+        "Test",
+        "Test",
+        "Test",
+        "Test"
     ],
     back: "",
     next: "",
