@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { JsxElement } from "typescript";
 import { ProjectModel } from "../../Utils/ProjectModel";
+import { Responsive } from "../Responsive/Responsive";
 import { Tag } from "../Tag/Tag";
 import { Typography } from "../Typography/Typography";
 import "./PortfolioProjectCard.scss";
@@ -31,12 +32,14 @@ export const ProjectSection = (props: Props) => {
                     {props.model.briefText}
                 </Typography>
                 </div>
+                <Responsive displayOn="mobile">
+                    <div className="link">
+                        <button className={`w3-button w3-mr-black w3-round w3-mr-lifted`}> 
+                                View Project <FontAwesomeIcon icon={faAngleRight} /> 
+                        </button>
+                    </div>
+                </Responsive>
                 
                 <img src={props.model.coverImg} alt="M" style={{width: "100%"}} />
-                {/* <div className="link">
-                    <button className={`w3-button w3-mr-black w3-round w3-mr-lifted`}> 
-                            View Project <FontAwesomeIcon icon={faAngleRight} /> 
-                    </button>
-                </div> */}
             </Link>
 }

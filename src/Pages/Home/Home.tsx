@@ -41,7 +41,6 @@ export const Home = () => {
                                     </Typography>
                                 </div>} />
 
-
                 <div className={CSS_CLASS_ROWS_ANIMATION}>
                     <div className="w3-col s4 m4 l4">
                         <Contact 
