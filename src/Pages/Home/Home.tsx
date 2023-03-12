@@ -104,10 +104,8 @@ export const Home = () => {
 
                 <ProjectSection model={DocumentDriveModel} classname={CSS_CLASS_ROWS_ANIMATION} />
 
-                
                 <ProjectSection model={Project2Model} classname={CSS_CLASS_ROWS_ANIMATION} />
 
-                
                 <ProjectSection model={Project3Model} classname={CSS_CLASS_ROWS_ANIMATION} />
 
 
