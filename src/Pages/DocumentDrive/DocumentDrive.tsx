@@ -1,9 +1,7 @@
-import { MarkdownContent } from "../../Components/MarkdownContent/HtmlContent";
 import { PortfolioProject } from "../../Components/PortfolioProject/PortfolioProject";
 import MdIntro from './1-DocumentDrive-Intro.md';
 import MdBody from './2-DocumentDrive-Body.md';
 import { Kpi } from "../../Components/Kpi/Kpi";
-import { Typography } from "../../Components/Typography/Typography";
 import { Gantt, Task, ViewMode } from "gantt-task-react";
 import "gantt-task-react/dist/index.css";
 import { useEffect } from "react";

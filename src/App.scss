@@ -2,9 +2,10 @@
 @import 'w3-css';
 @import 'font-awesome';
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Serif&family=Quattrocento&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Serif&family=Quattrocento&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&family=PT+Serif&family=Quattrocento&display=swap');
 a,
 a:link,
 a:hover,
@@ -34,7 +35,7 @@ a:active,button
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     // background: variable.$background;
     // these two lines corrects a bug from animate css: when a bound in animation is created whe total app width is grater than 100% and the background image is not displayed correctly
     width: 100vw!important;
