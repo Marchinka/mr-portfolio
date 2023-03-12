@@ -1,18 +1,18 @@
 @use "../../Variables.scss" as variable;
 
 .project-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+    // text-align: center;
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
+    
 
     .title {
         border-bottom-color: transparent;
         border-bottom-width: 3px;
         border-bottom-style: solid;
         text-transform: capitalize;
+        width: fit-content;
 
         &.line-software {
             border-bottom-color: variable.$software
@@ -40,5 +40,8 @@
         margin-top: 16px;
         margin-bottom: 24px;
         text-decoration: underline;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }

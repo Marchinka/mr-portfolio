@@ -3,15 +3,18 @@ import { HomeSection } from "../../Components/HomeSection/HomeSection";
 import { MLogo } from "../../Components/MLogo/MLogo";
 import { Typography } from "../../Components/Typography/Typography";
 import "./Home.scss";
-import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
+
 import Project2Img from "./../../Images/Project2.png";
-import Project3Img from "./../../Images/Project3.png";
+
 import { Kpi } from "../../Components/Kpi/Kpi";
 import { Divider } from "../../Components/Divider/Divider";
 import { ProjectSection } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { ScrollToTop } from "../../Utils/ScrollToTop";
+import { DocumentDriveModel } from "../DocumentDrive/DocumentDriveModel";
+import { Project2Model } from "../Project2/Project2";
+import { Project3Model } from "../Project3/Project3";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;
@@ -99,17 +102,17 @@ export const Home = () => {
                     </Typography>
                 </div>
 
-                <Divider className={CSS_CLASS_ROWS_ANIMATION} />
 
-                <ProjectSection title={"Document Platform"} color="agile" route="/document-drive"
-                                subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
-                                classname={CSS_CLASS_ROWS_ANIMATION}
-                                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
-                                img={<img src={DocumentPlatformImg} alt="M" style={{width: "100%"}} />} />
+                <ProjectSection model={DocumentDriveModel} classname={CSS_CLASS_ROWS_ANIMATION} />
 
-                <Divider className={CSS_CLASS_ROWS_ANIMATION} />
+                
+                <ProjectSection model={Project2Model} classname={CSS_CLASS_ROWS_ANIMATION} />
 
-                <ProjectSection title={"Project 2"}  color="software" route="/"
+                
+                <ProjectSection model={Project3Model} classname={CSS_CLASS_ROWS_ANIMATION} />
+
+
+                {/* <ProjectSection title={"Project 2"}  color="software" route="/"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"}
                                 classname={CSS_CLASS_ROWS_ANIMATION} 
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
@@ -121,7 +124,7 @@ export const Home = () => {
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"} 
                                 classname={CSS_CLASS_ROWS_ANIMATION}
                                 content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."} 
-                                img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} />
+                                img={<img src={Project3Img} alt="M" style={{width: "100%"}} />} /> */}
 
 
         </div>
