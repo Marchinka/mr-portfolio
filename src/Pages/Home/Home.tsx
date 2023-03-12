@@ -100,12 +100,12 @@ export const Home = () => {
                     </Typography>
                 </div>
 
-
                 <ProjectSection model={DocumentDriveModel} classname={CSS_CLASS_ROWS_ANIMATION} />
 
                 <ProjectSection model={Project2Model} classname={CSS_CLASS_ROWS_ANIMATION} />
 
                 <ProjectSection model={Project3Model} classname={CSS_CLASS_ROWS_ANIMATION} />
+
 
 
                 {/* <ProjectSection title={"Project 2"}  color="software" route="/"

@@ -28,6 +28,7 @@ export const ProjectSection = (props: Props) => {
                     {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="design" />)}
                     {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="software" />)}
                 </div>
+                
                 <Typography type="p" color="black" className="content">
                     {props.model.briefText}
                 </Typography>
@@ -41,5 +42,6 @@ export const ProjectSection = (props: Props) => {
                 </Responsive>
                 
                 <img src={props.model.coverImg} alt="M" style={{width: "100%"}} />
+                
             </Link>
 }
