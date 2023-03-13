@@ -18,20 +18,20 @@ export const ProjectSection = (props: Props) => {
 
                 <div>
                     <Typography type="h3" color="black" className={`title line-${props.model.color}`}>
-                    {props.model.title}
-                </Typography>
-                <Typography type="small" color="black" weight="bold" className="sub-title">
-                    {props.model.subTitle}
-                </Typography>
-                <div>
-                    {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="agile"/>)}
-                    {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="design" />)}
-                    {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="software" />)}
-                </div>
-                
-                <Typography type="p" color="black" className="content">
-                    {props.model.briefText}
-                </Typography>
+                        {props.model.title}
+                    </Typography>
+                    <Typography type="small" color="black" weight="bold" className="sub-title" transform="capitalize">
+                        {props.model.subTitle}
+                    </Typography>
+                    <div>
+                        {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="agile"/>)}
+                        {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="design" />)}
+                        {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="software" />)}
+                    </div>
+                    
+                    <Typography type="p" color="black" className="content">
+                        {props.model.briefText}
+                    </Typography>
                 </div>
                 {/*<Responsive displayOn="mobile">
                     <div className="link">
@@ -40,7 +40,7 @@ export const ProjectSection = (props: Props) => {
                         </button>
                     </div>
                 </Responsive>*/}
-                
+                {/* <br /> */}
                 <img src={props.model.coverImg} alt="M" style={{width: "100%"}} />
                 
             </Link>

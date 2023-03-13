@@ -7,7 +7,7 @@ import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
 
 export const DocumentDriveModel: ProjectModel = {
     title: "Document Platform",
-    subTitle: "Document Platform Redesign",
+    subTitle: "How might we redeseign a 10-years old document platotform?",
     color: "agile",
     agileTags: [
         "Scrum",

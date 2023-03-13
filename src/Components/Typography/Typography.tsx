@@ -3,6 +3,7 @@ import "./Typography.scss";
 type TypographyElement = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span" | "small";
 type MrColor = "black" | "muted" | "software" | "agile" | "design";
 type MrWeight = "normal" | "bold";
+type Transform = "uppercase" | "capitalize";
 
 interface Props {
     type?: TypographyElement;
@@ -11,10 +12,11 @@ interface Props {
     color?: MrColor;
     weight?: MrWeight;
     className?: string;
+    transform?: Transform;
 }
 
 export const Typography = (props: Props) => {
-    let colorClass = `text ${props.color || "black"} ${props.weight || "normal"} ${props.className || ""}`;
+    let colorClass = `text ${props.color || "black"} ${props.weight || "normal"} ${props.className || ""} ${props.transform}`;
 
     switch (props.type) {
         case "h1":
