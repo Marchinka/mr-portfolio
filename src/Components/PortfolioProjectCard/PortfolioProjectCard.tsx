@@ -33,13 +33,13 @@ export const ProjectSection = (props: Props) => {
                     {props.model.briefText}
                 </Typography>
                 </div>
-                <Responsive displayOn="mobile">
+                {/*<Responsive displayOn="mobile">
                     <div className="link">
                         <button className={`w3-button w3-mr-black w3-round w3-mr-lifted`}> 
                                 View Project <FontAwesomeIcon icon={faAngleRight} /> 
                         </button>
                     </div>
-                </Responsive>
+                </Responsive>*/}
                 
                 <img src={props.model.coverImg} alt="M" style={{width: "100%"}} />
                 
