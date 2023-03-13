@@ -17,17 +17,18 @@
     .kpi {
 
         &.software {
-            color: variable.$software
+            border-color: variable.$software
         }
 
         &.agile {
-            color: variable.$agile
+            border-color: variable.$agile
         }
 
         &.design {
-            color: variable.$design
+            border-color: variable.$design
         }
 
+        
         font-weight: 400;
         font-size: variable.$h3-size;
         line-height: 44px;
@@ -46,8 +47,8 @@
         background: variable.$inner-color;
         /* Black */
 
-        border: 1.5px solid variable.$black;
-        border-radius: 100%;
+        border: 2px solid variable.$black;
+        // border-radius: 100%;
 
         /* Inside auto layout */
 
