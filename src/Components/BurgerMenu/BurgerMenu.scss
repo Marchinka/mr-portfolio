@@ -1,0 +1,33 @@
+@use "./../../Variables.scss" as variable;
+
+.big-device-navbar {
+    padding-right: 30px;
+}
+
+.small-device-navbar {
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.burger-button {
+    color: variable.$black;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.mr-navbar-link {
+    color: variable.$black;
+    border-top-width: 4px;
+    border-top-style:solid;
+    border-top-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: variable.$p-size;
+    font-weight: 400;
+
+    &:hover {
+        border-top-color: variable.$muted;
+        background-color: transparent!important;
+    }
+}
