@@ -35,7 +35,7 @@ export const timelineEvents: EventProps[] = [
         contentBorderColor: companyBorderColor,
         contentBackgroundColor: contentBackground,
         content: `Via Caldera 21, Milan, Italy`,
-        icon: <FontAwesomeIcon icon={faLocationDot} />,
+        icon: <FontAwesomeIcon icon={faBriefcase} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
     },
@@ -85,7 +85,7 @@ export const timelineEvents: EventProps[] = [
         date: "2014 - 2017",
         title: `Altran S.p.A.`,
         content: `Corso Sempione 66, Milan, Italy`,
-        icon: <FontAwesomeIcon icon={faLocationDot} />,
+        icon: <FontAwesomeIcon icon={faBriefcase} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
     },
@@ -112,7 +112,7 @@ export const timelineEvents: EventProps[] = [
         date: "2014 - 2017",
         title: `Master's Degree in Physics`,
         content: `Università degli studi di Milano - Bicocca`,
-        icon: <FontAwesomeIcon icon={faLocationDot} />,
+        icon: <FontAwesomeIcon icon={faGraduationCap} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
     },
