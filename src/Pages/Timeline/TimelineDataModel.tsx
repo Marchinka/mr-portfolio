@@ -34,7 +34,7 @@ export const timelineEvents: EventProps[] = [
         contentBorderColor: companyBorderColor,
         contentBackgroundColor: contentBackground,
         content: `Via Caldera 21, Milan, Italy`,
-        icon: <img src={TechegdeLogoImg} style={{width: "60px", marginTop: "3px"}}/>,
+        icon: <img src={TechegdeLogoImg} style={{width: "100%", marginTop: "2%"}}/>,
         iconBackgroundColor: iconBackground
     },
     {
@@ -83,7 +83,7 @@ export const timelineEvents: EventProps[] = [
         date: "2014 - 2017",
         title: `Altran`,
         content: `Corso Sempione 66, Milan, Italy`,
-        icon: <img src={AltranLogoImg} style={{width: "60px", marginTop: "10px"}}/>,
+        icon: <img src={AltranLogoImg} style={{width: "100%", marginTop: "15%"}}/>,
         iconBackgroundColor: iconBackground
     },
     {
@@ -109,7 +109,7 @@ export const timelineEvents: EventProps[] = [
         date: "2014 - 2017",
         title: `Master's Degree in Physics`,
         content: `Università degli studi di Milano - Bicocca`,
-        icon: <img src={BicoccaLogoImg} style={{width: "40px", marginTop: "11px", marginLeft: "10px"}}/>,
+        icon: <img src={BicoccaLogoImg} style={{width: "70%", marginTop: "17%", marginLeft: "15%"}}/>,
         iconBackgroundColor: iconBackground
     },
     {
