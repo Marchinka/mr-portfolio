@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 import "./Navbar.scss";
+
+const links = [
+  { label: "Portfolio", link: "/" },
+  { label: "Resume", link: "/resume" },
+  { label: "Timeline", link: "/timeline" },
+]
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -29,11 +36,7 @@ export const Navbar = () => {
                     <div>
                         <Link className="w3-bar-item w3-button w3-padding-large mr-navbar-logo" to="/">m.r.</Link>
                     </div>
-                    <div>
-                        <Link className="w3-bar-item w3-button w3-padding-large mr-navbar-link" to="/">Portfolio</Link>
-                        <Link className="w3-bar-item w3-button w3-padding-large mr-navbar-link" to="/resume">Resume</Link>
-                        <Link className="w3-bar-item w3-button w3-padding-large mr-navbar-link" to="/timeline">Timeline</Link>
-                    </div>
+                    <BurgerMenu links={links}></BurgerMenu>
                 </div> 
             </div>);
 }

@@ -28,19 +28,5 @@
         }
     }
 
-    .mr-navbar-link {
-        color: variable.$black;
-        border-top-width: 4px;
-        border-top-style:solid;
-        border-top-color: transparent;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-size: variable.$p-size;
-        font-weight: 400;
-
-        &:hover {
-            border-top-color: variable.$muted;
-            background-color: transparent!important;
-        }
-    }
+    
 }

@@ -2,11 +2,19 @@
 
 .big-device-navbar {
     padding-right: 30px;
+    display: none;
+    @media (min-width: 993px) {
+        display: block;
+    }
 }
 
 .small-device-navbar {
     padding-right: 30px;
     padding-top: 15px;
+    display: none;
+    @media (max-width: 993px) {
+        display: block;
+    }
 }
 
 .burger-button {
@@ -30,4 +38,30 @@
         border-top-color: variable.$muted;
         background-color: transparent!important;
     }
+}
+
+.link-menu {
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+
+.overlay {
+    background-color: variable.$background;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 90000;
+}
+
+.link-section {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90001;
 }
