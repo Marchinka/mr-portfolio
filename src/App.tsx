@@ -11,6 +11,7 @@ import { Resume } from './Pages/Resume/Resume';
 import { Navbar } from './Components/Navbar/Navbar';
 import { AppLayout } from './Components/AppLayout/AppLayout';
 import { useNavigate } from "react-router-dom";
+import { Timeline } from './Pages/Timeline/Timeline';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/document-drive" element={<DocumentDrive />} />
+        <Route path="/timeline" element={<Timeline />} />
         <Route path="/*" element={<Home />} />
       </Routes>
       <br />

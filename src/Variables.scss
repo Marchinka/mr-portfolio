@@ -6,6 +6,12 @@ $light-grey: #5b5b5c;
 $background: #EDEDEE;
 $inner-color: #FFFFFF;
 
+// ## Red, green and blue
+$software: #2196F3;
+$agile: #4CAF50;
+$design: #673AB7;
+
+
 // ## Red, blue, light blue
 // $software: #DF3C5F;
 // $agile: #224193;
@@ -36,11 +42,6 @@ $inner-color: #FFFFFF;
 // $agile: #be9e0e;
 // $design: #2C306F;
 
-// ## Red, green and blue
-$software: #2196F3;
-$agile: #4CAF50;
-$design: #673AB7;
-
 $h1-size: rem.convert(67.68px);
 $h2-size: rem.convert(50.52px);
 $h3-size: rem.convert(37.9px);
@@ -50,3 +51,7 @@ $p-size: rem.convert(16px);
 $small-size: rem.convert(12px);
 
 $navbar-height: 108px;
+
+:export {
+    innerColor: $inner-color;
+}
