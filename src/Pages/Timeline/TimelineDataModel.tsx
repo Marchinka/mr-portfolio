@@ -4,7 +4,8 @@ import TechegdeLogoImg from "./../../Images/Techedge-Logo.png";
 import AltranLogoImg from "./../../Images/Altran-Logo.png";
 import BicoccaLogoImg from "./../../Images/Bicocca-Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase, faCode, faGlasses, faProcedures, faProjectDiagram, faSchool } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faBuildingWheat, faCode, faGlasses, faGraduationCap, faLocationDot, faMedal, faProcedures, faProjectDiagram, faSchool } from "@fortawesome/free-solid-svg-icons";
+import { faBuilding } from "@fortawesome/free-regular-svg-icons";
 
 const colorVariables = {
     black: "#313131",
@@ -30,11 +31,12 @@ export const timelineEvents: EventProps[] = [
     {
         position: "left",
         date: "2017 - present",
-        title: `Techedge`,
+        title: `Techedge S.p.A.`,
         contentBorderColor: companyBorderColor,
         contentBackgroundColor: contentBackground,
         content: `Via Caldera 21, Milan, Italy`,
-        icon: <img src={TechegdeLogoImg} style={{width: "100%", marginTop: "2%"}}/>,
+        icon: <FontAwesomeIcon icon={faLocationDot} />,
+        iconColor: iconColor,
         iconBackgroundColor: iconBackground
     },
     {
@@ -81,9 +83,10 @@ export const timelineEvents: EventProps[] = [
         contentBorderColor: companyBorderColor,
         contentBackgroundColor: contentBackground,
         date: "2014 - 2017",
-        title: `Altran`,
+        title: `Altran S.p.A.`,
         content: `Corso Sempione 66, Milan, Italy`,
-        icon: <img src={AltranLogoImg} style={{width: "100%", marginTop: "15%"}}/>,
+        icon: <FontAwesomeIcon icon={faLocationDot} />,
+        iconColor: iconColor,
         iconBackgroundColor: iconBackground
     },
     {
@@ -109,7 +112,8 @@ export const timelineEvents: EventProps[] = [
         date: "2014 - 2017",
         title: `Master's Degree in Physics`,
         content: `Università degli studi di Milano - Bicocca`,
-        icon: <img src={BicoccaLogoImg} style={{width: "70%", marginTop: "17%", marginLeft: "15%"}}/>,
+        icon: <FontAwesomeIcon icon={faLocationDot} />,
+        iconColor: iconColor,
         iconBackgroundColor: iconBackground
     },
     {
@@ -120,7 +124,7 @@ export const timelineEvents: EventProps[] = [
         title: `Master's Degree in Physics`,
         content: `Theoretical physics, computational calculus and Monte Carlo simulations, advanced statistics,
         computer molecular dynamics, study of stochastic processes, Markov chains and statistical mechanics. Degree: 109/110.`,
-        icon: <FontAwesomeIcon icon={faGlasses} />,
+        icon: <FontAwesomeIcon icon={faGraduationCap} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
     },
@@ -132,7 +136,7 @@ export const timelineEvents: EventProps[] = [
         title: `Bachelor's Degree in Physics`,
         content: `Programming (fortran, C++), analytical calculus, statistics, classical physics, relativity
         special, general relativity, quantum mechanics, interpolation algorithms. Degree: 107/110.`,
-        icon: <FontAwesomeIcon icon={faGlasses} />,
+        icon: <FontAwesomeIcon icon={faGraduationCap} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
     },
