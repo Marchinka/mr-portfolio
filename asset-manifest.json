@@ -1,31 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.3ad5c195.css",
-    "main.js": "/static/js/main.7da2dbcc.js",
+    "main.js": "/static/js/main.3722d3a2.js",
     "static/js/787.a4063eb2.chunk.js": "/static/js/787.a4063eb2.chunk.js",
     "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.9a5656b245239d910b6a.pdf",
     "static/media/Curriculum Vitae - Marcello Rossi.svg": "/static/media/Curriculum Vitae - Marcello Rossi.d9a77999a13aa25783c3f1b25f1c3edb.svg",
     "static/media/Project3.png": "/static/media/Project3.e2e4ca27a8273295505a.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Project2.png": "/static/media/Project2.987f9413cc37038aca5f.png",
-    "static/media/Bicocca-Logo.png": "/static/media/Bicocca-Logo.ba606ede177e06833824.png",
     "static/media/background_1.jpg": "/static/media/background_1.6183dad59b531f072b5f.jpg",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/DocumentPlatform.png": "/static/media/DocumentPlatform.64e5eb7146b26de343da.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/Techedge-Logo.png": "/static/media/Techedge-Logo.540784cf65921877e413.png",
-    "static/media/Altran-Logo.png": "/static/media/Altran-Logo.1f82b6125aab73c2d37b.png",
     "static/media/2-DocumentDrive-Body.md": "/static/media/2-DocumentDrive-Body.f96169981cf363108870.md",
     "index.html": "/index.html",
     "static/media/1-DocumentDrive-Intro.md": "/static/media/1-DocumentDrive-Intro.14f9f7f4257fb1503694.md",
     "main.3ad5c195.css.map": "/static/css/main.3ad5c195.css.map",
-    "main.7da2dbcc.js.map": "/static/js/main.7da2dbcc.js.map",
+    "main.3722d3a2.js.map": "/static/js/main.3722d3a2.js.map",
     "787.a4063eb2.chunk.js.map": "/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ad5c195.css",
-    "static/js/main.7da2dbcc.js"
+    "static/js/main.3722d3a2.js"
   ]
 }
