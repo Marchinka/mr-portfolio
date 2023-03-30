@@ -1,12 +1,16 @@
 import "./Resume.scss";
 import CurriculumVitaePdf from "./../../Resources/Curriculum Vitae - Marcello Rossi.pdf";
 import CurriculumVitaeSvg from "./../../Resources/Curriculum Vitae - Marcello Rossi.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faSpinner  } from "@fortawesome/free-solid-svg-icons";
+import { ScrollToTop } from "../../Utils/ScrollToTop";
 
 export const Resume = () => {
     const [loaded, setLoaded] = useState(false);
+    useEffect(() => {
+        ScrollToTop();
+    }, [])
     
     return  <div className={`animate__animated animate__fadeIn page-content resume`}>
                 {!loaded && <div className="loader">

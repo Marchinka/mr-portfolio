@@ -40,6 +40,12 @@
     }
 }
 
+.mobile-link {
+    display: block;
+    font-size: 28px;
+    
+}
+
 .link-menu {
     display: none;
     &.show {
@@ -49,7 +55,7 @@
 
 .overlay {
     background-color: variable.$background;
-    opacity: 0.5;
+    opacity: 0.9;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,4 +70,7 @@
     top: 0;
     left: 0;
     z-index: 90001;
+    width: 100vw;
+    text-align: center;
+    padding-top: 20vh;
 }

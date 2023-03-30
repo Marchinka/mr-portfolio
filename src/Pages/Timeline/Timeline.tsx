@@ -2,10 +2,15 @@ import "./Timeline.scss";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { arrowColor, lineColor, projectEvents, timelineEvents } from "./TimelineDataModel";
+import { ScrollToTop } from "../../Utils/ScrollToTop";
+import { useEffect } from "react";
 
 
 export const Timeline = () => {
-   
+    useEffect(() => {
+        ScrollToTop();
+    }, [])
+    
     return  <div className={`animate__animated animate__fadeIn page-content timeline`}>
                 <h3 className="align-center margin-bottom-0">Work Experiences</h3>
                 <p className="align-center margin-top-0">My carreer journey</p>

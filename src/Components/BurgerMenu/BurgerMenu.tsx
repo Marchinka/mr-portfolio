@@ -1,4 +1,4 @@
-import { faBars, faBurger } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBurger, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -21,20 +21,24 @@ export const BurgerMenu = (props: Props) => {
                 })}
               </div>
               <div className="small-device-navbar">
-                <button className="burger-button" onClick={() => setShowMenu(true)}>
-                  <FontAwesomeIcon icon={faBars} />
+                <button className={`burger-button`} onClick={() => setShowMenu(true)}>
+                  <FontAwesomeIcon icon={showMenu ? faClose : faBars} />
                 </button>
               </div>
               <div className={`link-menu ${showMenu ? "show" : ""}`}>
                 <div className={`overlay`} onClick={() => setShowMenu(false)}></div>
                 <div className="link-section">
                     {props.links.map(link => {
-                      return  <div>
-                                <Link className="w3-button w3-padding-large" to={link.link}>
+                      return  <Link className="w3-button w3-padding-large mobile-link" to={link.link}
+                                    onClick={() => setShowMenu(false)}>
                                   {link.label}
-                                </Link>
-                              </div>
+                              </Link>
                     })}
+                    <hr />
+                    <a className="w3-button w3-padding-large mobile-link text muted"
+                                    onClick={() => setShowMenu(false)}>
+                                  <FontAwesomeIcon icon={faClose} /> <span>Close</span>
+                    </a>
               </div>
               </div>
             </div>);
