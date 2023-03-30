@@ -88,10 +88,10 @@ export const timelineEvents: EventProps[] = [
     },
     {
         position: "right",
-        contentBorderColor: companyBorderColor,
+        contentBorderColor: experienceBorderColor,
         contentBackgroundColor: contentBackground,
         date: "2014 - 2017",
-        title: `Senior Consultant`,
+        title: `Consultant`,
         content: `Technical Specialist and IT Consulting for Financial Services. During this 
         experience, I learned the basics of full-stack software development in 
         java, javascript, .NET through several projects in the Banking and 
@@ -129,7 +129,7 @@ export const timelineEvents: EventProps[] = [
         contentBorderColor: experienceBorderColor,
         contentBackgroundColor: contentBackground,
         date: "2008 - 2011",
-        title: `Master's Degree in Physics`,
+        title: `Bachelor's Degree in Physics`,
         content: `Programming (fortran, C++), analytical calculus, statistics, classical physics, relativity
         special, general relativity, quantum mechanics, interpolation algorithms. Degree: 107/110.`,
         icon: <FontAwesomeIcon icon={faGlasses} />,
