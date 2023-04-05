@@ -1,3 +1,5 @@
+@use "../../Variables.scss" as variable;
+
 .resume {
     .loader {
         padding-top: 64px;
@@ -5,6 +7,29 @@
         display: flex;
         margin-top: 24px;
         justify-content: center;
+    }
+
+    .pager {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            appearance: none;
+            font-size: 24px;
+            color: variable.$muted;
+
+            &:hover {
+                color: variable.$software!important;
+            }
+        }
     }
 
     .container {
