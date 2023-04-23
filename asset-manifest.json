@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0142b0e4.css",
-    "main.js": "/static/js/main.781fb828.js",
+    "main.css": "/static/css/main.36a076a0.css",
+    "main.js": "/static/js/main.75d2f170.js",
     "static/js/787.a4063eb2.chunk.js": "/static/js/787.a4063eb2.chunk.js",
     "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.96349049f4977a817240.pdf",
     "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.004d8b216ce5d2f01e29af3a26c6b70d.svg",
@@ -15,15 +15,16 @@
     "static/media/DocumentPlatform.png": "/static/media/DocumentPlatform.64e5eb7146b26de343da.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/2-DocumentDrive-Body.md": "/static/media/2-DocumentDrive-Body.f96169981cf363108870.md",
+    "static/media/3-DocumentDrive-Body.md": "/static/media/3-DocumentDrive-Body.0f32d33d17d6e9f3b098.md",
     "index.html": "/index.html",
     "static/media/1-DocumentDrive-Intro.md": "/static/media/1-DocumentDrive-Intro.14f9f7f4257fb1503694.md",
-    "main.0142b0e4.css.map": "/static/css/main.0142b0e4.css.map",
-    "main.781fb828.js.map": "/static/js/main.781fb828.js.map",
+    "static/media/2-DocumentDrive-AudienceTeam.md": "/static/media/2-DocumentDrive-AudienceTeam.42e5050f6941d6037633.md",
+    "main.36a076a0.css.map": "/static/css/main.36a076a0.css.map",
+    "main.75d2f170.js.map": "/static/js/main.75d2f170.js.map",
     "787.a4063eb2.chunk.js.map": "/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0142b0e4.css",
-    "static/js/main.781fb828.js"
+    "static/css/main.36a076a0.css",
+    "static/js/main.75d2f170.js"
   ]
 }
