@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a690e69.css",
-    "main.js": "/static/js/main.9d150842.js",
+    "main.css": "/static/css/main.9125e098.css",
+    "main.js": "/static/js/main.298792a9.js",
     "static/js/787.a4063eb2.chunk.js": "/static/js/787.a4063eb2.chunk.js",
     "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.96349049f4977a817240.pdf",
     "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.004d8b216ce5d2f01e29af3a26c6b70d.svg",
@@ -24,12 +24,12 @@
     "static/media/Final.md": "/static/media/Final.3531ca273133025b0164.md",
     "static/media/Timeline.md": "/static/media/Timeline.ef9d6ebdc69b136f4781.md",
     "static/media/Research.md": "/static/media/Research.31d6cfe0d16ae931b73c.md",
-    "main.7a690e69.css.map": "/static/css/main.7a690e69.css.map",
-    "main.9d150842.js.map": "/static/js/main.9d150842.js.map",
+    "main.9125e098.css.map": "/static/css/main.9125e098.css.map",
+    "main.298792a9.js.map": "/static/js/main.298792a9.js.map",
     "787.a4063eb2.chunk.js.map": "/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a690e69.css",
-    "static/js/main.9d150842.js"
+    "static/css/main.9125e098.css",
+    "static/js/main.298792a9.js"
   ]
 }
