@@ -34,7 +34,14 @@ export const PortfolioCard = (props: Props) => {
                     {props.model.briefText && <MarkdownContent url={props.model.briefText} />}
                     {!props.model.briefText && <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>}
                 </div>
-
+                
+                <Responsive displayOn="mobile">
+                    <div className="link">
+                        <button className={`w3-button w3-mr-black w3-round w3-mr-lifted`}> 
+                                View Project <FontAwesomeIcon icon={faAngleRight} /> 
+                        </button>
+                    </div>
+                </Responsive>
                 {/* <img src={props.model.coverImg} alt="M" style={{width: "100%"}} /> */}
 
             </Link>
