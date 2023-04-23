@@ -1,19 +1,3 @@
-### Target Audience
-
-The target audience for this platform includes technical and scientific employees of the energy company (**geologyst**, **reservoir experts**, **drilling specialists**...), working with documents on a daily basis and need a platform that is easy to use and provides the necessary functionality. The platform should be accessible and efficient for individuals who work in 12 professional areas of expertise within the company.
-
-
-### Team
-
-The team for this project was composed of 
-- 1 Scrum master (<span class="u agile">me</span>)
-- 2 Solution Architects - *Luca Di Biagio. Fabrizio Zanette. Microsoft*
-- 1 Azure cloud expert - *Stefano Campanella. Techedge*
-- 1 Senior Dev Lead  - *Francesco Cardin. Techedge*
-- 2 UX designers - *Andrea Caporale. Francesco Villa. Microsoft*
-- 5 Software developers / heroes - *Emanuele Serrao, Giuseppe Campanella, Davide Ferri, Andrea Pasquali, Stefano Ruga. Techedge.*
-
-
 ### Project Governance
 
 As the Scrum master, I was responsible for facilitating the whole process and ensuring that the team adheres to Agile principles, assisting a team composed both of technical and design profiles. 

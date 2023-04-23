@@ -1,8 +1,9 @@
-import { DocumentDriveKpis } from '../../Components/DocumentDriveKpi/DocumentDriveKpi';
+import { DocumentDriveKpis, DocumentDriveTeam } from './DocumentDriveVisuals';
 import { Kpi } from '../../Components/Kpi/Kpi';
 import { ProjectModel } from '../../Utils/ProjectModel';
 import MdIntro from './1-DocumentDrive-Intro.md';
-import MdBody from './2-DocumentDrive-Body.md';
+import MdAudienceTeam from './2-DocumentDrive-AudienceTeam.md';
+import MdBody from './3-DocumentDrive-Body.md';
 import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
 
 export const DocumentDriveModel: ProjectModel = {
@@ -31,7 +32,8 @@ export const DocumentDriveModel: ProjectModel = {
     components: [
         MdIntro,
         <DocumentDriveKpis />,
-        // <DocumentDriveGantt />,
+        MdAudienceTeam,
+        <DocumentDriveTeam />,
         MdBody
     ],
     route: '/document-drive'

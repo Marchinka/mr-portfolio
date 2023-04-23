@@ -1,4 +1,4 @@
-import { DocumentDriveKpis } from '../../Components/DocumentDriveKpi/DocumentDriveKpi';
+import { DocumentDriveKpis } from '../DocumentDrive/DocumentDriveVisuals';
 import { Kpi } from '../../Components/Kpi/Kpi';
 import { ProjectModel } from '../../Utils/ProjectModel';
 import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
