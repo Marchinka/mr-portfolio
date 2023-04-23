@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.0e880661.css",
-    "main.js": "/static/js/main.1ff6dfba.js",
+    "main.css": "/static/css/main.d5a9431e.css",
+    "main.js": "/static/js/main.79f79565.js",
     "static/js/787.a4063eb2.chunk.js": "/static/js/787.a4063eb2.chunk.js",
     "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.96349049f4977a817240.pdf",
-    "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.004d8b216ce5d2f01e29af3a26c6b70d.svg",
-    "static/media/CV_MR_2.svg": "/static/media/CV_MR_2.6d5b9d8377d2d0c5b0cce506eb7d7e13.svg",
+    "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.c7231f4b226b00d565f69d1b2faa8793.svg",
+    "static/media/CV_MR_2.svg": "/static/media/CV_MR_2.98388bfef3d2565c997730e405541586.svg",
     "static/media/Project3.png": "/static/media/Project3.e2e4ca27a8273295505a.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Project2.png": "/static/media/Project2.987f9413cc37038aca5f.png",
@@ -24,12 +24,12 @@
     "static/media/Final.md": "/static/media/Final.3531ca273133025b0164.md",
     "static/media/Timeline.md": "/static/media/Timeline.ef9d6ebdc69b136f4781.md",
     "static/media/Research.md": "/static/media/Research.31d6cfe0d16ae931b73c.md",
-    "main.0e880661.css.map": "/static/css/main.0e880661.css.map",
-    "main.1ff6dfba.js.map": "/static/js/main.1ff6dfba.js.map",
+    "main.d5a9431e.css.map": "/static/css/main.d5a9431e.css.map",
+    "main.79f79565.js.map": "/static/js/main.79f79565.js.map",
     "787.a4063eb2.chunk.js.map": "/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e880661.css",
-    "static/js/main.1ff6dfba.js"
+    "static/css/main.d5a9431e.css",
+    "static/js/main.79f79565.js"
   ]
 }
