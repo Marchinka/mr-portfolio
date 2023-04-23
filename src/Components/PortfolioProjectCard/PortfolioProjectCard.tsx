@@ -37,8 +37,8 @@ export const PortfolioCard = (props: Props) => {
                 
                 <Responsive displayOn="mobile">
                     <div className="link">
-                        <button className={`w3-button w3-mr-black w3-round w3-mr-lifted`}> 
-                                View Project <FontAwesomeIcon icon={faAngleRight} /> 
+                        <button className={`w3-button w3-white w3-round w3-mr-lifted`}> 
+                                View Project <FontAwesomeIcon icon={faAngleRight} className={`text ${props.model.color}`}/> 
                         </button>
                     </div>
                 </Responsive>
