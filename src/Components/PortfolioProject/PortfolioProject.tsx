@@ -12,6 +12,27 @@ type Content = React.ReactNode | string;
 
 interface Props {
     model: ProjectModel;
+    className?: string;
+}
+
+export const PortfolioHeader = (props: Props) => {
+    return <div className={props.className}>
+                <Typography type="h1" color={"black"} className={`title`}>
+                    {props.model.title}
+                </Typography>
+                
+                <Typography type="p" color={"muted"}  className={`subTitle`}>
+                    {props.model.subTitle}
+                </Typography>
+           
+                <div>
+                    {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="white"/>)}
+                    {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
+                    {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
+                </div>
+
+            </div>
+
 }
 
 export const PortfolioProject = (props: Props) => {
@@ -23,29 +44,20 @@ export const PortfolioProject = (props: Props) => {
                         {props.model.title}
                     </Typography>
                 </div>
-                {/* <div>
-                    {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="agile"/>)}
-                    {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="design" />)}
-                    {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="software" />)}
-                </div> */}
 
-                <Typography type="h1" color={"black"} className={`title`}>
-                    {props.model.title}
-                </Typography>
-                
-                <Typography type="p" color={"muted"}  className={`subTitle`}>
-                    {props.model.subTitle}
-                </Typography>
-                
-                <Divider />
-                <br />
+                <PortfolioHeader {...props} />
 
-                {props.model.components.map(component => {
-                    if (typeof(component) == "string") {
-                        return <MarkdownContent url={component} />
-                    } else {
-                        return <>{component}</>
-                    }
+                {props.model.paragraphs.map(par => {
+                    return  <div key={par.title}>
+                                <h4 id={par.title} >{par.title}</h4>
+                                {par.components.map(component => {
+                                    if (typeof(component) == "string") {
+                                        return <MarkdownContent url={component} />
+                                    } else {
+                                        return <>{component}</>
+                                    }
+                                })}
+                            </div>
                 })}
                 <div className="animate__animated animate__fadeIn animate__delay-1s">
                     <Divider className="portfolio-divider"/>

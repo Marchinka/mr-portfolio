@@ -1,5 +1,10 @@
 type Content = React.ReactNode | string;
 
+export interface Paragraph {
+    title: string;
+    components: Content[];
+}
+
 export interface ProjectModel {
     title: string;
     subTitle: string;
@@ -10,7 +15,7 @@ export interface ProjectModel {
     back:string;
     route: string;
     next: string;
-    briefText: string;
+    briefText?: string | null;
     coverImg: string;
-    components: Content[];
+    paragraphs: Paragraph[];
 }

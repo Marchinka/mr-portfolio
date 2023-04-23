@@ -38,14 +38,13 @@ export const DocumentDriveKpis = () => {
             
 export const DocumentDriveTeam = () => {
     return <>
-            <Typography type="h4" label="Team and my role"/>
             <div className={"w3-row"}>
                 <div className="w3-col s12 m12 l4">
                     <TeamElement icon='Tie'
                                     type="agile" 
                                     number="1"
                                     title="Scrum Master"
-                                    subTitle={<strong className='u agile '>ME</strong>}/>
+                                    subTitle={<strong className='u agile '>me</strong>}/>
                 </div>
                 <div className="w3-col s12 m12 l4">
                     <TeamElement  icon='Tie'

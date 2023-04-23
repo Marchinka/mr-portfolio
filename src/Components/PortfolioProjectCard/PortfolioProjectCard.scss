@@ -1,5 +1,81 @@
 @use "../../Variables.scss" as variable;
 
+.portfolio-card {
+    
+    width: 100%;
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+
+    &:hover {
+        color: variable.$black!important;
+    }
+
+    // background-color: variable.$inner-color;
+    padding: 8px 16px;
+    border-radius: 0.25em;
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    // border-bottom-color: variable.$background;
+    // border-bottom-style: solid;
+    // border-bottom-width: 4px;
+
+
+    // border-top-color: variable.$background;
+    // border-top-style: solid;
+    // border-top-width: 3px;
+
+    // &:hover {
+    //     background-color: variable.$background;
+    //     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+    // }
+
+    &.software:hover {
+        border-top-color: variable.$software;
+    }
+    &.agile:hover {
+        border-top-color: variable.$agile;
+    }
+    &.design:hover {
+        border-top-color: variable.$design;
+    }
+
+    .content {
+        font-size: variable.$small-size!important;
+        color: variable.$black!important;
+    }
+
+    .title {
+        margin-bottom: 0;    
+
+        border-bottom-color: transparent;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        text-transform: capitalize;
+        width: fit-content;
+        transition: all .25s ease-in-out;
+        -moz-transition: all .25s ease-in-out;
+        -webkit-transition: all .25s ease-in-out;
+
+      
+    }
+
+    .subTitle {
+        margin-top: 0;
+    }
+
+    &:hover .line-software {
+        border-bottom-color: variable.$software
+    }
+
+    &:hover .line-agile {
+        border-bottom-color: variable.$agile
+    }
+
+    &:hover .line-design {
+        border-bottom-color: variable.$design
+    }
+}
+
 .project-section {
 
     // text-align: center;

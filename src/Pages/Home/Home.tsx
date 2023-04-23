@@ -8,13 +8,14 @@ import Project2Img from "./../../Images/Project2.png";
 
 import { Kpi } from "../../Components/Kpi/Kpi";
 import { Divider } from "../../Components/Divider/Divider";
-import { ProjectSection } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
+import { PortfolioCard, ProjectSection } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { ScrollToTop } from "../../Utils/ScrollToTop";
 import { DocumentDriveModel } from "../DocumentDrive/DocumentDriveModel";
 import { Project2Model } from "../Project2/Project2";
 import { Project3Model } from "../Project3/Project3";
+import { PortfolioHeader } from "../../Components/PortfolioProject/PortfolioProject";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;
@@ -100,11 +101,13 @@ export const Home = () => {
                     </Typography>
                 </div>
 
-                <ProjectSection model={DocumentDriveModel} classname={CSS_CLASS_ROWS_ANIMATION} />
+                <PortfolioCard model={DocumentDriveModel} className={CSS_CLASS_ROWS_ANIMATION} />
 
-                <ProjectSection model={Project2Model} classname={CSS_CLASS_ROWS_ANIMATION} />
 
-                <ProjectSection model={Project3Model} classname={CSS_CLASS_ROWS_ANIMATION} />
+                <PortfolioCard model={Project2Model} className={CSS_CLASS_ROWS_ANIMATION} />
+
+                
+                <PortfolioCard model={Project3Model} className={CSS_CLASS_ROWS_ANIMATION} />
 
 
 

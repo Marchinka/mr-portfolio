@@ -1,7 +1,7 @@
 import "./Tag.scss";
 
 interface Props {
-    color?: "software" | "agile" | "design";
+    color?: "software" | "agile" | "design" | "white" | "black";
     label: any;
 }
 

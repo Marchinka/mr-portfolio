@@ -3,21 +3,20 @@ import { Kpi } from '../../Components/Kpi/Kpi';
 import { ProjectModel } from '../../Utils/ProjectModel';
 
 
-import MdIntro from './Markdown/1-Intro.md';
-import MdAudience from './Markdown/2-Audience.md';
-import MdGovernance from './Markdown/3-Governance.md';
-import MdDesign from './Markdown/4-Design.md';
-import MdEmpathy from './Markdown/5-Empathy.md';
-import MdDefine from './Markdown/6-Define.md';
-import MdIdeate from './Markdown/7-Ideate.md';
-import MdPrototype from './Markdown/8-Prototype.md';
-import MdTest from './Markdown/9-Test.md';
+import MdIntro from './Markdown/Intro.md';
+import MdAudience from './Markdown/Audience.md';
+import MdTimeline from './Markdown/Timeline.md';
+import MdGovernance from './Markdown/Governance.md';
+import MdChallenge from './Markdown/Challenge.md';
+import MdResearch from './Markdown/Research.md';
+import MdSolution from './Markdown/Solution.md';
+import MdFinal from './Markdown/Final.md';
 
 import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
 
 export const DocumentDriveModel: ProjectModel = {
     title: "Document Platform",
-    subTitle: "How might we redeseign a 10-years old document platotform?",
+    subTitle: "How might we redeseign a 10-years old document platform?",
     color: "agile",
     agileTags: [
         "Scrum",
@@ -36,20 +35,30 @@ export const DocumentDriveModel: ProjectModel = {
     ],
     back: "",
     next: "",
-    briefText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    briefText: MdIntro,
     coverImg: DocumentPlatformImg,
-    components: [
-        MdIntro,
-        <DocumentDriveKpis />,
-        MdAudience,
-        <DocumentDriveTeam />,
-        MdGovernance,
-        MdDesign,
-        MdEmpathy,
-        MdDefine,
-        MdIdeate,
-        MdPrototype,
-        MdTest
+    paragraphs: [
+        { title: "Summary", components: [MdIntro, <DocumentDriveKpis />] },
+        { title: "Timeline", components: [MdTimeline] },
+        { title: "Target Audience", components: [MdAudience] },
+        { title: "Team & My Role", components: [<DocumentDriveTeam />, MdGovernance] },
+        { title: "Challenge", components: [MdChallenge] },
+        { title: "Research", components: [MdResearch] },
+        { title: "Solution", components: [MdSolution] },
+        { title: "Final thoughts", components: [MdFinal] }
     ],
+    // paragraphs: [
+    //     MdIntro,
+    //     <DocumentDriveKpis />,
+    //     MdAudience,
+    //     <DocumentDriveTeam />,
+    //     MdGovernance,
+    //     MdDesign,
+    //     MdEmpathy,
+    //     MdDefine,
+    //     MdIdeate,
+    //     MdPrototype,
+    //     MdTest
+    // ],
     route: '/document-drive'
 };
