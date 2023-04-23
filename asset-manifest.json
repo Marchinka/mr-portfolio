@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c48a1929.css",
-    "main.js": "/static/js/main.7a72b3bc.js",
+    "main.css": "/static/css/main.7a690e69.css",
+    "main.js": "/static/js/main.9d150842.js",
     "static/js/787.a4063eb2.chunk.js": "/static/js/787.a4063eb2.chunk.js",
     "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.96349049f4977a817240.pdf",
     "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.004d8b216ce5d2f01e29af3a26c6b70d.svg",
@@ -15,22 +15,21 @@
     "static/media/DocumentPlatform.png": "/static/media/DocumentPlatform.64e5eb7146b26de343da.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/3-Governance.md": "/static/media/3-Governance.57bff85ae8ed9e78e8b1.md",
-    "static/media/6-Define.md": "/static/media/6-Define.7dc914188867b1b4ce12.md",
+    "static/media/Governance.md": "/static/media/Governance.57bff85ae8ed9e78e8b1.md",
+    "static/media/Challenge.md": "/static/media/Challenge.7818673cca86ff0da0fa.md",
     "index.html": "/index.html",
-    "static/media/1-Intro.md": "/static/media/1-Intro.201b1c6ebc1bd06eedb8.md",
-    "static/media/2-Audience.md": "/static/media/2-Audience.4b03aeedd348fb974ec2.md",
-    "static/media/4-Design.md": "/static/media/4-Design.6335f820ad964eeaaa3c.md",
-    "static/media/5-Empathy.md": "/static/media/5-Empathy.c1a439d4122f77edd182.md",
-    "static/media/9-Test.md": "/static/media/9-Test.41de9410e63bf4492100.md",
-    "static/media/8-Prototype.md": "/static/media/8-Prototype.120c8adde9ddd23943d7.md",
-    "static/media/7-Ideate.md": "/static/media/7-Ideate.bf5fa3d87b72798281a0.md",
-    "main.c48a1929.css.map": "/static/css/main.c48a1929.css.map",
-    "main.7a72b3bc.js.map": "/static/js/main.7a72b3bc.js.map",
+    "static/media/Intro.md": "/static/media/Intro.14f9f7f4257fb1503694.md",
+    "static/media/Audience.md": "/static/media/Audience.b89b1e5e5cc0ded026bb.md",
+    "static/media/Solution.md": "/static/media/Solution.fd1c9d2c2668ff6923ba.md",
+    "static/media/Final.md": "/static/media/Final.3531ca273133025b0164.md",
+    "static/media/Timeline.md": "/static/media/Timeline.ef9d6ebdc69b136f4781.md",
+    "static/media/Research.md": "/static/media/Research.31d6cfe0d16ae931b73c.md",
+    "main.7a690e69.css.map": "/static/css/main.7a690e69.css.map",
+    "main.9d150842.js.map": "/static/js/main.9d150842.js.map",
     "787.a4063eb2.chunk.js.map": "/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c48a1929.css",
-    "static/js/main.7a72b3bc.js"
+    "static/css/main.7a690e69.css",
+    "static/js/main.9d150842.js"
   ]
 }
