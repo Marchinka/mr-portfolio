@@ -7,23 +7,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faBuildingWheat, faCode, faGlasses, faGraduationCap, faLocationDot, faMedal, faProcedures, faProjectDiagram, faSchool } from "@fortawesome/free-solid-svg-icons";
 import { faBuilding } from "@fortawesome/free-regular-svg-icons";
 
+// $software: #a54c3c;
+// $agile: #1a6a6a;
+// $design: #557a61;
+
 const colorVariables = {
     black: "#313131",
     muted: "#4B5C71",
     lightGrey: "#5b5b5c",
     background: "#EDEDEE",
     innerColor: "#FFFFFF",
-    software: "#2196F3",
-    agile: "#4CAF50",
-    design: "#673AB7"
+    software: "#a54c3c",
+    agile: "#1a6a6a",
+    design: "#557a61"
 };
 
 const contentBackground = colorVariables.innerColor;
 const iconBackground = colorVariables.background;
 const iconColor = colorVariables.muted;
 const companyBorderColor = colorVariables.agile;
-const experienceBorderColor = colorVariables.software;
-const projectBorderColor = colorVariables.design;
+const experienceBorderColor = colorVariables.design;
+const projectBorderColor = colorVariables.software;
 export const lineColor = "#bfbfbf";
 export const arrowColor = colorVariables.muted;
 
