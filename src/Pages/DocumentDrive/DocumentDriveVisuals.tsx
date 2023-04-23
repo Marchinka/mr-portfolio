@@ -1,5 +1,6 @@
 import { Kpi } from '../../Components/Kpi/Kpi';
 import { TeamElement } from '../../Components/TeamElement/TeamElement';
+import { Typography } from '../../Components/Typography/Typography';
 import { ProjectModel } from '../../Utils/ProjectModel';
 import MdIntro from './1-DocumentDrive-Intro.md';
 import MdBody from './2-DocumentDrive-Body.md';
@@ -37,13 +38,14 @@ export const DocumentDriveKpis = () => {
             
 export const DocumentDriveTeam = () => {
     return <>
+            <Typography type="h4" label="Team and my role"/>
             <div className={"w3-row"}>
                 <div className="w3-col s12 m12 l4">
                     <TeamElement icon='Tie'
                                     type="agile" 
                                     number="1"
                                     title="Scrum Master"
-                                    subTitle="me"/>
+                                    subTitle={<strong className='u agile '>ME</strong>}/>
                 </div>
                 <div className="w3-col s12 m12 l4">
                     <TeamElement  icon='Tie'

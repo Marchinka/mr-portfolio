@@ -18,28 +18,3 @@ export const DocumentDrive = () => {
 
     return <PortfolioProject model={DocumentDriveModel}/>
 }
-export const DocumentDriveGantt = () => {
-    let tasks: Task[] = [
-        {
-          start: new Date(2020, 10, 1),
-          end: new Date(2021, 1, 31),
-          name: 'Ideation & Discovery',
-          id: 'Task 0',
-          type:'task',
-          progress: 100,
-          isDisabled: true,
-          styles: { progressColor: '#313131', progressSelectedColor: '#313131' },
-        },
-        {
-          start: new Date(2020, 11, 1),
-          end: new Date(2021, 2, 27),
-          name: 'Technical Project Preparation',
-          id: 'Task 1',
-          type:'task',
-          progress: 100,
-          isDisabled: true,
-          styles: { progressColor: '#313131', progressSelectedColor: '#313131' },
-        }
-    ];
-    return <Gantt tasks={tasks} viewMode={ViewMode.Month} listCellWidth=""/>
-}

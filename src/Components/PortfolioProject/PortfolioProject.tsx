@@ -20,18 +20,26 @@ export const PortfolioProject = (props: Props) => {
                     <Typography type="p" color="black">
                         <Link className={props.model.color} to={"/"}>Portfolio</Link>&nbsp;
                         <FontAwesomeIcon icon={faAngleRight} className="text light-grey" />&nbsp;
-                        {props.model.subTitle}
+                        {props.model.title}
                     </Typography>
                 </div>
-                <div>
+                {/* <div>
                     {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="agile"/>)}
                     {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="design" />)}
                     {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="software" />)}
-                </div>
+                </div> */}
 
                 <Typography type="h1" color={"black"} className={`title`}>
                     {props.model.title}
                 </Typography>
+                
+                <Typography type="p" color={"muted"}  className={`subTitle`}>
+                    {props.model.subTitle}
+                </Typography>
+                
+                <Divider />
+                <br />
+
                 {props.model.components.map(component => {
                     if (typeof(component) == "string") {
                         return <MarkdownContent url={component} />

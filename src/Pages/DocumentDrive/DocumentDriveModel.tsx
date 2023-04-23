@@ -1,9 +1,18 @@
 import { DocumentDriveKpis, DocumentDriveTeam } from './DocumentDriveVisuals';
 import { Kpi } from '../../Components/Kpi/Kpi';
 import { ProjectModel } from '../../Utils/ProjectModel';
-import MdIntro from './1-DocumentDrive-Intro.md';
-import MdAudienceTeam from './2-DocumentDrive-AudienceTeam.md';
-import MdBody from './3-DocumentDrive-Body.md';
+
+
+import MdIntro from './Markdown/1-Intro.md';
+import MdAudience from './Markdown/2-Audience.md';
+import MdGovernance from './Markdown/3-Governance.md';
+import MdDesign from './Markdown/4-Design.md';
+import MdEmpathy from './Markdown/5-Empathy.md';
+import MdDefine from './Markdown/6-Define.md';
+import MdIdeate from './Markdown/7-Ideate.md';
+import MdPrototype from './Markdown/8-Prototype.md';
+import MdTest from './Markdown/9-Test.md';
+
 import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
 
 export const DocumentDriveModel: ProjectModel = {
@@ -32,9 +41,15 @@ export const DocumentDriveModel: ProjectModel = {
     components: [
         MdIntro,
         <DocumentDriveKpis />,
-        MdAudienceTeam,
+        MdAudience,
         <DocumentDriveTeam />,
-        MdBody
+        MdGovernance,
+        MdDesign,
+        MdEmpathy,
+        MdDefine,
+        MdIdeate,
+        MdPrototype,
+        MdTest
     ],
     route: '/document-drive'
 };

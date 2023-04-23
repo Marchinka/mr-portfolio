@@ -2,7 +2,7 @@
 
 .divider {
     width: 100%;
-    border-top-color: variable.$light-grey;
+    border-top-color: lighten(variable.$light-grey, 30);
     border-top-width: 1px;
     border-top-style: solid;
 }

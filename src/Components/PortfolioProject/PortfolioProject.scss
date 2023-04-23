@@ -8,6 +8,7 @@
         border-bottom-style: solid;
         text-transform: capitalize;
         width: fit-content;
+        margin-bottom: 0;
 
         &.line-software {
             border-bottom-color: variable.$software
@@ -23,8 +24,8 @@
 
     }
 
-    .sub-title {
-        text-transform: uppercase;
+    .subTitle {
+        margin-top: 0;
     }
 
     strong {
