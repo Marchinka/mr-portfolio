@@ -1,7 +1,8 @@
-import { DocumentDriveKpis, DocumentDriveTeam } from './DocumentDriveVisuals';
+import { DocumentDriveHighlights, DocumentDriveKpis, DocumentDrivePersonas, DocumentDriveTeam } from './DocumentDriveVisuals';
 import { Kpi } from '../../Components/Kpi/Kpi';
 import { ProjectModel } from '../../Utils/ProjectModel';
 
+import DocumentumImg from "./../../Images/documentum.png";
 
 import MdIntro from './Markdown/Intro.md';
 import MdAudience from './Markdown/Audience.md';
@@ -13,6 +14,7 @@ import MdSolution from './Markdown/Solution.md';
 import MdFinal from './Markdown/Final.md';
 
 import DocumentPlatformImg from "./../../Images/DocumentPlatform.png";
+import { RefImage } from '../../Components/RefImage/RefImage';
 
 export const DocumentDriveModel: ProjectModel = {
     title: "Document Platform",
@@ -38,14 +40,14 @@ export const DocumentDriveModel: ProjectModel = {
     briefText: MdIntro,
     coverImg: DocumentPlatformImg,
     paragraphs: [
-        { title: "Summary", components: [MdIntro, <DocumentDriveKpis />] },
-        { title: "Timeline", components: [MdTimeline] },
-        { title: "Target Audience", components: [MdAudience] },
-        { title: "Team & My Role", components: [<DocumentDriveTeam />, MdGovernance] },
-        { title: "Challenge", components: [MdChallenge] },
-        { title: "Research", components: [MdResearch] },
-        { title: "Solution", components: [MdSolution] },
-        { title: "Final thoughts", components: [MdFinal] }
+        { title: "", components: [<DocumentDriveHighlights />] },
+        { title: "Challenge", components: [MdIntro, <DocumentDriveKpis />, <RefImage img={DocumentumImg} caption="A screenshot of the old product (it was an instance of D2 documentum)." />] },
+        { title: "Target Audience", components: [<DocumentDrivePersonas />] },
+        { title: "Team & Governance", components: [<DocumentDriveTeam />, MdGovernance] },
+        // { title: "Challenge", components: [MdChallenge] },
+        // { title: "Research", components: [MdResearch] },
+        // { title: "Solution", components: [MdSolution] },
+        // { title: "Final thoughts", components: [MdFinal] }
     ],
     // paragraphs: [
     //     MdIntro,

@@ -25,11 +25,11 @@ export const PortfolioHeader = (props: Props) => {
                     {props.model.subTitle}
                 </Typography>
            
-                <div>
+                {/* <div>
                     {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="white"/>)}
                     {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
                     {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
-                </div>
+                </div> */}
 
             </div>
 

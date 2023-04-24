@@ -128,3 +128,23 @@ body:before {
 .animate__animated.animate__delay-08s {
     animation-delay: 0.8s;
 }
+
+.line {
+    border-bottom-color: transparent;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    width: fit-content;
+
+    &.line-software {
+        border-bottom-color: variable.$software
+    }
+
+    &.line-agile {
+        border-bottom-color: variable.$agile
+    }
+
+    &.line-design {
+        border-bottom-color: variable.$design
+    }
+
+}

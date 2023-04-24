@@ -1,7 +1,6 @@
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { JsxElement } from "typescript";
 import { ProjectModel } from "../../Utils/ProjectModel";
 import { MarkdownContent } from "../MarkdownContent/HtmlContent";
 import { Responsive } from "../Responsive/Responsive";

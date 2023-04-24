@@ -3,19 +3,13 @@ import { HeroSection as HeroSection } from "../../Components/HeroSection/HeroSec
 import { MLogo } from "../../Components/MLogo/MLogo";
 import { Typography } from "../../Components/Typography/Typography";
 import "./Home.scss";
-
-import Project2Img from "./../../Images/Project2.png";
-
 import { Kpi } from "../../Components/Kpi/Kpi";
-import { Divider } from "../../Components/Divider/Divider";
-import { PortfolioCard, ProjectSection } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
-import { useNavigate } from "react-router-dom";
+import { PortfolioCard } from "../../Components/PortfolioProjectCard/PortfolioProjectCard";
 import { useEffect } from "react";
 import { ScrollToTop } from "../../Utils/ScrollToTop";
 import { DocumentDriveModel } from "../DocumentDrive/DocumentDriveModel";
 import { Project2Model } from "../Project2/Project2";
 import { Project3Model } from "../Project3/Project3";
-import { PortfolioHeader } from "../../Components/PortfolioProject/PortfolioProject";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;
