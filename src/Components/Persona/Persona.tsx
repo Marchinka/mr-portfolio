@@ -1,3 +1,4 @@
+import { Card } from "../Card/Card";
 import { Typography } from "../Typography/Typography";
 import "./Persona.scss";
 
@@ -15,27 +16,29 @@ interface Props {
 }
 
 export const Persona = (props: Props) => {
-    return  <div className={`persona persona-${props.color}`}>
-                <div>
-                    <Typography color="black"  type="span" weight="bold" >{props.name}</Typography>
+    return  <Card color={props.color}>
+                <div className={`persona`}>
+                    <div>
+                        <Typography color="black"  type="span" weight="bold" >{props.name}</Typography>
+                    </div>
+                    <div className="persona-img">
+                        <img src={props.img} />
+                    </div>
+                    <div className="description">
+                        <Typography color="black"  type="small" >{props.description}</Typography>
+                    </div>
+                    <div>
+                        <Typography color="black"  type="small" weight="bold" >Pain Points</Typography>
+                        <ul>
+                            {props.painPoints.map(x => <li key={x}><Typography color="black"  type="small" >{x}</Typography></li>)}
+                        </ul>
+                    </div>
+                    <div>
+                        <Typography color="black" type="small" weight="bold">Needs</Typography>
+                        <ul>
+                            {props.goals.map(x => <li key={x}><Typography color="black"  type="small" >{x}</Typography></li>)}
+                        </ul>
+                    </div>
                 </div>
-                <div className="persona-img">
-                    <img src={props.img} />
-                </div>
-                <div className="description">
-                    <Typography color="black"  type="small" >{props.description}</Typography>
-                </div>
-                <div>
-                    <Typography color="black"  type="small" weight="bold" >Pain Points</Typography>
-                    <ul>
-                        {props.painPoints.map(x => <li key={x}><Typography color="black"  type="small" >{x}</Typography></li>)}
-                    </ul>
-                </div>
-                <div>
-                    <Typography color="black" type="small" weight="bold">Needs</Typography>
-                    <ul>
-                        {props.goals.map(x => <li key={x}><Typography color="black"  type="small" >{x}</Typography></li>)}
-                    </ul>
-                </div>
-            </div>
+            </Card>
 }

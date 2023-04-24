@@ -1,0 +1,22 @@
+@use "../../Variables.scss" as variable;
+
+.card {
+    padding: 16px;
+    margin: 12px;
+    background-color: variable.$inner-color;
+    box-shadow: 0 3px 0 #ddd;
+    border-radius: 0.25em;
+    border-top: 4px solid transparent;
+
+    &.card-software {
+        border-top-color: variable.$software;
+    }
+
+    &.card-agile {
+        border-top-color: variable.$agile;
+    }
+
+    &.card-design {
+        border-top-color: variable.$design;
+    }
+}

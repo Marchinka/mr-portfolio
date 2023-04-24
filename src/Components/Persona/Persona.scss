@@ -1,29 +1,6 @@
 @use "../../Variables.scss" as variable;
 
 .persona {
-    padding: 16px;
-    margin: 12px;
-    background-color: variable.$inner-color;
-    box-shadow: 0 3px 0 #ddd;
-    border-radius: 0.25em;
-    border-top: 4px solid transparent;
-
-    &.persona-software {
-        border-top-color: variable.$software;
-    }
-
-    &.persona-agile {
-        border-top-color: variable.$agile;
-    }
-
-    &.persona-design {
-        border-top-color: variable.$design;
-    }
-
-    .description {
-        margin-bottom: 4px;
-    }
-
     .persona-img {
         padding: 32px;
         background: variable.$background;

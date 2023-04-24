@@ -76,7 +76,7 @@ export const DocumentDrivePersonas = () => {
             <div className="w3-col s12 m12 l4">
                 <Persona name='Operational Geologist'
                         color="agile"
-                        description="Scrum Master, coordinating developers and designers."
+                        description="Reservoir, geology or seismic expert. He uses the platform for recovering and consult operational procedures, company guidelines or study of previous projects."
                         painPoints={[
                             "Obsolete user interface",
                             "Missing functionalities"
@@ -90,7 +90,7 @@ export const DocumentDrivePersonas = () => {
             <div className="w3-col s12 m12 l4">
                 <Persona name='Geology Department Manager'
                         color="software"
-                        description="Scrum Master, coordinating developers and designers."
+                        description="Responsible for a whole proessional area of geologists. He manages and organize people and process and uses the platform as areferences point for all procedures."
                         painPoints={[
                             "Onboarding process on the platform for new users is time consuming"
                         ]}
@@ -103,7 +103,7 @@ export const DocumentDrivePersonas = () => {
             <div className="w3-col s12 m12 l4">
                 <Persona name='ICT Admin'
                         color="design"
-                        description="Scrum Master, coordinating developers and designers."
+                        description="Platform admin, responsible for addressing problems and make the evolution fo the product both substainable and in respect of the end users needs."
                         painPoints={[
                             "Bad and overcomplicated profile management",
                             "Frequent helpdesk support for unclear unser experience"
