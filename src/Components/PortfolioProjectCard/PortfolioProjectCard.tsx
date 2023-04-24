@@ -1,4 +1,5 @@
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
+import { faAngleRight, faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { ProjectModel } from "../../Utils/ProjectModel";
@@ -17,10 +18,10 @@ interface Props {
 
 export const PortfolioCard = (props: Props) => {
     return <Link className={`portfolio-card ${props.model.color} ${props.className}`}  to={props.model.route}>
-               <Card color={props.model.color} className="project-content">
+               {/* <Card color={props.model.color} className="project-content"> */}
                     <div>
                         <Typography type="h4" color={"black"} className={`title`}>
-                            {props.model.title}
+                            <span className="square"></span>{props.model.title}
                         </Typography>
                         <Typography type="span" color={"muted"} className={`subTitle`}>
                             {props.model.subTitle}
@@ -32,21 +33,24 @@ export const PortfolioCard = (props: Props) => {
                         </div>
                     </div>
             
-                    <RefImage img={props.model.coverImg} />
+                    {/* <RefImage img={props.model.coverImg} /> */}
                     {/* <img src={props.model.coverImg} alt="M" style={{width: "100%"}} /> */}
                     <div className="content">
                         {props.model.briefText && <MarkdownContent url={props.model.briefText} />}
                         {!props.model.briefText && <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>}
                     </div>
                     
-                    <Responsive displayOn="mobile">
+                    {/* <Responsive displayOn="mobile"> */}
                         <div className="link">
-                            <button className={`w3-button w3-white w3-round w3-mr-lifted`}> 
-                                    View Project <FontAwesomeIcon icon={faAngleRight} className={`text ${props.model.color}`}/> 
-                            </button>
+                            {/* <button className={`w3-button w3-white w3-round w3-mr-lifted`}> 
+                                View Project &nbsp; <FontAwesomeIcon icon={faArrowRightLong} className={`text ${props.model.color}`}/> 
+                            </button> */}
+                            <Link  to={props.model.route}> 
+                                    View Project &nbsp; <FontAwesomeIcon icon={faArrowRightLong} className={`text ${props.model.color}`}/> 
+                            </Link>
                         </div>
-                    </Responsive>
-                </Card>
+                    {/* </Responsive> */}
+                {/* </Card> */}
             </Link>
 
 }

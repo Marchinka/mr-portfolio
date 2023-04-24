@@ -10,6 +10,7 @@ import { ScrollToTop } from "../../Utils/ScrollToTop";
 import { DocumentDriveModel } from "../DocumentDrive/DocumentDriveModel";
 import { Project2Model } from "../Project2/Project2";
 import { Project3Model } from "../Project3/Project3";
+import { Divider } from "../../Components/Divider/Divider";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;
@@ -95,14 +96,18 @@ export const Home = () => {
                     </Typography>
                 </div>
 
+<div>
                 <PortfolioCard model={DocumentDriveModel} className={CSS_CLASS_ROWS_ANIMATION} />
-
+                <Divider />
 
                 <PortfolioCard model={Project2Model} className={CSS_CLASS_ROWS_ANIMATION} />
 
+                <Divider />
                 
                 <PortfolioCard model={Project3Model} className={CSS_CLASS_ROWS_ANIMATION} />
 
+</div>
+                
 
 
                 {/* <ProjectSection title={"Project 2"}  color="software" route="/"
