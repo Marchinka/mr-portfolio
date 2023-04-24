@@ -10,6 +10,10 @@
         width: fit-content;
         margin-bottom: 0;
 
+        h1,h2,h3,h4,h5,h6 {
+            margin-bottom: 0;
+        }
+
         &.line-software {
             border-bottom-color: variable.$software
         }
@@ -26,6 +30,7 @@
 
     .subTitle {
         margin-top: 0;
+        margin-bottom: 12px;
     }
 
     strong {

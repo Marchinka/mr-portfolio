@@ -2,7 +2,9 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { ProjectModel } from "../../Utils/ProjectModel";
+import { Card } from "../Card/Card";
 import { MarkdownContent } from "../MarkdownContent/HtmlContent";
+import { RefImage } from "../RefImage/RefImage";
 import { Responsive } from "../Responsive/Responsive";
 import { Tag } from "../Tag/Tag";
 import { Typography } from "../Typography/Typography";
@@ -15,34 +17,36 @@ interface Props {
 
 export const PortfolioCard = (props: Props) => {
     return <Link className={`portfolio-card ${props.model.color} ${props.className}`}  to={props.model.route}>
-               
-                <Typography type="h3" color={"black"} className={`title line-${props.model.color}`}>
-                    {props.model.title}
-                </Typography>
-                <Typography type="h5" color={"muted"} className={`subTitle`}>
-                    {props.model.subTitle}
-                </Typography>
-           
-                <div>
-                    {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="white"/>)}
-                    {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
-                    {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
-                </div>
-
-                <div className="content">
-                    {props.model.briefText && <MarkdownContent url={props.model.briefText} />}
-                    {!props.model.briefText && <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>}
-                </div>
-                
-                <Responsive displayOn="mobile">
-                    <div className="link">
-                        <button className={`w3-button w3-white w3-round w3-mr-lifted`}> 
-                                View Project <FontAwesomeIcon icon={faAngleRight} className={`text ${props.model.color}`}/> 
-                        </button>
+               <Card color={props.model.color} className="project-content">
+                    <div>
+                        <Typography type="h4" color={"black"} className={`title`}>
+                            {props.model.title}
+                        </Typography>
+                        <Typography type="span" color={"muted"} className={`subTitle`}>
+                            {props.model.subTitle}
+                        </Typography>
+                        <div>
+                            {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="white"/>)}
+                            {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
+                            {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
+                        </div>
                     </div>
-                </Responsive>
-                {/* <img src={props.model.coverImg} alt="M" style={{width: "100%"}} /> */}
-
+            
+                    <RefImage img={props.model.coverImg} />
+                    {/* <img src={props.model.coverImg} alt="M" style={{width: "100%"}} /> */}
+                    <div className="content">
+                        {props.model.briefText && <MarkdownContent url={props.model.briefText} />}
+                        {!props.model.briefText && <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>}
+                    </div>
+                    
+                    <Responsive displayOn="mobile">
+                        <div className="link">
+                            <button className={`w3-button w3-white w3-round w3-mr-lifted`}> 
+                                    View Project <FontAwesomeIcon icon={faAngleRight} className={`text ${props.model.color}`}/> 
+                            </button>
+                        </div>
+                    </Responsive>
+                </Card>
             </Link>
 
 }

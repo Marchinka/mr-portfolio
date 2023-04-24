@@ -5,12 +5,13 @@ type Type = "software" | "agile" | "design";
 type IconType = "Tie" | "User" | "Mob";
 
 interface Props { 
-    color: Type;
+    color: Type | string;
     children: any;
+    className?: string;
 }
 
 export const Card = (props: Props) => {
-    return  <div className={`card card-${props.color}`}>
+    return  <div className={`card card-${props.color} ${props.className}`}>
                 {props.children}
             </div>
 }

@@ -7,7 +7,7 @@ import Project2Img from "./../../Images/Project2.png";
 export const Project2Model: ProjectModel = {
     title: "Project2",
     subTitle: "Lorem ipsum dolor sit amet",
-    color: "design",
+    color: "software",
     agileTags: [
         "Test", "Test"
     ],

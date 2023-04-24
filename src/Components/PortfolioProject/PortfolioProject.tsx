@@ -17,19 +17,22 @@ interface Props {
 
 export const PortfolioHeader = (props: Props) => {
     return <div className={props.className}>
-                <Typography type="h1" color={"black"} className={`title`}>
-                    {props.model.title}
-                </Typography>
-                
-                <Typography type="p" color={"muted"}  className={`subTitle`}>
-                    {props.model.subTitle}
-                </Typography>
+                <div className={`title`}>
+                    <Typography type="h2" color={"black"} >
+                        {props.model.title}
+                    </Typography>
+                </div>
+                <div className={`subTitle`}>
+                    <Typography type="span" color={"muted"}>
+                        {props.model.subTitle}
+                    </Typography>
+                </div>
            
-                {/* <div>
+                <div>
                     {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="white"/>)}
                     {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
                     {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
-                </div> */}
+                </div>
 
             </div>
 

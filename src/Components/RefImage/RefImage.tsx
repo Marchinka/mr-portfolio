@@ -5,15 +5,15 @@ type Type = "software" | "agile" | "design";
 type IconType = "Tie" | "User" | "Mob";
 
 interface Props { 
-    caption: string, 
+    caption?: string, 
     img: string
 }
 
 export const RefImage = (props: Props) => {
     return  <div className="ref-image">
                 <img src={props.img} />
-                <div className="caption">
+                {props.caption && <div className="caption">
                     <Typography>{props.caption}</Typography>
-                </div>
+                </div>}
             </div>
 }

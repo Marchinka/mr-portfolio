@@ -1,7 +1,13 @@
 @use "../../Variables.scss" as variable;
 
 .portfolio-card {
-    
+    .project-content {
+        padding: 12px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
     width: 100%;
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
@@ -74,6 +80,13 @@
     &:hover .line-design {
         border-bottom-color: variable.$design
     }
+
+    .link {
+        padding-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .project-section {
@@ -113,8 +126,7 @@
     }
 
     .link {
-        margin-top: 24px;
-        margin-bottom: 24px;
+        padding-bottom: 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
