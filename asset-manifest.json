@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5a9431e.css",
-    "main.js": "/static/js/main.79f79565.js",
+    "main.css": "/static/css/main.ac9641b8.css",
+    "main.js": "/static/js/main.03129b76.js",
     "static/js/787.a4063eb2.chunk.js": "/static/js/787.a4063eb2.chunk.js",
     "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.96349049f4977a817240.pdf",
     "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.c7231f4b226b00d565f69d1b2faa8793.svg",
@@ -10,26 +10,24 @@
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Project2.png": "/static/media/Project2.987f9413cc37038aca5f.png",
     "static/media/background_1.jpg": "/static/media/background_1.6183dad59b531f072b5f.jpg",
+    "static/media/documentum.png": "/static/media/documentum.ffebf80e14b653f9ce22.png",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/DocumentPlatform.png": "/static/media/DocumentPlatform.64e5eb7146b26de343da.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/Governance.md": "/static/media/Governance.57bff85ae8ed9e78e8b1.md",
-    "static/media/Challenge.md": "/static/media/Challenge.7818673cca86ff0da0fa.md",
+    "static/media/Operational_Geologist.svg": "/static/media/Operational_Geologist.6febbc67d747deed9b36407a7da26c5c.svg",
+    "static/media/HQ_Geologist.svg": "/static/media/HQ_Geologist.22d59f8d278db7b38fdbed22df48498b.svg",
+    "static/media/ICT_Admin.svg": "/static/media/ICT_Admin.5d733052efe48eb21b6fc29b42fcd43f.svg",
+    "static/media/Governance.md": "/static/media/Governance.2eae916a54e136fb1b6a.md",
     "index.html": "/index.html",
-    "static/media/Intro.md": "/static/media/Intro.14f9f7f4257fb1503694.md",
-    "static/media/Audience.md": "/static/media/Audience.b89b1e5e5cc0ded026bb.md",
-    "static/media/Solution.md": "/static/media/Solution.fd1c9d2c2668ff6923ba.md",
-    "static/media/Final.md": "/static/media/Final.3531ca273133025b0164.md",
-    "static/media/Timeline.md": "/static/media/Timeline.ef9d6ebdc69b136f4781.md",
-    "static/media/Research.md": "/static/media/Research.31d6cfe0d16ae931b73c.md",
-    "main.d5a9431e.css.map": "/static/css/main.d5a9431e.css.map",
-    "main.79f79565.js.map": "/static/js/main.79f79565.js.map",
+    "static/media/Intro.md": "/static/media/Intro.9b7f921baa6c7d5d1c0e.md",
+    "main.ac9641b8.css.map": "/static/css/main.ac9641b8.css.map",
+    "main.03129b76.js.map": "/static/js/main.03129b76.js.map",
     "787.a4063eb2.chunk.js.map": "/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5a9431e.css",
-    "static/js/main.79f79565.js"
+    "static/css/main.ac9641b8.css",
+    "static/js/main.03129b76.js"
   ]
 }

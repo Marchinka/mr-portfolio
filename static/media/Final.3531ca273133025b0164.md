@@ -1,1 +1,0 @@
-- Portare dei KPi numerici di misura dell'uso della piattaforma
