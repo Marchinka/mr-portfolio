@@ -49,17 +49,9 @@ export const timelineEvents: EventProps[] = [
         contentBackgroundColor: contentBackground,
         date: "2020 - present",
         title: `Deputy Practice Manager`,
-        content: `I am a Team Leader in Techedge’s Mobile & Cloud department. 
-        I am responsible for architectural design on the Azure platform, and I 
-        personally handle relationships with Microsoft. In this contest, I take 
-        care of cloud certification paths, both for single individuals and 
-        company-related ones, such as Microsoft partnership and advanced 
-        specialization.
-        As a project manager, I administrate all project phases, from pre-sales to 
-        analysis and budget administration to technical implementation.
-        Concerning the team, I lead a group of thirty people that I personally 
-        interviewed and for whom I am responsible in terms of technical training 
-        and personal mentorship. I manage external contractors as well.`,
+        content: `I currently work as a team Leader in Techedge's Mobile & Cloud department. I am a senior full-stack developer, and I am also responsible for designing applications (both technically and functionally), project management, supervising project budgets, and conceiving cloud architectures. 
+        Finally, I lead a team of 30 people, for whom I am responsible in terms of technical training and personal mentorship.
+        I am a  fervent sustainer of agile project management, a passionate software developer, and a strong believer in the importance of interdisciplinarity.`,
         icon: <FontAwesomeIcon icon={faBriefcase} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
@@ -126,8 +118,7 @@ export const timelineEvents: EventProps[] = [
         contentBackgroundColor: contentBackground,
         date: "2011 - 2014",
         title: `Master's Degree in Physics`,
-        content: `Theoretical physics, computational calculus and Monte Carlo simulations, advanced statistics,
-        computer molecular dynamics, study of stochastic processes, Markov chains and statistical mechanics. Degree: 109/110.`,
+        content: `Theoretical physics, computational calculus and Monte Carlo simulations, advanced statistics, computer molecular dynamics, study of stochastic processes, Markov chains, and statistical mechanics. Degree: 109/110.`,
         icon: <FontAwesomeIcon icon={faGraduationCap} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
@@ -162,6 +153,7 @@ export const projectEvents: EventProps[] = [
             <li>Learning and training (both internal and external) aiming to follow 
         people on their cloud certification path.</li>
             <li>Evangelization of DevOps practices.</li>
+            <li>DesignOps.</li>
         </ul></span>,
         icon: <FontAwesomeIcon icon={faCode} />,
         iconColor: iconColor,
@@ -171,9 +163,8 @@ export const projectEvents: EventProps[] = [
         date: "2019 - present",
         contentBorderColor: projectBorderColor,
         contentBackgroundColor: contentBackground,
-        title: `Eni E&P - journey to the cloud and digital transformation`,
-        content: `Along with my previous experience as a Technical Team Leader for Eni E&P (technical and scientific department, related to drilling digital processes), I and my team contributed to leading the customer through a digital transformation process and cloud adoption path. Via the implementation of more than ten new applications based on 
-        cloud-native approaches and best practices, we achieved cost reduction and strategic enhancement of our customer processes. The technological stack involved in the implementation of this process includes Microsoft Azure cloud-native services, a microservices approach based on Kubernetes, react.js, node.js, C#, and MongoDB.`,
+        title: `Eni E&P - journey to cloud and digital transformation`,
+        content: `Along with my previous experience as a Technical Team Leader for Eni E&P (technical and scientific department, related to drilling digital processes), my team and I contributed to leading the customer through a digital transformation process and cloud adoption path. Via the implementation of more than ten new applications based on cloud-native approaches and best practices, we achieved cost reduction and strategic enhancement of our customer processes. The technological stack involved in the implementation of this process includes Microsoft Azure cloud-native services, a microservices approach based on Kubernetes, react.js, node.js, C#, and MongoDB.`,
         icon: <FontAwesomeIcon icon={faCode} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
@@ -183,11 +174,7 @@ export const projectEvents: EventProps[] = [
         contentBorderColor: projectBorderColor,
         contentBackgroundColor: contentBackground,
         title: `Document Platform`,
-        content: <span>Docware Platform is the new Eni document repository reference platform for the Exploration and Production department.
-        Objective of the new application is the creation of a brand-new document platform, based on MS Azure Cloud-native technologies, that 
-        can be grown over time to become a reference point for knowledge sharing for drilling, exploration, geosciences, and several others.
-        Docware Drive implements a complex permission model, several libraries, approval and review workflows and an advanced full-text 
-        search functionality based on MS Azure Cognitive services.
+        content: <span>Document Platform is the new document repository reference platform for the Exploration and Production department of a major Italian energy company. The objective of the new application is the creation of a brand-new document platform, based on MS Azure Cloud-native technologies, that can be grown over time to become a reference point for knowledge sharing for drilling, exploration, geosciences, and several others. Docware Drive implements a complex permission model, several libraries, approval and review workflows, and an advanced full-text search functionality based on MS Azure Cognitive services.
         <ul>
             <li>600k documents</li>
             <li>25 TB of data stored on the cloud</li>
@@ -203,9 +190,7 @@ export const projectEvents: EventProps[] = [
         contentBorderColor: projectBorderColor,
         contentBackgroundColor: contentBackground,
         title: `Luxottica Store360 Platform`,
-        content: `Analysis and implementation for the solution architecture of a worldwide internet platform connecting corporate and store users of 
-        the Luxottica group. The whole platform uses a micro frontend approach based on react.js and single-spa, and a microservices approach based on 
-        Kubernetes and node.js solutions. As database, both relational (Microsoft SQL Server) and non-relational (MongoDb) paradigms are used.`,
+        content: `Analysis and implementation for the solution architecture of a worldwide internet platform connecting more than 2.000 corporate and store users of the Luxottica group. The whole platform uses a micro frontend approach based on react.js and single-spa, and a microservices approach based on Kubernetes and node.js solutions. As a database, both relational (Microsoft SQL Server) and non-relational (MongoDb) paradigms are used.`,
         icon: <FontAwesomeIcon icon={faCode} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
@@ -215,8 +200,7 @@ export const projectEvents: EventProps[] = [
         contentBorderColor: projectBorderColor,
         contentBackgroundColor: contentBackground,
         title: `Engineer Design & Development Reimbursement Simulation`,
-        content: `Tool for Engineer Design & Development (ED&D) reimbursement simulation. The end-users of the ED&D Simulator use this instrument for 
-        what-if simulations and scenario analysis. The application is developed with a microservice architecture with python, React.js, node.js, and MySQL.`,
+        content: `Tool for Engineer Design & Development (ED&D) reimbursement simulation. The end-users of the ED&D Simulator use this instrument for what-if simulations and scenario analysis for payment plans of spare parts in the automotive sector. The application is developed with a microservice architecture with python, React.js, node.js, and MySQL.`,
         icon: <FontAwesomeIcon icon={faCode} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
@@ -226,7 +210,7 @@ export const projectEvents: EventProps[] = [
         contentBorderColor: projectBorderColor,
         contentBackgroundColor: contentBackground,
         title: `Eni E&P - Ecosystem of 24 Java and .NET applications`,
-        content: `The enormous amount and complexity of data for the business domain of Exploration and Production demands a strong digital infrastructure. As project manager and solution architect, I lead a team dedicated to the evolution and maintenance of twenty-four applications with the sole purpose of dealing with all the phases of the E&P department, from mineral certification, concessions, well registration and dismission, production monitoring, and drilling simulations.`,
+        content: `The enormous amount and complexity of data for the business domain of Exploration and Production demand a strong digital infrastructure. As project manager and solution architect, I lead a team dedicated to the evolution and maintenance of twenty-four applications with the sole purpose of dealing with all the phases of the E&P department, from mineral certification, concessions, well registration and dismission, production monitoring, and drilling simulations.`,
         icon: <FontAwesomeIcon icon={faCode} />,
         iconColor: iconColor,
         iconBackgroundColor: iconBackground
@@ -263,7 +247,7 @@ export const projectEvents: EventProps[] = [
         content: `Online baking project management activities and coordination of 
         activities related to the application life cycle. Responsible for the annual 
         release plan, incident, problem and disaster Recovery, load, and 
-        penetration tests and management of public-facing internet 
+        penetration tests, and management of public-facing internet 
         applications.`,
         icon: <FontAwesomeIcon icon={faCode} />,
         iconColor: iconColor,

@@ -31,8 +31,13 @@ export const Home = () => {
                                         Marcello Rossi
                                     </Typography>
                                     <Typography type="p" className="animate__animated animate__bounceInRight animate__delay-04s">
-                                        I consider myself an M-shaped person: my areas of expertise are <Typography type="span" color="software" weight="bold">Software Development</Typography>, <Typography type="span" color="agile" weight="bold">Agile Project Managament</Typography> and <Typography type="span" color="design" weight="bold">User Experience Design</Typography>.
+                                        M-shaped person.
+                                        <div>
+                                        My areas of expertise are <Typography type="span" color="software" weight="bold">Software Development</Typography>, <Typography type="span" color="agile" weight="bold">Agile Project Managament</Typography> and <Typography type="span" color="design" weight="bold">User Experience Design</Typography>.
+                                        </div>
+                                        <div>
                                         Beside work I am a passionate yoga practitioner, theater enthusiast and japanese culture lover.
+                                        </div>
                                     </Typography>
                                 </div>} />
 
@@ -58,34 +63,26 @@ export const Home = () => {
                 </div>
 
                 <div className={CSS_CLASS_ROWS_ANIMATION}>
-                    <div className="w3-col s12 m6 l3">
+                    <div className="w3-col s12 m6 l4">
                         <Kpi 
-                                    type="agile" 
-                                    kpi="8"
+                                    type="software" 
+                                    kpi="10"
                                     title="Years"
                                     subTitle="work experience in IT projects"/>
                     </div>
-                    <div className="w3-col s12 m6 l3">
+                    <div className="w3-col s12 m6 l4">
                         <Kpi 
                                 type="design" 
-                                kpi="3"
-                                title="Areas of Expertise"
-                                subTitle="programming, agile and design"/>
+                                kpi="30"
+                                title="People"
+                                subTitle="in the team I currently manage"/>
                     </div>
-                    <div className="w3-col s12 m6 l3">
-                        <Kpi 
-                                type="software" 
-                                kpi="24"
-                                title="Projects"
-                                subTitle="followed during in my whole career"/>
-
-                    </div>
-                    <div className="w3-col s12 m6 l3">
+                    <div className="w3-col s12 m6 l4">
                         <Kpi 
                                 type="agile" 
                                 kpi="12"
                                 title="Certifications"
-                                subTitle={<span>between cloud, agile and design <Typography weight="bold">(click to show)</Typography></span>}/>
+                                subTitle={<span>between cloud, agile and design {/*<Typography weight="bold">(click to show)</Typography>*/}</span>}/>
 
                     </div>
                 </div>
