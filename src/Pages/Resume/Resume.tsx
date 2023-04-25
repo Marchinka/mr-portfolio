@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faArrowAltCircleLeft, faEnvelope, faSpinner  } from "@fortawesome/free-solid-svg-icons";
 import { ScrollToTop } from "../../Utils/ScrollToTop";
+import { Flex } from "../../Components/Flex/Flex";
 
 export const Resume = () => {
     const [loaded, setLoaded] = useState(false);
@@ -19,17 +20,20 @@ export const Resume = () => {
                 {!loaded && <div className="loader">
                     <FontAwesomeIcon icon={faSpinner} spin={true} size="6x" className="text muted"/>
                 </div>}
+                <Flex justify="center" align="center" >
+                        <button className={`w3-button w3-round w3-mr-lifted ${page == 2 ? "w3-white" : "w3-mr-black"}`} onClick={() => setPage(1)}>Page 1</button>
+                        &nbsp;&nbsp;&nbsp;
+                        <button className={`w3-button w3-round w3-mr-lifted  ${page == 1 ? "w3-white" : "w3-mr-black"}`} onClick={() => setPage(2)}>Page 2</button>
+                    </Flex>
+                    <br />
                 <div style={{display: loaded ? "block" : "none"}}>
-                    <div className="pager">
-                        <button onClick={() => setPage(1)}><FontAwesomeIcon icon={faAngleLeft} /></button>
-                        <span>Page {page}&nbsp;/&nbsp;2</span>{}
-                        <button onClick={() => setPage(2)}><FontAwesomeIcon icon={faAngleRight} /></button>
-                    </div>
                     <div className="container">
                         <img style={{ display: page == 1 ? "block" : "none" }}src={MR_CV_1_svg} onLoad={e => setLoaded(true)}/>
                         <img style={{ display: page == 2 ? "block" : "none" }}src={MR_CV_2_svg} onLoad={e => setLoaded(true)}/>
                         {/* <iframe src={CurriculumVitaePdf} /> */}
                     </div>
+                    
+
 
                     <div className="download-area">
                         <a className={`w3-button w3-large w3-mr-black w3-round w3-mr-lifted`}

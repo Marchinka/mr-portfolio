@@ -1,6 +1,6 @@
 import "./Flex.scss";
 
-type FlexJustify = "space-between" | "space-around";
+type FlexJustify = "space-between" | "space-around" | "center";
 type FlexAlign = "center" | "flex-start" | "flex-end"
 
 export const Flex = (props: { children: any, justify: FlexJustify, align: FlexAlign, gap?: number }) => {
@@ -8,7 +8,8 @@ export const Flex = (props: { children: any, justify: FlexJustify, align: FlexAl
         display: "flex",
         alignItems: props.align,
         justifyContent: props.justify,
-        gap: `${props.gap}px`
+        gap: `${props.gap}px`,
+        width: "100%"
     };
 
     return <div style={style}>{props.children}</div>
