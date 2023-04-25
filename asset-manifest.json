@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a78418fc.css",
-    "main.js": "/static/js/main.b040ac25.js",
+    "main.js": "/static/js/main.e33b0f69.js",
     "static/js/787.a4063eb2.chunk.js": "/static/js/787.a4063eb2.chunk.js",
     "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.96349049f4977a817240.pdf",
     "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.c7231f4b226b00d565f69d1b2faa8793.svg",
@@ -23,11 +23,11 @@
     "index.html": "/index.html",
     "static/media/Intro.md": "/static/media/Intro.9b7f921baa6c7d5d1c0e.md",
     "main.a78418fc.css.map": "/static/css/main.a78418fc.css.map",
-    "main.b040ac25.js.map": "/static/js/main.b040ac25.js.map",
+    "main.e33b0f69.js.map": "/static/js/main.e33b0f69.js.map",
     "787.a4063eb2.chunk.js.map": "/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a78418fc.css",
-    "static/js/main.b040ac25.js"
+    "static/js/main.e33b0f69.js"
   ]
 }
