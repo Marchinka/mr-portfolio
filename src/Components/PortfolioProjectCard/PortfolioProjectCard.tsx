@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { ProjectModel } from "../../Utils/ProjectModel";
 import { Card } from "../Card/Card";
+import { Flex } from "../Flex/Flex";
 import { MarkdownContent } from "../MarkdownContent/HtmlContent";
 import { RefImage } from "../RefImage/RefImage";
 import { Responsive } from "../Responsive/Responsive";
@@ -16,42 +17,72 @@ interface Props {
     className: string;
 }
 
-export const PortfolioCard = (props: Props) => {
-    return <Link className={`portfolio-card ${props.model.color} ${props.className}`}  to={props.model.route}>
-               {/* <Card color={props.model.color} className="project-content"> */}
-                    <div>
-                        <Typography type="h4" color={"black"} className={`title`}>
-                            <span className="square"></span>{props.model.title}
-                        </Typography>
-                        <Typography type="span" color={"muted"} className={`subTitle`}>
-                            {props.model.subTitle}
-                        </Typography>
-                        <div>
-                            {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="white"/>)}
-                            {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
-                            {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
-                        </div>
-                    </div>
-            
-                    {/* <RefImage img={props.model.coverImg} /> */}
-                    {/* <img src={props.model.coverImg} alt="M" style={{width: "100%"}} /> */}
-                    <div className="content">
-                        {props.model.briefText && <MarkdownContent url={props.model.briefText} />}
-                        {!props.model.briefText && <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>}
-                    </div>
-                    
-                    {/* <Responsive displayOn="mobile"> */}
-                        <div className="link">
-                            {/* <button className={`w3-button w3-white w3-round w3-mr-lifted`}> 
-                                View Project &nbsp; <FontAwesomeIcon icon={faArrowRightLong} className={`text ${props.model.color}`}/> 
-                            </button> */}
-                            <Link  to={props.model.route}> 
+
+export const PortfolioCardLink = (props: Props) => {
+    return <div className="link">
+                                <button className={`w3-button w3-white w3-round w3-mr-lifted`}> 
                                     View Project &nbsp; <FontAwesomeIcon icon={faArrowRightLong} className={`text ${props.model.color}`}/> 
-                            </Link>
+                                </button>
                         </div>
-                    {/* </Responsive> */}
-                {/* </Card> */}
+};
+
+export const PortfolioCardTextPart = (props: Props) => {
+    return <>
+                        <div>
+                            <Typography type="h4" color={props.model.color} className={`title`}>
+                                {props.model.title}
+                            </Typography>
+                            <Typography type="small" color={"muted"} className={`subTitle`} transform="uppercase">
+                                {props.model.subTitle}
+                            </Typography>
+                            {/* <div>
+                                {props.model.agileTags.map(tag => <Tag key={tag} label={tag} color="white"/>)}
+                                {props.model.designTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
+                                {props.model.softwareTags.map(tag => <Tag key={tag} label={tag} color="white" />)}
+                            </div> */}
+                        </div>
+                
+                        <div className="content">
+                            {props.model.briefText && <MarkdownContent url={props.model.briefText} />}
+                            {!props.model.briefText && <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>}
+                        </div>
+                    </>
+};
+
+export const PortfolioCardMobile = (props: Props) => {
+    return <Link className={`portfolio-card ${props.model.color} ${props.className}`}  to={props.model.route}>
+                <PortfolioCardTextPart {...props} />
+                <RefImage img={props.model.coverImg} />
+                <br />
+                <PortfolioCardLink  {...props} />
             </Link>
+
+}
+
+export const PortfolioCardDesktop = (props: Props) => {
+    return <Link className={`portfolio-card ${props.model.color} ${props.className}`}  to={props.model.route}>
+                <Flex justify="space-between" align="center" gap={64}>
+                    <div style={{width: "30%"}}>
+                        <PortfolioCardTextPart {...props} />
+                        <br />
+                        <PortfolioCardLink  {...props} />
+                    </div>
+                    <div style={{width: "70%"}}>
+                        <RefImage img={props.model.coverImg} />
+                    </div>
+                </Flex>
+            </Link>
+
+}
+export const PortfolioCard = (props: Props) => {
+    return  <>
+                <Responsive displayOn="mobile">
+                    <PortfolioCardMobile {...props}/>
+                </Responsive>
+                <Responsive displayOn="desktop">
+                    <PortfolioCardDesktop {...props}/>
+                </Responsive>
+            </>
 
 }
 

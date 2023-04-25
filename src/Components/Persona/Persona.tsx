@@ -25,20 +25,22 @@ export const Persona = (props: Props) => {
                         <img src={props.img} />
                     </div>
                     <div className="description">
-                        <Typography color="black"  type="small" >{props.description}</Typography>
+                        <Typography color="black"  type="p" >{props.description}</Typography>
                     </div>
                     <div>
-                        <Typography color="black"  type="small" weight="bold" >Pain Points</Typography>
+                        <Typography color="black"  type="span" weight="bold" >Pain Points</Typography>
                         <ul>
-                            {props.painPoints.map(x => <li key={x}><Typography color="black"  type="small" >{x}</Typography></li>)}
+                            {props.painPoints.map(x => <li key={x}><Typography color="black"  type="span" >{x}</Typography></li>)}
                         </ul>
                     </div>
+                    <br />
                     <div>
-                        <Typography color="black" type="small" weight="bold">Needs</Typography>
+                        <Typography color="black" type="span" weight="bold">Needs</Typography>
                         <ul>
-                            {props.goals.map(x => <li key={x}><Typography color="black"  type="small" >{x}</Typography></li>)}
+                            {props.goals.map(x => <li key={x}><Typography color="black"  type="span" >{x}</Typography></li>)}
                         </ul>
                     </div>
+                    
                 </div>
             </Card>
 }

@@ -73,6 +73,7 @@
     .content {
         font-size: variable.$small-size!important;
         color: variable.$black!important;
+        p { margin-bottom: 0px; }
     }
 
     .title {

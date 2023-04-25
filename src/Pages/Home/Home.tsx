@@ -96,7 +96,6 @@ export const Home = () => {
                     </Typography>
                 </div>
 
-<div>
                 <PortfolioCard model={DocumentDriveModel} className={CSS_CLASS_ROWS_ANIMATION} />
                 <Divider />
 
@@ -105,11 +104,7 @@ export const Home = () => {
                 <Divider />
                 
                 <PortfolioCard model={Project3Model} className={CSS_CLASS_ROWS_ANIMATION} />
-
-</div>
-                
-
-
+             
                 {/* <ProjectSection title={"Project 2"}  color="software" route="/"
                                 subTitle={"DOCUMENT REPOSITORY REDESIGN"}
                                 classname={CSS_CLASS_ROWS_ANIMATION} 

@@ -10,6 +10,9 @@ export const Responsive = (props: Props) => {
     if (props.displayOn == "mobile") {
         className = "w3-hide-large w3-hide-medium";
     }
+    if (props.displayOn == "desktop") {
+        className = "w3-hide-small";
+    }
 
     return <div className={className}>
                 {props.children}

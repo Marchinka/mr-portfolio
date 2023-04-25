@@ -1,27 +1,16 @@
 import "./Flex.scss";
 
-type FlexJustify = "space-between"
-type FlexAlign = "center"
+type FlexJustify = "space-between" | "space-around";
+type FlexAlign = "center" | "flex-start" | "flex-end"
 
-export const Flex = (props: { children: any, justify: FlexJustify, align: FlexAlign }) => {
-    let className = "mr-flex";
+export const Flex = (props: { children: any, justify: FlexJustify, align: FlexAlign, gap?: number }) => {
+    let style = {
+        display: "flex",
+        alignItems: props.align,
+        justifyContent: props.justify,
+        gap: `${props.gap}px`
+    };
 
-    switch (props.justify) {
-        case "space-between":
-            className += " justify-space-between"
-            break;
-        default:
-            break;
-    }
-
-    switch (props.align) {
-        case "center":
-            className += " align-center"
-            break;
-        default:
-            break;
-    }
-
-    return <div className={className}>{props.children}</div>
+    return <div style={style}>{props.children}</div>
 
 }

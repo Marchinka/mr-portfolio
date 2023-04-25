@@ -9,7 +9,7 @@ interface Props {
     type?: TypographyElement;
     children?: any;
     label?: string;
-    color?: MrColor;
+    color?: MrColor | string;
     weight?: MrWeight;
     className?: string;
     transform?: Transform;

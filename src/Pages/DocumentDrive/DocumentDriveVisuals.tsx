@@ -96,7 +96,7 @@ export const DocumentDrivePersonas = () => {
                         ]}
                         goals={[
                             "Authonomy in categorizing and organize documents",
-                            "Optimization of document recovery and consultation process"
+                            "Optimization of document recovery and consultation"
                         ]} img={HQGeologist}
                 />
             </div>
