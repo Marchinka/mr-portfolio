@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faArrowAltCircleLeft, faEnvelope, faSpinner  } from "@fortawesome/free-solid-svg-icons";
 import { ScrollToTop } from "../../Utils/ScrollToTop";
 import { Flex } from "../../Components/Flex/Flex";
+import ReactGA from "react-ga4";
 
 export const Resume = () => {
     const [loaded, setLoaded] = useState(false);
@@ -15,15 +16,20 @@ export const Resume = () => {
     useEffect(() => {
         ScrollToTop();
     }, [])
+
+    const changePage = (num: number) => {
+        ReactGA.event("resume_pager");
+        setPage(num);
+    }
     
     return  <div className={`animate__animated animate__fadeIn page-content resume`}>
                 {!loaded && <div className="loader">
                     <FontAwesomeIcon icon={faSpinner} spin={true} size="6x" className="text muted"/>
                 </div>}
                 <Flex justify="center" align="center" >
-                        <button className={`w3-button w3-round w3-mr-lifted ${page == 2 ? "w3-white" : "w3-mr-black"}`} onClick={() => setPage(1)}>Page 1</button>
+                        <button className={`w3-button w3-round w3-mr-lifted ${page == 2 ? "w3-white" : "w3-mr-black"}`} onClick={() => changePage(1)}>Page 1</button>
                         &nbsp;&nbsp;&nbsp;
-                        <button className={`w3-button w3-round w3-mr-lifted  ${page == 1 ? "w3-white" : "w3-mr-black"}`} onClick={() => setPage(2)}>Page 2</button>
+                        <button className={`w3-button w3-round w3-mr-lifted  ${page == 1 ? "w3-white" : "w3-mr-black"}`} onClick={() => changePage(2)}>Page 2</button>
                     </Flex>
                     <br />
                 <div style={{display: loaded ? "block" : "none"}}>
