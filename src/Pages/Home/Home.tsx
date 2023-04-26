@@ -22,13 +22,6 @@ export const Home = () => {
         ScrollToTop();
     }, []);
 
-    useEffect(() => {
-        ReactGA.send({
-            hitType: "pageview",
-            page: window.location.pathname + window.location.search
-        });
-    }, []);
-
     return (
         <div className="mr-home-content page-content">     
                 <HeroSection 

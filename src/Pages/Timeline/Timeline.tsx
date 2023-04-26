@@ -10,13 +10,6 @@ import ReactGA from "react-ga4";
 export const Timeline = () => {
     useEffect(() => {
         ScrollToTop();
-    }, [])
-
-    useEffect(() => {
-        ReactGA.send({
-            hitType: "pageview",
-            page: window.location.pathname + window.location.search
-        });
     }, []);
     
     return  <div className={`animate__animated animate__fadeIn page-content timeline`}>
