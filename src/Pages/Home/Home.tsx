@@ -47,19 +47,19 @@ export const Home = () => {
 
                 <div className={CSS_CLASS_ROWS_ANIMATION}>
                     <div className="w3-col s4 m4 l4">
-                        <Contact onClick={() => trackEvent("contact", "mail")}
+                        <Contact onClick={() => trackEvent("contact", `contact:mail`)}
                                 type="mail" 
                                 link="mailto:marc89rossi@gmail.com" 
                                 label="marc89rossi@gmail.com"/>
                     </div>
                     <div className="w3-col s4 m4 l4">
-                        <Contact onClick={() => trackEvent("contact", "linkedin")}
+                        <Contact onClick={() => trackEvent("contact", `contact:linkedin`)}
                                 type="linkedin" 
                                 link="https://www.linkedin.com/in/marcello-rossi-40301594/" 
                                 label="linkedin.com" />
                     </div>
                     <div className="w3-col s4 m4 l4">
-                        <Contact onClick={() => trackEvent("contact", "phone")}
+                        <Contact onClick={() => trackEvent("contact", `contact:phone`)}
                                 type="phone" 
                                 link="tel:+393473914704" 
                                 label="+39 347 39 14 704" />

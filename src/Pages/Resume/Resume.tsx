@@ -21,7 +21,7 @@ export const Resume = () => {
     usePageView("/resume", "Resume");
 
     const changePage = (num: number) => {
-        trackEvent("resume", "resume_pager");
+        trackEvent("resume",  `resume:pager`);
         setPage(num);
     }
     

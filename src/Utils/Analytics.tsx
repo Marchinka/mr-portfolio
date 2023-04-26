@@ -11,7 +11,7 @@ export const usePageView = (page: string, title: string) => {
     }, []);
 }
 
-export const trackEvent = (category: string, action: string) => {
+export const trackEvent = (category: string, action: string, label?: string) => {
     ReactGA.event({
         category: category,
         action: action,

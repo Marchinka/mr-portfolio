@@ -12,7 +12,7 @@ import { Navbar } from './Components/Navbar/Navbar';
 import { AppLayout } from './Components/AppLayout/AppLayout';
 import { useNavigate } from "react-router-dom";
 import { Timeline } from './Pages/Timeline/Timeline';
-import { initializeAnalytics } from './Utils/Analytics';
+import { initializeAnalytics, trackEvent } from './Utils/Analytics';
 
 initializeAnalytics();
 
@@ -24,10 +24,31 @@ function App() {
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const source = urlParams.get('source');
+
+      const itt = urlParams.get('itt');
+      if (itt) {
+        console.log("Itt found", itt);
+        localStorage.setItem("itt", itt || "");
+      }
+
       if (source) {
         console.log("Navigation catched to", source);
         navigate(source);
       }
+  }, []);
+
+
+  useEffect(() => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const ittFromQuery = urlParams.get('itt');
+    if (ittFromQuery) {
+      console.log("Itt found", ittFromQuery);
+      localStorage.setItem("itt", ittFromQuery || "");
+    }
+
+    let itt = localStorage.getItem("itt") || "unkown";
+    trackEvent("itt", `itt:${itt}`);
   }, []);
   
   return (
