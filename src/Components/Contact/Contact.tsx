@@ -26,7 +26,7 @@ export const Contact = (props: { type: Type, link: string, label: string | React
         }
     };
 
-    return  <a className="containt-item-container" href={props.link} target="_blank" onClick={onclick}>
+    return  <a className="containt-item-container" href={props.link} target="_blank" onClick={onClick}>
                 <div className="icon-border">
                     {getIcon()}
                 </div>
