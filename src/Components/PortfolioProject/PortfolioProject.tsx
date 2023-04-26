@@ -18,7 +18,7 @@ interface Props {
 export const PortfolioHeader = (props: Props) => {
     return <div className={props.className}>
                 <div className={`title`}>
-                    <Typography type="h2" color={props.model.color} >
+                    <Typography type="h2" color={"black"} >
                         {props.model.title}
                     </Typography>
                 </div>

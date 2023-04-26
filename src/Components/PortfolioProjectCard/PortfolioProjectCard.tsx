@@ -29,7 +29,7 @@ export const PortfolioCardLink = (props: Props) => {
 export const PortfolioCardTextPart = (props: Props) => {
     return <>
                         <div>
-                            <Typography type="h4" color={props.model.color} className={`title`}>
+                            <Typography type="h4" color={"black"} className={`title`}>
                                 {props.model.title}
                             </Typography>
                             <Typography type="small" color={"muted"} className={`subTitle`} transform="uppercase">

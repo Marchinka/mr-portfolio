@@ -36,7 +36,7 @@ export const Home = () => {
                                         My areas of expertise are <Typography type="span" color="software" weight="bold">Software Development</Typography>, <Typography type="span" color="agile" weight="bold">Agile Project Managament</Typography> and <Typography type="span" color="design" weight="bold">User Experience Design</Typography>.
                                         </div>
                                         <div>
-                                        Beside work I am a passionate yoga practitioner, theater enthusiast and japanese culture lover.
+                                        Besides work, I am a passionate yoga practitioner, theater enthusiast, and japanese culture lover.
                                         </div>
                                     </Typography>
                                 </div>} />

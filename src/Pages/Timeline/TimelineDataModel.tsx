@@ -49,7 +49,7 @@ export const timelineEvents: EventProps[] = [
         contentBackgroundColor: contentBackground,
         date: "2020 - present",
         title: `Deputy Practice Manager`,
-        content: `I currently work as a team Leader in Techedge's Mobile & Cloud department. I am a senior full-stack developer, and I am also responsible for designing applications (both technically and functionally), project management, supervising project budgets, and conceiving cloud architectures. 
+        content: `I currently work as a team leader in Techedge's Mobile & Cloud department. I am a senior full-stack developer, and I am also responsible for designing applications (both technically and functionally), project management, supervising project budgets, and conceiving cloud architectures. 
         Finally, I lead a team of 30 people, for whom I am responsible in terms of technical training and personal mentorship.
         I am a  fervent sustainer of agile project management, a passionate software developer, and a strong believer in the importance of interdisciplinarity.`,
         icon: <FontAwesomeIcon icon={faBriefcase} />,
