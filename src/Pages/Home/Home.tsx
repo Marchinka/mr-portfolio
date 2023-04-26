@@ -12,6 +12,7 @@ import { Project2Model } from "../Project2/Project2";
 import { Project3Model } from "../Project3/Project3";
 import { Divider } from "../../Components/Divider/Divider";
 import ReactGA from "react-ga4";
+import { usePageView } from "../../Utils/Analytics";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;
@@ -21,6 +22,8 @@ export const Home = () => {
     useEffect(() => {
         ScrollToTop();
     }, []);
+
+    usePageView("/", "Home");
 
     return (
         <div className="mr-home-content page-content">     

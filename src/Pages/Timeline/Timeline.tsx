@@ -5,12 +5,15 @@ import { arrowColor, lineColor, projectEvents, timelineEvents } from "./Timeline
 import { ScrollToTop } from "../../Utils/ScrollToTop";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
+import { usePageView } from "../../Utils/Analytics";
 
 
 export const Timeline = () => {
     useEffect(() => {
         ScrollToTop();
     }, []);
+    
+    usePageView("/timeline", "Timeline");
     
     return  <div className={`animate__animated animate__fadeIn page-content timeline`}>
                 <h3 className="align-center margin-bottom-0">Work Experiences</h3>
