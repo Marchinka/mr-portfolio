@@ -4,12 +4,20 @@ import 'react-vertical-timeline-component/style.min.css';
 import { arrowColor, lineColor, projectEvents, timelineEvents } from "./TimelineDataModel";
 import { ScrollToTop } from "../../Utils/ScrollToTop";
 import { useEffect } from "react";
+import ReactGA from "react-ga4";
 
 
 export const Timeline = () => {
     useEffect(() => {
         ScrollToTop();
     }, [])
+
+    useEffect(() => {
+        ReactGA.send({
+            hitType: "pageview",
+            page: location.pathname + location.search
+        });
+    }, []);
     
     return  <div className={`animate__animated animate__fadeIn page-content timeline`}>
                 <h3 className="align-center margin-bottom-0">Work Experiences</h3>

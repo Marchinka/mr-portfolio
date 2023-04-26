@@ -11,6 +11,7 @@ import { DocumentDriveModel } from "../DocumentDrive/DocumentDriveModel";
 import { Project2Model } from "../Project2/Project2";
 import { Project3Model } from "../Project3/Project3";
 import { Divider } from "../../Components/Divider/Divider";
+import ReactGA from "react-ga4";
 
 const CSS_ANIMATION_CLASS = "animate__animated animate__fadeIn animate__delay-1s";
 const CSS_CLASS_ROWS = `w3-row`;
@@ -19,6 +20,13 @@ const CSS_CLASS_ROWS_ANIMATION = `${CSS_CLASS_ROWS} ${CSS_ANIMATION_CLASS}`;
 export const Home = () => {
     useEffect(() => {
         ScrollToTop();
+    }, []);
+    
+    useEffect(() => {
+        ReactGA.send({
+            hitType: "pageview",
+            page: location.pathname + location.search
+        });
     }, []);
 
     return (
