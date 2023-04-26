@@ -6,7 +6,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 type Type = "mail" | "linkedin" | "phone";
 
 
-export const Contact = (props: { type: Type, link: string, label: string | React.ReactNode }) => {
+export const Contact = (props: { type: Type, link: string, label: string | React.ReactNode, onClick?: () => void}) => {
 
     const getIcon = () => {
         switch (props.type) {
@@ -20,7 +20,13 @@ export const Contact = (props: { type: Type, link: string, label: string | React
         }
     }
 
-    return  <a className="containt-item-container" href={props.link} target="_blank">
+    const onClick = () => {
+        if (props.onClick) {
+            props.onClick();
+        }
+    };
+
+    return  <a className="containt-item-container" href={props.link} target="_blank" onClick={onclick}>
                 <div className="icon-border">
                     {getIcon()}
                 </div>

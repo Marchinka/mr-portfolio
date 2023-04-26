@@ -10,3 +10,14 @@ export const usePageView = (page: string, title: string) => {
         ReactGA.send({ hitType: "pageview", page: page, title: title });
     }, []);
 }
+
+export const trackEvent = (category: string, action: string) => {
+    ReactGA.event({
+        category: category,
+        action: action,
+        // label: "your label", // optional
+        // value: 99, // optional, must be a number
+        // nonInteraction: true, // optional, true/false
+        // transport: "xhr", // optional, beacon/xhr/image
+      });
+}
