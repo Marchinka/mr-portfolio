@@ -21,11 +21,11 @@ export const Home = () => {
     useEffect(() => {
         ScrollToTop();
     }, []);
-    
+
     useEffect(() => {
         ReactGA.send({
             hitType: "pageview",
-            page: location.pathname + location.search
+            page: window.location.pathname + window.location.search
         });
     }, []);
 

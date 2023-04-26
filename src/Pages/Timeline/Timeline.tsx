@@ -15,7 +15,7 @@ export const Timeline = () => {
     useEffect(() => {
         ReactGA.send({
             hitType: "pageview",
-            page: location.pathname + location.search
+            page: window.location.pathname + window.location.search
         });
     }, []);
     
