@@ -219,8 +219,8 @@ export const projectEvents: EventProps[] = [
         date: "2017 - Present",
         contentBorderColor: projectBorderColor,
         contentBackgroundColor: contentBackground,
-        title: <span>Riskturn <a href="www.riskturn.com">www.riskturn.com</a></span>,
-        content: <span>Riskturn is a risk management software, dedicated to the probabilistic 
+        title: "Riskturn",
+        content: <span>Riskturn (<a href="www.riskturn.com">www.riskturn.com</a>) is a risk management software, dedicated to the probabilistic 
         forecast of future cash flows, a registered trademark internally 
         developed by Techedge. Riskturn counts a standard cloud version and 
         two enterprise customizations for three major companies. The software 

@@ -12,6 +12,9 @@ import { Navbar } from './Components/Navbar/Navbar';
 import { AppLayout } from './Components/AppLayout/AppLayout';
 import { useNavigate } from "react-router-dom";
 import { Timeline } from './Pages/Timeline/Timeline';
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-FG2PQB0LWL");
 
 function App() {
 

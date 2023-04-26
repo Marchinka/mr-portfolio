@@ -18,7 +18,7 @@ export const Timeline = () => {
                         // layout="1-column-left" 
                         lineColor={lineColor}
                         animate={true}>
-                            {timelineEvents.map(event => <TimelineEvent {...event} />)}
+                            {timelineEvents.map(event => <TimelineEvent key={`${event.title}_${event.date}`} {...event} />)}
                 </VerticalTimeline>
                 <h3 className="align-center margin-bottom-0">My projects</h3>
                 <p className="align-center margin-top-0">The full list of my experiences</p>
@@ -26,13 +26,13 @@ export const Timeline = () => {
                         // layout="1-column-left" 
                         lineColor={lineColor}
                         animate={true}>
-                            {projectEvents.map(event => <TimelineEvent {...event} />)}
+                            {projectEvents.map(event => <TimelineEvent key={`${event.title}_${event.date}`} {...event} />)}
                 </VerticalTimeline> 
             </div>
 }
 
 export interface EventProps {
-    title: React.ReactNode;
+    title: string;
     date: string;
     position?: "left" | "right";
     content: React.ReactNode;
@@ -53,6 +53,6 @@ export const TimelineEvent = (props: EventProps) => {
                 iconStyle={{ background: props.iconBackgroundColor, color: props.iconColor }}
                 icon={props.icon}>
                     <strong>{props.title}</strong>
-                    {props.content && <p className="timeline-content">{props.content}</p>}
+                    {props.content && <div className="timeline-content">{props.content}</div>}
                 </VerticalTimelineElement>
 }

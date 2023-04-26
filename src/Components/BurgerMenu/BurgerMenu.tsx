@@ -15,7 +15,7 @@ export const BurgerMenu = (props: Props) => {
     return (<div>
               <div className="big-device-navbar">
                 {props.links.map(link => {
-                  return  <Link className="w3-bar-item w3-button w3-padding-large mr-navbar-link" to={link.link}>
+                  return  <Link key={link.label} className="w3-bar-item w3-button w3-padding-large mr-navbar-link" to={link.link}>
                             {link.label}
                           </Link>
                 })}
@@ -30,6 +30,7 @@ export const BurgerMenu = (props: Props) => {
                 <div className="link-section">
                     {props.links.map(link => {
                       return  <Link className="w3-button w3-padding-large mobile-link" to={link.link}
+                      key={link.label} 
                                     onClick={() => setShowMenu(false)}>
                                   {link.label}
                               </Link>

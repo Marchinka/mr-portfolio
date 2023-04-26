@@ -53,11 +53,11 @@ export const PortfolioProject = (props: Props) => {
                 {props.model.paragraphs.map(par => {
                     return  <div key={par.title}>
                                 <h4 id={par.title} >{par.title}</h4>
-                                {par.components.map(component => {
+                                {par.components.map((component, index) => {
                                     if (typeof(component) == "string") {
-                                        return <MarkdownContent url={component} />
+                                        return <MarkdownContent url={component} key={index} />
                                     } else {
-                                        return <>{component}</>
+                                        return <div key={index}>{component}</div>
                                     }
                                 })}
                             </div>

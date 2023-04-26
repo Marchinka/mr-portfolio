@@ -32,12 +32,12 @@ export const Home = () => {
                                     </Typography>
                                     <Typography type="p" className="animate__animated animate__bounceInRight animate__delay-04s">
                                         M-shaped person.
-                                        <div>
+                                        <span style={{display: "block"}}>
                                         My areas of expertise are <Typography type="span" color="software" weight="bold">Software Development</Typography>, <Typography type="span" color="agile" weight="bold">Agile Project Managament</Typography> and <Typography type="span" color="design" weight="bold">User Experience Design</Typography>.
-                                        </div>
-                                        <div>
+                                        </span>
+                                        <span style={{display: "block"}}>
                                         Besides work, I am a passionate yoga practitioner, theater enthusiast, and japanese culture lover.
-                                        </div>
+                                        </span>
                                     </Typography>
                                 </div>} />
 
