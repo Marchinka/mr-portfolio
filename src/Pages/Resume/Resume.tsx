@@ -8,6 +8,7 @@ import { faAngleLeft, faAngleRight, faArrowAltCircleLeft, faEnvelope, faSpinner 
 import { ScrollToTop } from "../../Utils/ScrollToTop";
 import { Flex } from "../../Components/Flex/Flex";
 import ReactGA from "react-ga4";
+import { usePageView } from "../../Utils/Analytics";
 
 export const Resume = () => {
     const [loaded, setLoaded] = useState(false);
@@ -15,7 +16,9 @@ export const Resume = () => {
 
     useEffect(() => {
         ScrollToTop();
-    }, [])
+    }, []);
+
+    usePageView("/resume", "Resume");
 
     const changePage = (num: number) => {
         ReactGA.event("screen_view", {
