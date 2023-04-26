@@ -18,7 +18,10 @@ export const Resume = () => {
     }, [])
 
     const changePage = (num: number) => {
-        ReactGA.event("resume_pager");
+        ReactGA.event("screen_view", {
+            app_name: "myApp",
+            screen_name: "name",
+          });
         setPage(num);
     }
     
