@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faArrowAltCircleLeft, faEnvelope, faSpinner  } from "@fortawesome/free-solid-svg-icons";
 import { ScrollToTop } from "../../Utils/ScrollToTop";
 import { Flex } from "../../Components/Flex/Flex";
-import ReactGA from "react-ga4";
 import { trackEvent, usePageView } from "../../Utils/Analytics";
 
 export const Resume = () => {
@@ -23,7 +22,7 @@ export const Resume = () => {
     const changePage = (num: number) => {
         trackEvent("resume",  `resume:pager`);
         setPage(num);
-    }
+    };
     
     return  <div className={`animate__animated animate__fadeIn page-content resume`}>
                 {!loaded && <div className="loader">
@@ -42,11 +41,11 @@ export const Resume = () => {
                         {/* <iframe src={CurriculumVitaePdf} /> */}
                     </div>
                     
-
-
                     <div className="download-area">
-                        <a className={`w3-button w3-large w3-mr-black w3-round w3-mr-lifted`}
-                            href={CurriculumVitaePdf} target="_blank" download="Curriculum Vitae - Marcello Rossi.pdf"> 
+                        <a  className={`w3-button w3-large w3-mr-black w3-round w3-mr-lifted`}
+                            onClick={() => trackEvent("resume",  `resume:download`)}
+                            href={CurriculumVitaePdf} target="_blank" 
+                            download="Curriculum Vitae - Marcello Rossi.pdf"> 
                             Download Resume
                         </a>
                     </div>
