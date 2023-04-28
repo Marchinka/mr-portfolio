@@ -40,7 +40,7 @@ export const DocumentDriveModel: ProjectModel = {
     briefText: MdIntro,
     coverImg: DocumentPlatformImg,
     paragraphs: [
-        { title: "", components: [<DocumentDriveHighlights />] },
+        { title: "Highlights", hideTitle: true, components: [<DocumentDriveHighlights />] },
         { title: "Challenge", components: [MdIntro, <DocumentDriveKpis />, <RefImage img={DocumentumImg} caption="A screenshot of the old product (it was an instance of D2 documentum)." />] },
         { title: "Target Audience", components: [<p>For this project we decided to use role-based personas.</p>, <DocumentDrivePersonas />] },
         { title: "Team & Governance", components: [<DocumentDriveTeam />, MdGovernance] },

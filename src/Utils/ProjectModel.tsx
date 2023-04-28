@@ -2,6 +2,7 @@ type Content = React.ReactNode | string;
 
 export interface Paragraph {
     title: string;
+    hideTitle?: boolean;
     components: Content[];
 }
 

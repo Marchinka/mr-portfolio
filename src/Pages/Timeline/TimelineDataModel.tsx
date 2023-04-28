@@ -174,7 +174,7 @@ export const projectEvents: EventProps[] = [
         contentBorderColor: projectBorderColor,
         contentBackgroundColor: contentBackground,
         title: `Document Platform`,
-        content: <span>Document Platform is the new document repository reference platform for the Exploration and Production department of a major Italian energy company. The objective of the new application is the creation of a brand-new document platform, based on MS Azure Cloud-native technologies, that can be grown over time to become a reference point for knowledge sharing for drilling, exploration, geosciences, and several others. Docware Drive implements a complex permission model, several libraries, approval and review workflows, and an advanced full-text search functionality based on MS Azure Cognitive services.
+        content: <span>Document Platform is the new document repository reference platform for the Exploration and Production department of a major Italian energy company. The objective of the new application is the creation of a brand-new document platform, based on MS Azure Cloud-native technologies, that can be grown over time to become a reference point for knowledge sharing for drilling, exploration, geosciences, and several others. It implements a complex permission model, several libraries, approval and review workflows, and an advanced full-text search functionality based on MS Azure Cognitive services.
         <ul>
             <li>600k documents</li>
             <li>25 TB of data stored on the cloud</li>

@@ -2,7 +2,12 @@ import { useEffect } from "react";
 import ReactGA from "react-ga4";
 
 export const initializeAnalytics = () => {
-    ReactGA.initialize("G-5K9K6PVVZC");
+    const itt = localStorage.getItem('itt') || null;
+    ReactGA.initialize("G-5K9K6PVVZC", {
+        gaOptions: {
+            userId: itt
+        }
+    });
 };
 
 export const usePageView = (page: string, title: string) => {
