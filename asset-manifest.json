@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.544d8b90.css",
-    "main.js": "/static/js/main.8b51b131.js",
+    "main.js": "/static/js/main.cb860b9e.js",
     "static/js/787.a4063eb2.chunk.js": "/static/js/787.a4063eb2.chunk.js",
-    "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.9e2807072723a4a2002e1ee316e68dd1.svg",
-    "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.70228bf7b21ef9eede7b.pdf",
+    "static/media/CV_MR_1.svg": "/static/media/CV_MR_1.a638dd8f0bcad765c1d9b68fc3fe11c9.svg",
+    "static/media/Curriculum Vitae - Marcello Rossi.pdf": "/static/media/Curriculum Vitae - Marcello Rossi.4e9c018b6834acfc2168.pdf",
     "static/media/CV_MR_2.svg": "/static/media/CV_MR_2.edfe736b4ab77016258487fa84197351.svg",
     "static/media/Project3.png": "/static/media/Project3.e2e4ca27a8273295505a.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -23,11 +23,11 @@
     "index.html": "/index.html",
     "static/media/Intro.md": "/static/media/Intro.9b7f921baa6c7d5d1c0e.md",
     "main.544d8b90.css.map": "/static/css/main.544d8b90.css.map",
-    "main.8b51b131.js.map": "/static/js/main.8b51b131.js.map",
+    "main.cb860b9e.js.map": "/static/js/main.cb860b9e.js.map",
     "787.a4063eb2.chunk.js.map": "/static/js/787.a4063eb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.544d8b90.css",
-    "static/js/main.8b51b131.js"
+    "static/js/main.cb860b9e.js"
   ]
 }
